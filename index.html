@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en-ZA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PocketBusiness — Run your business from your pocket</title>
+    <meta
+      name="description"
+      content="Quotes, catalog, contacts, and cashflow — a mobile app for solo operators and micro-businesses in South Africa."
+    />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <meta property="og:title" content="PocketBusiness — Run your business from your pocket" />
+    <meta
+      property="og:description"
+      content="Quotes, catalog, contacts, and cashflow for South African solo operators."
+    />
+    <meta property="og:image" content="/screenshots/home.png" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-bg text-ink font-sans antialiased">
+    <header
+      class="sticky top-0 z-50 border-b border-border bg-bg/90 backdrop-blur-md"
+    >
+      <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
+        <a href="#top" class="flex items-center gap-3">
+          <img
+            src="/images/icon.png"
+            alt=""
+            width="36"
+            height="36"
+            class="h-9 w-9 rounded-[10px]"
+          />
+          <span class="font-display text-lg tracking-tight">PuBo</span>
+        </a>
+        <nav class="hidden items-center gap-8 text-sm text-ink-muted md:flex">
+          <a href="#features" class="hover:text-ink">Features</a>
+          <a href="#how" class="hover:text-ink">How it works</a>
+          <a href="#faq" class="hover:text-ink">FAQ</a>
+        </nav>
+        <a
+          data-play
+          href="#"
+          class="hidden rounded-full bg-accent px-4 py-2 text-sm font-medium text-bg hover:opacity-90 md:inline-flex"
+          >Get it on Google Play</a
+        >
+        <button
+          id="nav-toggle"
+          type="button"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border text-ink md:hidden"
+          aria-expanded="false"
+          aria-controls="nav-panel"
+          aria-label="Open menu"
+        >
+          <span class="text-xl leading-none">☰</span>
+        </button>
+      </div>
+      <div id="nav-panel" class="hidden border-t border-border px-5 py-4 md:hidden">
+        <div class="flex flex-col gap-3 text-sm">
+          <a href="#features" class="text-ink-muted hover:text-ink">Features</a>
+          <a href="#how" class="text-ink-muted hover:text-ink">How it works</a>
+          <a href="#faq" class="text-ink-muted hover:text-ink">FAQ</a>
+          <a
+            data-play
+            href="#"
+            class="mt-2 inline-flex w-fit rounded-full bg-accent px-4 py-2 font-medium text-bg"
+            >Get it on Google Play</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:grid-cols-2 md:py-24">
+        <div>
+          <p class="mb-4 text-[11px] font-semibold tracking-[1.2px] text-accent uppercase">
+            Built for small South African businesses
+          </p>
+          <h1 class="font-display text-4xl leading-[1.05] tracking-tight md:text-6xl">
+            Run your business from your pocket
+          </h1>
+          <p class="mt-5 max-w-md text-lg text-ink-muted">
+            Quotes, catalog, contacts, and cashflow — built for solo operators and
+            micro-businesses in South Africa.
+          </p>
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a
+              data-play
+              href="#"
+              class="inline-flex rounded-full bg-accent px-5 py-3 text-sm font-semibold text-bg hover:opacity-90"
+              >Get it on Google Play</a
+            >
+          </div>
+          <ul class="mt-6 flex flex-wrap gap-2 text-xs text-ink-muted">
+            <li class="rounded-full border border-border px-3 py-1">Free while we grow</li>
+            <li class="rounded-full border border-border px-3 py-1">No credit card</li>
+            <li class="rounded-full border border-border px-3 py-1">Android</li>
+          </ul>
+        </div>
+        <div class="flex justify-center">
+          <div class="phone">
+            <div class="phone-screen">
+              <img
+                src="/screenshots/home.png"
+                alt="PocketBusiness Home dashboard in dark mode, showing net cashflow, income, expenses and awaiting."
+                width="1080"
+                height="2280"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-y border-border">
+        <div
+          class="mx-auto grid max-w-6xl gap-6 px-5 py-8 text-center text-sm text-ink-muted sm:grid-cols-3"
+        >
+          <p>Made in South Africa</p>
+          <p>ZAR and VAT-aware</p>
+          <p>Send quotes on WhatsApp</p>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-5 py-20">
+        <h2 class="font-display text-3xl tracking-tight md:text-4xl">Your week, before PocketBusiness</h2>
+        <p class="mt-3 max-w-2xl text-ink-muted">
+          PocketBusiness keeps the catalog, the customer, the quote, the stock and the numbers
+          together.
+        </p>
+        <div class="mt-10 grid gap-4 md:grid-cols-3">
+          <article class="rounded-card border border-border bg-surface p-6">
+            <h3 class="font-display text-xl">Quotes live in WhatsApp</h3>
+            <p class="mt-2 text-sm text-ink-muted">
+              Prices get typed into a chat, then copied into a spreadsheet — and nobody is sure
+              which one is current.
+            </p>
+          </article>
+          <article class="rounded-card border border-border bg-surface p-6">
+            <h3 class="font-display text-xl">Stock is a notebook</h3>
+            <p class="mt-2 text-sm text-ink-muted">
+              You find out something is sold out when the customer is already waiting.
+            </p>
+          </article>
+          <article class="rounded-card border border-border bg-surface p-6">
+            <h3 class="font-display text-xl">The month lives in three places</h3>
+            <p class="mt-2 text-sm text-ink-muted">
+              Expenses in one app, sales in another, and “how did we do?” in a third.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="features" class="mx-auto max-w-6xl px-5 py-8 pb-20">
+        <p class="text-[11px] font-semibold tracking-[1.2px] text-accent uppercase">Features</p>
+        <h2 class="mt-2 font-display text-3xl tracking-tight md:text-4xl">
+          What you can do on your phone
+        </h2>
+
+        <div class="mt-12 grid items-center gap-10 md:grid-cols-2">
+          <div>
+            <h3 class="font-display text-2xl">Build your customer base</h3>
+            <p class="mt-3 text-ink-muted">
+              Add customers in seconds — no spreadsheets, no paperwork.
+            </p>
+          </div>
+          <div class="shot max-h-[520px]">
+            <img src="/screenshots/contacts.png" alt="Contacts list in PocketBusiness." />
+          </div>
+        </div>
+
+        <div class="mt-16 grid items-center gap-10 md:grid-cols-2">
+          <div class="shot max-h-[520px] md:order-1">
+            <img src="/screenshots/stock.png" alt="Stock screen in PocketBusiness." />
+          </div>
+          <div class="md:order-2">
+            <h3 class="font-display text-2xl">Stay on top of your stock</h3>
+            <p class="mt-3 text-ink-muted">
+              Track what you sell and know what's running low.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-16 grid items-center gap-10 md:grid-cols-2">
+          <div>
+            <h3 class="font-display text-2xl">Turn quotes into sales</h3>
+            <p class="mt-3 text-ink-muted">
+              Send a professional quote, then track it through to payment. Line items come from
+              your catalog — VAT included where it belongs.
+            </p>
+          </div>
+          <div class="shot max-h-[520px]">
+            <img src="/screenshots/sales.png" alt="Quotes list in PocketBusiness." />
+          </div>
+        </div>
+
+        <div class="mt-16 grid items-center gap-10 md:grid-cols-2">
+          <div class="shot max-h-[520px] md:order-1">
+            <img
+              src="/screenshots/home.png"
+              alt="Home dashboard showing rolling net cashflow in rand."
+            />
+          </div>
+          <div class="md:order-2">
+            <h3 class="font-display text-2xl">Watch your business grow</h3>
+            <p class="mt-3 text-ink-muted">
+              Real-time profit tracking on Home: income, expenses, and what is still awaiting
+              payment.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-16 grid items-center gap-10 md:grid-cols-2">
+          <div>
+            <h3 class="font-display text-2xl">Sell from a catalog you trust</h3>
+            <p class="mt-3 text-ink-muted">
+              Products, variations, packaging and shipping options — priced once, reused on every
+              quote.
+            </p>
+          </div>
+          <div class="shot max-h-[520px]">
+            <img src="/screenshots/catalog-list.png" alt="Catalog shipping options in PocketBusiness." />
+          </div>
+        </div>
+
+        <div class="mt-16 grid items-center gap-10 md:grid-cols-2">
+          <div class="shot max-h-[520px] md:order-1">
+            <img src="/screenshots/expenses.png" alt="Expenses screen in PocketBusiness." />
+          </div>
+          <div class="md:order-2">
+            <h3 class="font-display text-2xl">Expenses on the phone</h3>
+            <p class="mt-3 text-ink-muted">
+              Capture rent, fuel, subscriptions, or anything else that is not tied to a quote.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="border-y border-border bg-surface/40">
+        <div class="mx-auto max-w-6xl px-5 py-20">
+          <h2 class="font-display text-3xl tracking-tight md:text-4xl">How it works</h2>
+          <ol class="mt-10 grid gap-6 md:grid-cols-3">
+            <li class="rounded-card border border-border bg-surface p-6">
+              <p class="text-sm font-semibold text-accent">01</p>
+              <h3 class="mt-3 font-display text-xl">Add your catalog and a few contacts</h3>
+              <p class="mt-2 text-sm text-ink-muted">
+                Products, prices, and the people you sell to — on the phone.
+              </p>
+            </li>
+            <li class="rounded-card border border-border bg-surface p-6">
+              <p class="text-sm font-semibold text-accent">02</p>
+              <h3 class="mt-3 font-display text-xl">Build a quote from real prices</h3>
+              <p class="mt-2 text-sm text-ink-muted">
+                Line items come from the catalog. Send it. Track it to packed and shipped.
+              </p>
+            </li>
+            <li class="rounded-card border border-border bg-surface p-6">
+              <p class="text-sm font-semibold text-accent">03</p>
+              <h3 class="mt-3 font-display text-xl">Watch stock, expenses and a simple report</h3>
+              <p class="mt-2 text-sm text-ink-muted">
+                Home shows the month as you work. No desktop required.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-5 py-20">
+        <h2 class="font-display text-3xl tracking-tight md:text-4xl">Built for South Africa</h2>
+        <div class="mt-10 grid gap-4 md:grid-cols-2">
+          <p class="rounded-card border border-border bg-surface p-6 text-ink-muted">
+            <span class="block font-medium text-ink">Rand, not dollars.</span>
+            Amounts display in ZAR the way you already think about money.
+          </p>
+          <p class="rounded-card border border-border bg-surface p-6 text-ink-muted">
+            <span class="block font-medium text-ink">VAT where it belongs.</span>
+            Quotes can carry VAT so the number you send is the number they pay.
+          </p>
+          <p class="rounded-card border border-border bg-surface p-6 text-ink-muted">
+            <span class="block font-medium text-ink">WhatsApp is a first-class channel.</span>
+            Send a quote without rewriting it in a chat.
+          </p>
+          <p class="rounded-card border border-border bg-surface p-6 text-ink-muted">
+            <span class="block font-medium text-ink">Your data stays in your account.</span>
+            Each business only sees its own catalog, contacts, quotes and expenses.
+          </p>
+        </div>
+      </section>
+
+      <section class="border-y border-border">
+        <div class="mx-auto max-w-3xl px-5 py-20 text-center">
+          <h2 class="font-display text-3xl tracking-tight">Free for early users</h2>
+          <p class="mt-4 text-ink-muted">
+            PocketBusiness is a real app, not a waitlist. We are not charging yet. If that
+            changes, early users hear first.
+          </p>
+          <a
+            data-play
+            href="#"
+            class="mt-8 inline-flex rounded-full bg-accent px-5 py-3 text-sm font-semibold text-bg hover:opacity-90"
+            >Get it on Google Play</a
+          >
+        </div>
+      </section>
+
+      <section id="faq" class="mx-auto max-w-3xl px-5 py-20">
+        <h2 class="font-display text-3xl tracking-tight">FAQ</h2>
+        <div class="mt-8 divide-y divide-border border-y border-border">
+          <details class="faq py-5">
+            <summary class="cursor-pointer font-medium">Is it really free?</summary>
+            <p class="mt-3 text-sm text-ink-muted">
+              Yes, for now. There is no credit card and no trial clock. If we introduce paid
+              plans, we will tell early users first.
+            </p>
+          </details>
+          <details class="faq py-5">
+            <summary class="cursor-pointer font-medium">Who is it for?</summary>
+            <p class="mt-3 text-sm text-ink-muted">
+              Solo operators and micro-businesses in South Africa who sell with quotes — makers,
+              traders, and service businesses that need a catalog, stock and a simple picture of
+              the month.
+            </p>
+          </details>
+          <details class="faq py-5">
+            <summary class="cursor-pointer font-medium">
+              Is this invoicing, accounting, or a card machine?
+            </summary>
+            <p class="mt-3 text-sm text-ink-muted">
+              No. PocketBusiness is the catalog-to-quote-to-stock loop on your phone, plus
+              expenses and reports. It is not Sage, and it is not Yoco.
+            </p>
+          </details>
+          <details class="faq py-5">
+            <summary class="cursor-pointer font-medium">Does it handle South African VAT?</summary>
+            <p class="mt-3 text-sm text-ink-muted">
+              Quotes can include VAT. Currency defaults to ZAR. It is not a full set of SARS
+              books.
+            </p>
+          </details>
+          <details class="faq py-5">
+            <summary class="cursor-pointer font-medium">Where is my data? Is this POPIA-conscious?</summary>
+            <p class="mt-3 text-sm text-ink-muted">
+              Your catalog, contacts, quotes and expenses live in your account. We do not sell
+              that data. See the
+              <a class="text-accent underline" href="./privacy.html">privacy notice</a>.
+            </p>
+          </details>
+          <details class="faq py-5">
+            <summary class="cursor-pointer font-medium">Do I need a computer?</summary>
+            <p class="mt-3 text-sm text-ink-muted">
+              No. PocketBusiness is built for the phone.
+            </p>
+          </details>
+          <details class="faq py-5">
+            <summary class="cursor-pointer font-medium">Android or iOS?</summary>
+            <p class="mt-3 text-sm text-ink-muted">
+              Android first, on Google Play. iOS is not listed yet.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="border-t border-border bg-surface/40">
+        <div class="mx-auto max-w-3xl px-5 py-20 text-center">
+          <h2 class="font-display text-3xl tracking-tight">Ready to see the growth?</h2>
+          <p class="mt-3 text-ink-muted">Run quotes, stock and cashflow from your pocket.</p>
+          <a
+            data-play
+            href="#"
+            class="mt-8 inline-flex rounded-full bg-accent px-5 py-3 text-sm font-semibold text-bg hover:opacity-90"
+            >Get it on Google Play</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-border">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-8 text-sm text-ink-muted sm:flex-row sm:items-center sm:justify-between"
+      >
+        <p>© <span id="y"></span> PocketBusiness</p>
+        <nav class="flex flex-wrap gap-5">
+          <a href="./privacy.html" class="hover:text-ink">Privacy</a>
+          <a href="./terms.html" class="hover:text-ink">Terms</a>
+          <a
+            href="https://github.com/peroynel1/landing-page"
+            class="hover:text-ink"
+            rel="noreferrer"
+            >GitHub</a
+          >
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('y').textContent = String(new Date().getFullYear());
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
