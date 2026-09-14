@@ -1,8 +1,8 @@
 # landing-page
 
-Public marketing site for PocketBusiness. Hosted on GitHub Pages:
+Public marketing site for PocketBusiness / Vlyt. Hosted on GitHub Pages at:
 
-https://peroynel1.github.io/landing-page/
+https://vlyt.app
 
 The app itself lives in a separate private repo. This repo only has the site, brand assets, and screenshots.
 
@@ -17,8 +17,10 @@ npm run dev
 
 Set `PLAY_STORE_URL` in `src/config.ts`. Leave `#` until the listing is live.
 
-## Custom domain later
+## Custom domain
 
-1. Add a `CNAME` file with the domain.
-2. Change `base` in `vite.config.ts` from `'/landing-page/'` to `'/'`.
-3. Point DNS at GitHub Pages and enforce HTTPS.
+Domain: `vlyt.app` (GoDaddy registration, Cloudflare DNS → GitHub Pages).
+
+- Root `CNAME` file contains `vlyt.app`
+- Vite `base` is `/`
+- In the GitHub repo: Settings → Pages → custom domain `vlyt.app` → Enforce HTTPS once DNS is green
