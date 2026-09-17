@@ -8,7 +8,28 @@
       name="description"
       content="How Vlyt handles your information under POPIA."
     />
+    <link rel="canonical" href="https://vlyt.app/privacy.html" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
     <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta property="og:title" content="Privacy — Vlyt" />
+    <meta
+      property="og:description"
+      content="How Vlyt handles your information under POPIA."
+    />
+    <meta property="og:image" content="https://vlyt.app/images/og-image.png" />
+    <meta property="og:url" content="https://vlyt.app/privacy.html" />
+    <meta property="og:site_name" content="Vlyt" />
+    <meta property="og:locale" content="en_ZA" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Privacy — Vlyt" />
+    <meta
+      name="twitter:description"
+      content="How Vlyt handles your information under POPIA."
+    />
+    <meta name="twitter:image" content="https://vlyt.app/images/og-image.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,45 +47,165 @@
     </header>
     <main class="mx-auto max-w-3xl px-5 py-16">
       <h1 class="font-display text-4xl tracking-tight">Privacy notice</h1>
-      <p class="mt-3 text-sm text-ink-muted">Last updated 14 August 2026</p>
+      <p class="mt-3 text-sm text-ink-muted">Last updated 17 September 2026</p>
       <div class="mt-10 space-y-6 text-ink-muted">
         <p>
           Vlyt is a mobile app for small South African businesses. This notice
-          explains how we handle information, in line with the Protection of Personal Information
-          Act, 2013 (POPIA).
+          explains how we handle personal information under the Protection of
+          Personal Information Act, 2013 (POPIA).
         </p>
-        <h2 class="font-display text-2xl text-ink">What we collect</h2>
+
+        <h2 class="font-display text-2xl text-ink">Who we are</h2>
         <p>
-          When you create an account we store the details you give us — typically a phone number or
-          Google sign-in, a display name, and your business name. Inside the app you may add
-          contacts, products, quotes, stock, expenses, and related files such as product images or
-          receipts.
+          Vlyt is operated by <strong class="text-ink">Peroy Nel, trading as
+          Vlyt</strong> (“we”, “us”), based in Stellenbosch, South Africa. For
+          POPIA, the Operator is the <strong class="text-ink">Responsible
+          Party</strong> and Information Officer for personal information
+          processed through the app and this website.
         </p>
+        <p>
+          Privacy and data requests:
+          <a class="text-accent underline" href="mailto:support@vlyt.app"
+            >support@vlyt.app</a
+          >.
+        </p>
+
+        <h2 class="font-display text-2xl text-ink">What we collect</h2>
+        <p><strong class="text-ink">Account information.</strong> Email address
+          and password if you register with email; Google account details if you
+          sign in with Google; phone number if you use SMS sign-in; display name
+          and business name you enter during setup; optional profile photo.</p>
+        <p><strong class="text-ink">Business data you create.</strong> Contacts
+          and customers (including details you import from your device address
+          book, with your permission), products, quotes, stock, expenses,
+          receipts, product images, and related records.</p>
+        <p><strong class="text-ink">Technical and diagnostics.</strong> Device
+          type, OS, app version, crash reports and error logs (via
+          <strong class="text-ink">Sentry</strong>), and in-app usage patterns
+          (via <strong class="text-ink">PostHog</strong>) used to improve the
+          product.</p>
+        <p><strong class="text-ink">Website analytics.</strong> The marketing
+          site at vlyt.app may use Google Analytics 4 to understand visits and
+          whether people open store links. We do not use analytics to sell your
+          business data or advertise to your customers.</p>
+        <p>
+          We do not store card numbers. If paid subscriptions are offered later,
+          mobile billing would go through Apple/Google and web payments through a
+          payment processor — card details would not touch our own servers.
+        </p>
+
         <h2 class="font-display text-2xl text-ink">Why we collect it</h2>
         <p>
-          We use this information only to run the app for you: to sign you in, to keep your catalog
-          and quotes, and to send a one-time SMS code if you verify by phone. We do not sell your
-          business data, and we do not use it to advertise other products to your customers.
+          We process personal information to provide the Service: sign-in and
+          account security, catalog and quoting features, support, product
+          improvement, crash diagnostics, and (where enabled) one-time SMS codes
+          for phone verification. We do not sell your personal or business data.
         </p>
+
+        <h2 class="font-display text-2xl text-ink">Contacts import</h2>
+        <p>
+          If you choose to import customers from your phone’s contacts, we only
+          read the fields you select to create or update contact records in your
+          account. We do not upload your full address book for marketing, and we
+          do not share those contacts with other users.
+        </p>
+
+        <h2 class="font-display text-2xl text-ink">SMS OTP</h2>
+        <p>
+          If phone sign-in is enabled and you verify with a mobile number, we
+          send a one-time verification code via our SMS provider (currently
+          Vonage or a successor). Message and data rates may apply. We do not
+          send marketing SMS. Phone sign-in may be unavailable while we keep SMS
+          usage limited.
+        </p>
+
+        <h2 class="font-display text-2xl text-ink">Who we share it with</h2>
+        <p>
+          We use service providers that process data on our behalf to run Vlyt:
+        </p>
+        <ul class="list-disc space-y-2 pl-5">
+          <li><strong class="text-ink">Supabase</strong> — database, authentication, file storage</li>
+          <li><strong class="text-ink">Resend</strong> — transactional email (confirm signup, password reset, security notices)</li>
+          <li><strong class="text-ink">PostHog</strong> — product analytics</li>
+          <li><strong class="text-ink">Sentry</strong> — crash and error monitoring</li>
+          <li><strong class="text-ink">Vonage</strong> (or current SMS provider) — OTP codes when phone sign-in is enabled</li>
+          <li><strong class="text-ink">Google</strong> — Google Sign-In when you choose that method; Analytics on the marketing site</li>
+        </ul>
+        <p>
+          WhatsApp features open pre-filled messages in
+          <strong class="text-ink">your</strong> WhatsApp account. We do not
+          read or store your WhatsApp conversations.
+        </p>
+
         <h2 class="font-display text-2xl text-ink">Where it lives</h2>
         <p>
-          Data is stored with our hosting provider (Supabase). Access is limited to your signed-in
-          account. Other users cannot read your catalog, contacts, quotes, or expenses.
+          App data is stored with Supabase. Access is limited to your signed-in
+          account. Other users cannot read your catalog, contacts, quotes, or
+          expenses. Some providers operate infrastructure outside South Africa;
+          we take reasonable steps to keep transfers protected consistently with
+          POPIA.
         </p>
-        <h2 class="font-display text-2xl text-ink">Your rights</h2>
+
+        <h2 class="font-display text-2xl text-ink">Retention</h2>
         <p>
-          You may ask us what we hold, correct it, or delete your account and the business data
-          attached to it. Use the in-app account controls where available, or contact us through
-          the GitHub repository linked in the footer.
+          We keep personal and business data while your account is active. After
+          you delete your account, we remove account data and associated business
+          records from our systems, except where South African law requires us to
+          retain information longer (for example tax or accounting records,
+          commonly up to five years). Crash and analytics logs are kept only as
+          long as needed for diagnostics and product improvement.
         </p>
-        <h2 class="font-display text-2xl text-ink">SMS</h2>
+
+        <h2 class="font-display text-2xl text-ink">Security</h2>
         <p>
-          If you sign in with a phone number, we send a one-time verification code. Message and
-          data rates may apply. We do not send marketing SMS.
+          We use encryption in transit, access controls, and reputable
+          infrastructure providers. No system is perfectly secure — use a strong
+          password and device lock where available.
         </p>
+
+        <h2 class="font-display text-2xl text-ink">Your rights (POPIA)</h2>
+        <p>You may request:</p>
+        <ul class="list-disc space-y-2 pl-5">
+          <li>Confirmation of what personal information we hold about you</li>
+          <li>A copy of that information</li>
+          <li>Correction of inaccurate or outdated information</li>
+          <li>Deletion of your personal information (subject to legal retention)</li>
+          <li>Objection to processing based on legitimate interest, where applicable</li>
+        </ul>
         <p>
-          This notice will be updated if our practices change. The date above is the current
-          version.
+          Use in-app account controls where available, or email
+          <a class="text-accent underline" href="mailto:support@vlyt.app"
+            >support@vlyt.app</a
+          >. You may lodge a complaint with the Information Regulator (South
+          Africa) at
+          <a
+            class="text-accent underline"
+            href="mailto:enquiries@inforegulator.org.za"
+            >enquiries@inforegulator.org.za</a
+          >.
+        </p>
+
+        <h2 class="font-display text-2xl text-ink">Children</h2>
+        <p>
+          Vlyt is aimed at business users. If you are under 18, a parent or
+          guardian should consent to your use. Contact us to review or delete a
+          minor’s information.
+        </p>
+
+        <h2 class="font-display text-2xl text-ink">Changes</h2>
+        <p>
+          We may update this notice when our practices change. The date above is
+          the current version. Material changes will be noted here and, where
+          appropriate, in the app or by email.
+        </p>
+
+        <h2 class="font-display text-2xl text-ink">Contact</h2>
+        <p>
+          Peroy Nel, trading as Vlyt<br />
+          Stellenbosch, South Africa<br />
+          <a class="text-accent underline" href="mailto:support@vlyt.app"
+            >support@vlyt.app</a
+          >
         </p>
       </div>
       <p class="mt-12 text-sm"><a class="text-accent" href="./">← Back</a></p>
