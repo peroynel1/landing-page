@@ -27,6 +27,18 @@ Set these as GitHub Actions variables (anon key is public; never a service-role 
 
 Locally, copy them into `.env` as the same names.
 
+## Blog & content engine
+
+Markdown posts live in `content/blog/`. Free resources live in `content/resources/`.
+`npm run content` (also run before `dev` / `build`) generates HTML into `blog/` and
+`resources/`, plus `public/sitemap.xml`, `public/robots.txt`, and `public/llms.txt`.
+
+Cocoon map: [content/COCOON.md](./content/COCOON.md)  
+Outreach tracker: [content/OUTREACH.md](./content/OUTREACH.md)  
+Owned distribution: [content/DISTRIBUTION.md](./content/DISTRIBUTION.md)  
+AI visibility prompts: [content/AI_VISIBILITY.md](./content/AI_VISIBILITY.md)  
+GSC rewrite loop: [content/GSC_REWRITE_LOOP.md](./content/GSC_REWRITE_LOOP.md)
+
 ## Analytics (GA4)
 
 Set `VITE_GA_MEASUREMENT_ID` (`G-XXXXXXXX`) as a GitHub Actions variable so the Pages build injects Google Analytics. Omit it locally if you do not want hits from `npm run dev`.
