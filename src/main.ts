@@ -1,4 +1,5 @@
 import './style.css';
+import { initAnalytics } from './analytics.ts';
 import { PLAY_STORE_URL } from './config.ts';
 
 const playHref = PLAY_STORE_URL && PLAY_STORE_URL !== '#' ? PLAY_STORE_URL : '#';
@@ -25,3 +26,5 @@ panel?.querySelectorAll('a').forEach((link) => {
     toggle?.setAttribute('aria-expanded', 'false');
   });
 });
+
+initAnalytics();

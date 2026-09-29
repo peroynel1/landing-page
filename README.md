@@ -27,6 +27,12 @@ Set these as GitHub Actions variables (anon key is public; never a service-role 
 
 Locally, copy them into `.env` as the same names.
 
+## Analytics (GA4)
+
+Set `VITE_GA_MEASUREMENT_ID` (`G-XXXXXXXX`) as a GitHub Actions variable so the Pages build injects Google Analytics. Omit it locally if you do not want hits from `npm run dev`.
+
+Setup steps for Search Console + GA4 are in [SEO.md](./SEO.md).
+
 ## Custom domain
 
 Domain: `vlyt.app` (GoDaddy registration, Cloudflare DNS → GitHub Pages).

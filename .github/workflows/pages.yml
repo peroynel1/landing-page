@@ -28,6 +28,7 @@ jobs:
         env:
           VITE_PUBLIC_ORDER_FUNCTION_URL: ${{ vars.VITE_PUBLIC_ORDER_FUNCTION_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
+          VITE_GA_MEASUREMENT_ID: ${{ vars.VITE_GA_MEASUREMENT_ID }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

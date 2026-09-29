@@ -3,19 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vlyt — Run your business from your pocket</title>
+    <title>Vlyt — SA business app for quotes, stock &amp; cashflow</title>
     <meta
       name="description"
-      content="Quotes, catalog, contacts, and cashflow — a mobile app for solo operators and micro-businesses in South Africa."
+      content="Mobile business app for South African solo operators: quotes with VAT in ZAR, catalog, stock, expenses and cashflow — built for WhatsApp-first sellers."
     />
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="canonical" href="https://vlyt.app/" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#3ee8a0" />
     <meta property="og:title" content="Vlyt — Run your business from your pocket" />
     <meta
       property="og:description"
-      content="Quotes, catalog, contacts, and cashflow for South African solo operators."
+      content="Quotes, catalog, stock and cashflow for South African solo operators. Free while we grow."
     />
-    <meta property="og:image" content="/screenshots/home.png" />
+    <meta property="og:image" content="https://vlyt.app/images/og-image.png" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:url" content="https://vlyt.app/" />
+    <meta property="og:site_name" content="Vlyt" />
+    <meta property="og:locale" content="en_ZA" />
     <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vlyt — Run your business from your pocket" />
+    <meta
+      name="twitter:description"
+      content="Quotes, catalog, stock and cashflow for South African solo operators. Free while we grow."
+    />
+    <meta name="twitter:image" content="https://vlyt.app/images/og-image.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://vlyt.app/#organization",
+            "name": "Vlyt",
+            "url": "https://vlyt.app/",
+            "logo": "https://vlyt.app/images/favicon.png",
+            "description": "Mobile business app for South African solo operators."
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://vlyt.app/#website",
+            "url": "https://vlyt.app/",
+            "name": "Vlyt",
+            "publisher": { "@id": "https://vlyt.app/#organization" },
+            "inLanguage": "en-ZA"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Vlyt",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Android",
+            "url": "https://vlyt.app/",
+            "description": "Quotes, catalog, stock, expenses and cashflow for South African solo operators. VAT-aware quotes in ZAR.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "ZAR"
+            },
+            "publisher": { "@id": "https://vlyt.app/#organization" }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is it really free?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, for now. There is no credit card and no trial clock. If we introduce paid plans, we will tell early users first."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who is it for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Solo operators and micro-businesses in South Africa who sell with quotes — makers, traders, and service businesses that need a catalog, stock and a simple picture of the month."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is this invoicing, accounting, or a card machine?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Vlyt is the catalog-to-quote-to-stock loop on your phone, plus expenses and reports. It is not Sage, and it is not Yoco."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does it handle South African VAT?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Quotes can include VAT. Currency defaults to ZAR. It is not a full set of SARS books."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is my data? Is this POPIA-conscious?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Your catalog, contacts, quotes and expenses live in your account. We do not sell that data. See the privacy notice at https://vlyt.app/privacy.html."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need a computer?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Vlyt is built for the phone."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Android or iOS?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Android first, on Google Play. iOS is not listed yet."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -121,7 +237,7 @@
             <div class="phone-screen">
               <img
                 src="/screenshots/home.png"
-                alt="Vlyt Home dashboard in dark mode, showing net cashflow, income, expenses and awaiting."
+                alt="Vlyt Home for Brew Lab: Jordan Mets, net cashflow R 13 233, income, expenses and recent quote activity."
                 width="1080"
                 height="2272"
               />
@@ -204,18 +320,25 @@
             </p>
           </div>
           <div class="shot max-h-[520px]">
-            <img src="/screenshots/contacts.png" alt="Contacts list in Vlyt." />
+            <img
+              src="/screenshots/contacts.png"
+              alt="Vlyt Contacts: Dolce Café, La Tazza d'Oro, and other Brew Lab customers with open quotes."
+            />
           </div>
         </div>
 
         <div class="mt-20 grid items-center gap-12 md:grid-cols-2">
           <div class="shot max-h-[520px] md:order-1">
-            <img src="/screenshots/stock.png" alt="Stock screen in Vlyt." />
+            <img
+              src="/screenshots/catalog-list.png"
+              alt="Vlyt Catalog products: Brew Scale, Hand Grinder, Starter Kit with stock levels in rand."
+            />
           </div>
           <div class="md:order-2">
-            <h3 class="font-display text-2xl md:text-3xl">Stay on top of your stock</h3>
+            <h3 class="font-display text-2xl md:text-3xl">Sell from a catalog you trust</h3>
             <p class="mt-3 text-ink-muted">
-              Track what you sell and know what's running low.
+              Products, variations, packaging and shipping options — priced once, reused on every
+              quote. Stock levels stay visible on each item.
             </p>
           </div>
         </div>
@@ -229,7 +352,42 @@
             </p>
           </div>
           <div class="shot max-h-[520px]">
-            <img src="/screenshots/sales.png" alt="Quotes list in Vlyt." />
+            <img
+              src="/screenshots/sales.png"
+              alt="Vlyt Quotes list: BL-1042 Dolce Café shipped, pending and draft quotes in ZAR."
+            />
+          </div>
+        </div>
+
+        <div class="mt-20 grid items-center gap-12 md:grid-cols-2">
+          <div class="shot max-h-[520px] md:order-1">
+            <img
+              src="/screenshots/quote-editor.png"
+              alt="Vlyt quote for Bar Italia Verde with subtotal, 15% VAT, shipping and WhatsApp send."
+            />
+          </div>
+          <div class="md:order-2">
+            <h3 class="font-display text-2xl md:text-3xl">VAT where it belongs</h3>
+            <p class="mt-3 text-ink-muted">
+              See subtotal, VAT and total before you send — then share on WhatsApp without
+              rewriting the numbers in a chat.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-20 grid items-center gap-12 md:grid-cols-2">
+          <div>
+            <h3 class="font-display text-2xl md:text-3xl">Watch your business grow</h3>
+            <p class="mt-3 text-ink-muted">
+              Home shows cashflow as you work. Sales window breaks down sold units, margin and net
+              profit for the period.
+            </p>
+          </div>
+          <div class="shot max-h-[520px]">
+            <img
+              src="/screenshots/sales-window.png"
+              alt="Vlyt Sales window: 7 units sold, net profit R 8 368 after expenses for Brew Lab."
+            />
           </div>
         </div>
 
@@ -237,39 +395,14 @@
           <div class="shot max-h-[520px] md:order-1">
             <img
               src="/screenshots/home.png"
-              alt="Home dashboard showing rolling net cashflow in rand."
+              alt="Vlyt Home dashboard with net cashflow, income, expenses and awaiting payment."
             />
           </div>
           <div class="md:order-2">
-            <h3 class="font-display text-2xl md:text-3xl">Watch your business grow</h3>
+            <h3 class="font-display text-2xl md:text-3xl">Cashflow on Home</h3>
             <p class="mt-3 text-ink-muted">
-              Real-time profit tracking on Home: income, expenses, and what is still awaiting
-              payment.
-            </p>
-          </div>
-        </div>
-
-        <div class="mt-20 grid items-center gap-12 md:grid-cols-2">
-          <div>
-            <h3 class="font-display text-2xl md:text-3xl">Sell from a catalog you trust</h3>
-            <p class="mt-3 text-ink-muted">
-              Products, variations, packaging and shipping options — priced once, reused on every
-              quote.
-            </p>
-          </div>
-          <div class="shot max-h-[520px]">
-            <img src="/screenshots/catalog-list.png" alt="Catalog shipping options in Vlyt." />
-          </div>
-        </div>
-
-        <div class="mt-20 grid items-center gap-12 md:grid-cols-2">
-          <div class="shot max-h-[520px] md:order-1">
-            <img src="/screenshots/expenses.png" alt="Expenses screen in Vlyt." />
-          </div>
-          <div class="md:order-2">
-            <h3 class="font-display text-2xl md:text-3xl">Expenses on the phone</h3>
-            <p class="mt-3 text-ink-muted">
-              Capture rent, fuel, subscriptions, or anything else that is not tied to a quote.
+              Income, expenses and what is still awaiting payment — one screen, updated as quotes
+              move.
             </p>
           </div>
         </div>
