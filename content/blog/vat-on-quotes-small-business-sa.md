@@ -28,7 +28,7 @@ faq:
 
 **Customers pay the number they believe they agreed to.** On South African quotes, VAT confusion is one of the main reasons that number changes between “yes” in WhatsApp and payment day.
 
-This guide covers how to present VAT on quotes for small sellers. It is part of [running an SA business from your phone](/blog/run-sa-business-from-phone.html). It is **not** SARS tax advice.
+This guide covers how to present VAT on quotes for small sellers. It is part of [running an SA business from your phone](/blog/run-sa-business-from-phone/). It is **not** SARS tax advice.
 
 ## Direct answer
 
@@ -46,13 +46,13 @@ Wrong: sending “R10,000” exclusive in chat, then invoicing R11,500 later wit
 
 ## What belongs on the quote
 
-Follow the structure in [how to write a professional quote](/blog/how-to-write-professional-quote-south-africa.html), and add:
+Follow the structure in [how to write a professional quote](/blog/how-to-write-professional-quote-south-africa/), and add:
 
 - Explicit VAT treatment near the total
 - If exclusive: VAT amount and gross total
 - Validity date (supplier VAT-inclusive costs move)
 
-When you bill, switch to invoice language — [quote vs invoice](/blog/quote-vs-invoice-south-africa.html).
+When you bill, switch to invoice language — [quote vs invoice](/blog/quote-vs-invoice-south-africa/).
 
 ## Phone-friendly habit
 

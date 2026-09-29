@@ -63,7 +63,7 @@ After merging to `main` and Pages is live:
 npm run build
 ```
 
-Confirm `dist/` contains `robots.txt`, `sitemap.xml`, `llms.txt`, `blog/index.html`, blog articles, and `resources/sa-quoting-checklist.html`.
+Confirm `dist/` contains `robots.txt`, `sitemap.xml`, `llms.txt`, `blog/index.html`, blog articles, and `resources/sa-quoting-checklist/`.
 
 ### Manual checklist (owner — not automatable in git)
 

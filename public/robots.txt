@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /order.html
+Disallow: /order/
 
 User-agent: GPTBot
 Allow: /

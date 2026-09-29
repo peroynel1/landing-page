@@ -28,7 +28,7 @@ faq:
 
 Spreadsheets are excellent calculators. They are **poor field systems** for South African sellers who close jobs on WhatsApp between site visits.
 
-This article sits in the [phone-first business pillar](/blog/run-sa-business-from-phone.html).
+This article sits in the [phone-first business pillar](/blog/run-sa-business-from-phone/).
 
 ## Direct answer
 
@@ -46,12 +46,12 @@ If your quote price lives in a sheet but the customer negotiation lives in chat,
 
 Not “another spreadsheet template.” A replacement must:
 
-- Store products once ([catalog guide](/blog/product-catalog-quote-businesses.html))
-- Build quotes from those lines ([write a quote](/blog/how-to-write-professional-quote-south-africa.html))
-- Share without retyping ([WhatsApp send guide](/blog/send-quote-whatsapp-without-losing-numbers.html))
+- Store products once ([catalog guide](/blog/product-catalog-quote-businesses/))
+- Build quotes from those lines ([write a quote](/blog/how-to-write-professional-quote-south-africa/))
+- Share without retyping ([WhatsApp send guide](/blog/send-quote-whatsapp-without-losing-numbers/))
 - Optionally show stock
 
-Compare concrete tools in [best quoting apps for SA small business 2026](/blog/best-quoting-apps-south-africa-2026.html).
+Compare concrete tools in [best quoting apps for SA small business 2026](/blog/best-quoting-apps-south-africa-2026/).
 
 ## A calm migration path
 

@@ -28,7 +28,7 @@ faq:
 
 WhatsApp is where South African customers say yes. It is a **bad place to invent prices**. The fix is simple: treat WhatsApp as the courier, not the calculator.
 
-This spoke supports [running your SA business from your phone](/blog/run-sa-business-from-phone.html).
+This spoke supports [running your SA business from your phone](/blog/run-sa-business-from-phone/).
 
 ## Direct answer
 
@@ -36,9 +36,9 @@ Build the quote in a system that stores line items and totals, then share that f
 
 ## The workflow
 
-1. Pull lines from your catalog ([catalog guide](/blog/product-catalog-quote-businesses.html)).
-2. Complete the quote structure ([professional quote guide](/blog/how-to-write-professional-quote-south-africa.html)).
-3. Confirm VAT labelling ([VAT on quotes](/blog/vat-on-quotes-small-business-sa.html)).
+1. Pull lines from your catalog ([catalog guide](/blog/product-catalog-quote-businesses/)).
+2. Complete the quote structure ([professional quote guide](/blog/how-to-write-professional-quote-south-africa/)).
+3. Confirm VAT labelling ([VAT on quotes](/blog/vat-on-quotes-small-business-sa/)).
 4. Share to WhatsApp (PDF or clear summary).
 5. If they negotiate, **edit the quote**, then resend — do not only type a new total.
 
@@ -56,6 +56,6 @@ Short. Points at the document. States validity.
 
 ## When spreadsheets make this worse
 
-If you export from Sheets, retype into chat, then discount in chat, you have three truths. See [spreadsheet quoting problems](/blog/spreadsheet-quoting-problems.html) and [tool comparison](/blog/best-quoting-apps-south-africa-2026.html).
+If you export from Sheets, retype into chat, then discount in chat, you have three truths. See [spreadsheet quoting problems](/blog/spreadsheet-quoting-problems/) and [tool comparison](/blog/best-quoting-apps-south-africa-2026/).
 
 Vlyt is built so quotes use catalog prices with VAT in ZAR, then leave your phone for WhatsApp without a rewrite — free while we grow.

@@ -28,7 +28,7 @@ faq:
 
 Trades do not fail only from bad workmanship. They fail when **materials go out before money comes in**, and nobody sees it until Friday.
 
-This guide is the cashflow spoke of [running an SA business from your phone](/blog/run-sa-business-from-phone.html).
+This guide is the cashflow spoke of [running an SA business from your phone](/blog/run-sa-business-from-phone/).
 
 ## Direct answer
 
@@ -47,13 +47,13 @@ Profit on a quote is fiction until the waiting bucket clears.
 ## Habits that fit a phone
 
 - Log expenses the day they happen (photo + amount is enough).
-- Mark quotes clearly when accepted vs paid ([quote vs invoice](/blog/quote-vs-invoice-south-africa.html)).
+- Mark quotes clearly when accepted vs paid ([quote vs invoice](/blog/quote-vs-invoice-south-africa/)).
 - Do not count a WhatsApp “we’ll pay tomorrow” as cash.
-- Watch stock buys against [stock tracking](/blog/stock-tracking-phone-traders.html) so shelves do not silently drain cash.
+- Watch stock buys against [stock tracking](/blog/stock-tracking-phone-traders/) so shelves do not silently drain cash.
 
 ## Quote quality feeds cashflow quality
 
-Garbage-in quotes create garbage month views. Keep line items honest with [professional quoting](/blog/how-to-write-professional-quote-south-africa.html).
+Garbage-in quotes create garbage month views. Keep line items honest with [professional quoting](/blog/how-to-write-professional-quote-south-africa/).
 
 ## What “good enough” looks like
 

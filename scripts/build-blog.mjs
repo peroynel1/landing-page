@@ -21,7 +21,19 @@ function ensureDir(dir) {
 function clearHtmlDir(dir) {
   if (!fs.existsSync(dir)) return;
   for (const name of fs.readdirSync(dir)) {
-    if (name.endsWith('.html')) fs.unlinkSync(path.join(dir, name));
+    const full = path.join(dir, name);
+    const st = fs.statSync(full);
+    if (st.isDirectory()) {
+      const indexPath = path.join(full, 'index.html');
+      if (fs.existsSync(indexPath)) fs.unlinkSync(indexPath);
+      try {
+        fs.rmdirSync(full);
+      } catch {
+        /* not empty */
+      }
+    } else if (name.endsWith('.html') && name !== 'index.html') {
+      fs.unlinkSync(full);
+    }
   }
 }
 
@@ -141,16 +153,16 @@ function siteFooter() {
         <p>© <span id="y"></span> Vlyt</p>
         <nav class="flex flex-wrap gap-5">
           <a href="/blog/" class="hover:text-ink">Blog</a>
-          <a href="/resources/sa-quoting-checklist.html" class="hover:text-ink">Quoting checklist</a>
-          <a href="/privacy.html" class="hover:text-ink">Privacy</a>
-          <a href="/terms.html" class="hover:text-ink">Terms</a>
+          <a href="/resources/sa-quoting-checklist/" class="hover:text-ink">Quoting checklist</a>
+          <a href="/privacy/" class="hover:text-ink">Privacy</a>
+          <a href="/terms/" class="hover:text-ink">Terms</a>
         </nav>
       </div>
     </footer>`;
 }
 
 function renderPost(post, allPosts) {
-  const url = `${SITE}/blog/${post.slug}.html`;
+  const url = `${SITE}/blog/${post.slug}/`;
   const related = post.related
     .map((slug) => allPosts.find((p) => p.slug === slug))
     .filter(Boolean);
@@ -163,7 +175,7 @@ function renderPost(post, allPosts) {
             ${related
               .map(
                 (r) =>
-                  `<li><a class="text-accent underline" href="/blog/${r.slug}.html">${escapeHtml(r.title)}</a>
+                  `<li><a class="text-accent underline" href="/blog/${r.slug}/">${escapeHtml(r.title)}</a>
                   <p class="mt-1 text-sm text-ink-muted">${escapeHtml(r.description)}</p></li>`,
               )
               .join('\n')}
@@ -257,10 +269,10 @@ function renderBlogIndex(posts) {
       (p) => `<li class="border-b border-white/10 py-8">
         <p class="text-xs uppercase tracking-widest text-ink-faint">${escapeHtml(p.role || 'guide')} · <time datetime="${escapeHtml(p.date)}">${escapeHtml(p.date)}</time></p>
         <h2 class="mt-2 font-display text-2xl text-ink">
-          <a class="hover:text-accent" href="/blog/${p.slug}.html">${escapeHtml(p.title)}</a>
+          <a class="hover:text-accent" href="/blog/${p.slug}/">${escapeHtml(p.title)}</a>
         </h2>
         <p class="mt-2 text-ink-muted">${escapeHtml(p.description)}</p>
-        <a class="mt-3 inline-block text-sm text-accent underline" href="/blog/${p.slug}.html">Read article</a>
+        <a class="mt-3 inline-block text-sm text-accent underline" href="/blog/${p.slug}/">Read article</a>
       </li>`,
     )
     .join('\n');
@@ -295,7 +307,7 @@ ${siteFooter()}`;
 }
 
 function renderResource(page) {
-  const url = `${SITE}/resources/${page.slug}.html`;
+  const url = `${SITE}/resources/${page.slug}/`;
   const body = `${siteHeader()}
     <main class="mx-auto max-w-3xl px-5 py-16">
       <p class="eyebrow">Free resource</p>
@@ -332,12 +344,12 @@ function writeSitemap(posts, resources) {
   const staticUrls = [
     { loc: `${SITE}/`, changefreq: 'weekly', priority: '1.0' },
     { loc: `${SITE}/blog/`, changefreq: 'weekly', priority: '0.9' },
-    { loc: `${SITE}/privacy.html`, changefreq: 'yearly', priority: '0.3' },
-    { loc: `${SITE}/terms.html`, changefreq: 'yearly', priority: '0.3' },
+    { loc: `${SITE}/privacy/`, changefreq: 'yearly', priority: '0.3' },
+    { loc: `${SITE}/terms/`, changefreq: 'yearly', priority: '0.3' },
   ];
   for (const r of resources) {
     staticUrls.push({
-      loc: `${SITE}/resources/${r.slug}.html`,
+      loc: `${SITE}/resources/${r.slug}/`,
       changefreq: 'monthly',
       priority: '0.7',
       lastmod: formatDate(r.date),
@@ -345,7 +357,7 @@ function writeSitemap(posts, resources) {
   }
   for (const p of posts) {
     staticUrls.push({
-      loc: `${SITE}/blog/${p.slug}.html`,
+      loc: `${SITE}/blog/${p.slug}/`,
       changefreq: 'monthly',
       priority: p.role === 'pillar' ? '0.9' : '0.8',
       lastmod: formatDate(p.updated || p.date),
@@ -384,11 +396,11 @@ function writeLlmsTxt(posts, resources) {
     '',
     `- [Home](${SITE}/): Product overview`,
     `- [Blog index](${SITE}/blog/): All guides`,
-    ...resources.map((r) => `- [${r.title}](${SITE}/resources/${r.slug}.html)`),
+    ...resources.map((r) => `- [${r.title}](${SITE}/resources/${r.slug}/)`),
     '',
     '## Guides',
     '',
-    ...posts.map((p) => `- [${p.title}](${SITE}/blog/${p.slug}.html): ${p.description}`),
+    ...posts.map((p) => `- [${p.title}](${SITE}/blog/${p.slug}/): ${p.description}`),
     '',
   ];
   fs.writeFileSync(path.join(root, 'public', 'llms.txt'), lines.join('\n'), 'utf8');
@@ -397,7 +409,7 @@ function writeLlmsTxt(posts, resources) {
 function writeRobots() {
   const robots = `User-agent: *
 Allow: /
-Disallow: /order.html
+Disallow: /order/
 
 User-agent: GPTBot
 Allow: /
@@ -437,10 +449,14 @@ clearHtmlDir(resourcesDir);
 
 fs.writeFileSync(path.join(blogDir, 'index.html'), renderBlogIndex(posts), 'utf8');
 for (const post of posts) {
-  fs.writeFileSync(path.join(blogDir, `${post.slug}.html`), renderPost(post, posts), 'utf8');
+  const postDir = path.join(blogDir, post.slug);
+  ensureDir(postDir);
+  fs.writeFileSync(path.join(postDir, 'index.html'), renderPost(post, posts), 'utf8');
 }
 for (const page of resources) {
-  fs.writeFileSync(path.join(resourcesDir, `${page.slug}.html`), renderResource(page), 'utf8');
+  const pageDir = path.join(resourcesDir, page.slug);
+  ensureDir(pageDir);
+  fs.writeFileSync(path.join(pageDir, 'index.html'), renderResource(page), 'utf8');
 }
 
 writeSitemap(posts, resources);

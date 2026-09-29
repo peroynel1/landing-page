@@ -19,7 +19,7 @@ Set `PLAY_STORE_URL` in `src/config.ts`. Leave `#` until the listing is live.
 
 ## Public order form
 
-`order.html?t=<token>` is the customer form (PUBO-95). It calls the `public-order` Edge function.
+`/order/?t=<token>` is the customer form (PUBO-95). It calls the `public-order` Edge function.
 Set these as GitHub Actions variables (anon key is public; never a service-role key):
 
 - `VITE_PUBLIC_ORDER_FUNCTION_URL`

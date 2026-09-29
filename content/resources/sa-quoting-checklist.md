@@ -52,10 +52,10 @@ Print this, save it, or link it from your SOP. Built for makers, traders and ser
 
 ## Learn more on Vlyt
 
-- [Phone-first pillar guide](/blog/run-sa-business-from-phone.html)
-- [Write a professional SA quote](/blog/how-to-write-professional-quote-south-africa.html)
-- [Send on WhatsApp without losing numbers](/blog/send-quote-whatsapp-without-losing-numbers.html)
-- [Quote vs invoice](/blog/quote-vs-invoice-south-africa.html)
-- [Best quoting apps SA 2026](/blog/best-quoting-apps-south-africa-2026.html)
+- [Phone-first pillar guide](/blog/run-sa-business-from-phone/)
+- [Write a professional SA quote](/blog/how-to-write-professional-quote-south-africa/)
+- [Send on WhatsApp without losing numbers](/blog/send-quote-whatsapp-without-losing-numbers/)
+- [Quote vs invoice](/blog/quote-vs-invoice-south-africa/)
+- [Best quoting apps SA 2026](/blog/best-quoting-apps-south-africa-2026/)
 
 Prefer the checklist as a live system? [Vlyt](/) runs catalog → quote → stock → cashflow on Android, free while we grow.

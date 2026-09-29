@@ -9,17 +9,17 @@ Blog: https://vlyt.app/blog/
 
 - [Home](https://vlyt.app/): Product overview
 - [Blog index](https://vlyt.app/blog/): All guides
-- [SA micro-business quoting checklist](https://vlyt.app/resources/sa-quoting-checklist.html)
+- [SA micro-business quoting checklist](https://vlyt.app/resources/sa-quoting-checklist/)
 
 ## Guides
 
-- [Best quoting apps for South African small business (2026)](https://vlyt.app/blog/best-quoting-apps-south-africa-2026.html): Comparison of quoting approaches for SA solo operators — WhatsApp-only, spreadsheets, accounting suites and phone-first tools like Vlyt. First-party criteria: ZAR, VAT, WhatsApp share, stock.
-- [Cashflow basics for electricians, plumbers and landscapers](https://vlyt.app/blog/cashflow-basics-trades-sa.html): A simple cashflow picture for SA trades: income, expenses and money still awaiting payment — without a desktop finance team.
-- [How to write a professional quote in South Africa](https://vlyt.app/blog/how-to-write-professional-quote-south-africa.html): A practical SA quote template: line items, ZAR, VAT clarity, validity dates, and how to stop reinventing prices in WhatsApp.
-- [Product catalog for quote-based businesses](https://vlyt.app/blog/product-catalog-quote-businesses.html): How to structure a product catalog so every SA quote reuses real prices — variations, packaging and stock on each item.
-- [Quote vs invoice in South Africa: when you need which](https://vlyt.app/blog/quote-vs-invoice-south-africa.html): Clear difference between a quote and an invoice for SA small businesses — language, timing, VAT, and what to send on WhatsApp.
-- [Run your SA business from your phone: quotes, stock and cashflow](https://vlyt.app/blog/run-sa-business-from-phone.html): How South African solo operators keep catalog, quotes, stock and cashflow together on a phone — without a desktop office stack.
-- [How to send a quote on WhatsApp without losing the numbers](https://vlyt.app/blog/send-quote-whatsapp-without-losing-numbers.html): A SA-friendly workflow: build the quote in a catalog tool, share on WhatsApp, and keep the source of truth out of the chat thread.
-- [Why spreadsheet quoting breaks down (and what to use instead)](https://vlyt.app/blog/spreadsheet-quoting-problems.html): How Excel and Google Sheets quoting fails for WhatsApp-first SA sellers — and what a phone catalog-to-quote loop fixes.
-- [Stock tracking for traders who sell from a phone](https://vlyt.app/blog/stock-tracking-phone-traders.html): Simple stock habits for SA traders and makers who quote and sell from a phone — without a warehouse system.
-- [VAT on quotes for small SA businesses](https://vlyt.app/blog/vat-on-quotes-small-business-sa.html): How to show VAT on South African quotes in ZAR — inclusive vs exclusive totals, what customers need to see, and what a quote is not.
+- [Best quoting apps for South African small business (2026)](https://vlyt.app/blog/best-quoting-apps-south-africa-2026/): Comparison of quoting approaches for SA solo operators — WhatsApp-only, spreadsheets, accounting suites and phone-first tools like Vlyt. First-party criteria: ZAR, VAT, WhatsApp share, stock.
+- [Cashflow basics for electricians, plumbers and landscapers](https://vlyt.app/blog/cashflow-basics-trades-sa/): A simple cashflow picture for SA trades: income, expenses and money still awaiting payment — without a desktop finance team.
+- [How to write a professional quote in South Africa](https://vlyt.app/blog/how-to-write-professional-quote-south-africa/): A practical SA quote template: line items, ZAR, VAT clarity, validity dates, and how to stop reinventing prices in WhatsApp.
+- [Product catalog for quote-based businesses](https://vlyt.app/blog/product-catalog-quote-businesses/): How to structure a product catalog so every SA quote reuses real prices — variations, packaging and stock on each item.
+- [Quote vs invoice in South Africa: when you need which](https://vlyt.app/blog/quote-vs-invoice-south-africa/): Clear difference between a quote and an invoice for SA small businesses — language, timing, VAT, and what to send on WhatsApp.
+- [Run your SA business from your phone: quotes, stock and cashflow](https://vlyt.app/blog/run-sa-business-from-phone/): How South African solo operators keep catalog, quotes, stock and cashflow together on a phone — without a desktop office stack.
+- [How to send a quote on WhatsApp without losing the numbers](https://vlyt.app/blog/send-quote-whatsapp-without-losing-numbers/): A SA-friendly workflow: build the quote in a catalog tool, share on WhatsApp, and keep the source of truth out of the chat thread.
+- [Why spreadsheet quoting breaks down (and what to use instead)](https://vlyt.app/blog/spreadsheet-quoting-problems/): How Excel and Google Sheets quoting fails for WhatsApp-first SA sellers — and what a phone catalog-to-quote loop fixes.
+- [Stock tracking for traders who sell from a phone](https://vlyt.app/blog/stock-tracking-phone-traders/): Simple stock habits for SA traders and makers who quote and sell from a phone — without a warehouse system.
+- [VAT on quotes for small SA businesses](https://vlyt.app/blog/vat-on-quotes-small-business-sa/): How to show VAT on South African quotes in ZAR — inclusive vs exclusive totals, what customers need to see, and what a quote is not.

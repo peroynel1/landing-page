@@ -28,7 +28,7 @@ faq:
 
 **You find out something is sold out when the customer is already waiting** — that is the default stock system for many South African traders.
 
-If you quote from a phone, stock tracking has to live next to the product you just priced. This spoke belongs under [run your SA business from your phone](/blog/run-sa-business-from-phone.html).
+If you quote from a phone, stock tracking has to live next to the product you just priced. This spoke belongs under [run your SA business from your phone](/blog/run-sa-business-from-phone/).
 
 ## Direct answer
 
@@ -38,7 +38,7 @@ Put a quantity on every stocked item in your catalog. Update it when you buy and
 
 You do not need a warehouse WMS. You need:
 
-1. Product record (see [product catalog for quote businesses](/blog/product-catalog-quote-businesses.html))
+1. Product record (see [product catalog for quote businesses](/blog/product-catalog-quote-businesses/))
 2. On-hand quantity
 3. Habit: adjust after purchases and confirmed sales
 4. Optional low-stock note for items that kill jobs when missing
@@ -55,6 +55,6 @@ Sending a quote should not always reduce stock. Many operators only reduce when 
 
 ## Link to cashflow
 
-Dead stock is money you already spent. Pair stock visibility with [cashflow basics for trades](/blog/cashflow-basics-trades-sa.html) so buying and quoting stay honest.
+Dead stock is money you already spent. Pair stock visibility with [cashflow basics for trades](/blog/cashflow-basics-trades-sa/) so buying and quoting stay honest.
 
 Vlyt shows stock on catalog items so levels stay visible while you build quotes — built for solo operators, not warehouse teams.

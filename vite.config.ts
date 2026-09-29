@@ -3,15 +3,27 @@ import tailwindcss from '@tailwindcss/vite';
 import fs from 'node:fs';
 import path from 'node:path';
 
-function htmlInputsFromDir(dir: string, prefix: string): Record<string, string> {
-  const abs = path.resolve(dir);
-  if (!fs.existsSync(abs)) return {};
+function collectHtmlInputs(): Record<string, string> {
   const inputs: Record<string, string> = {};
-  for (const name of fs.readdirSync(abs)) {
-    if (!name.endsWith('.html')) continue;
-    const key = name === 'index.html' ? prefix : `${prefix}-${name.replace(/\.html$/, '')}`;
-    inputs[key] = path.join(abs, name);
+  const skip = new Set(['node_modules', 'dist', 'public', '.git']);
+  function walk(dir: string) {
+    for (const name of fs.readdirSync(dir)) {
+      if (skip.has(name)) continue;
+      const full = path.join(dir, name);
+      const st = fs.statSync(full);
+      if (st.isDirectory()) walk(full);
+      else if (name.endsWith('.html')) {
+        const rel = path.relative(process.cwd(), full).replace(/\\/g, '/');
+        const key =
+          rel
+            .replace(/\.html$/, '')
+            .replace(/\/index$/, '')
+            .replace(/\//g, '-') || 'main';
+        inputs[key] = full;
+      }
+    }
   }
+  walk(process.cwd());
   return inputs;
 }
 
@@ -20,14 +32,7 @@ export default defineConfig({
   plugins: [tailwindcss()],
   build: {
     rollupOptions: {
-      input: {
-        main: path.resolve('index.html'),
-        privacy: path.resolve('privacy.html'),
-        terms: path.resolve('terms.html'),
-        order: path.resolve('order.html'),
-        ...htmlInputsFromDir('blog', 'blog'),
-        ...htmlInputsFromDir('resources', 'resources'),
-      },
+      input: collectHtmlInputs(),
     },
   },
 });

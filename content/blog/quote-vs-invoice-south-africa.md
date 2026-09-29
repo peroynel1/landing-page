@@ -28,7 +28,7 @@ faq:
 
 **A quote offers a price. An invoice asks for money.** Mixing the two is one of the fastest ways to confuse a South African customer — and yourself — when you sell through WhatsApp.
 
-This comparison sits under [running your SA business from your phone](/blog/run-sa-business-from-phone.html).
+This comparison sits under [running your SA business from your phone](/blog/run-sa-business-from-phone/).
 
 ## Side-by-side
 
@@ -49,11 +49,11 @@ If the customer has not agreed yet, send a **quote**. If they owe you money for 
 
 ### Quote essentials
 
-Business identity, customer, date, validity, line items, ZAR totals, VAT treatment, exclusions. Full walkthrough: [how to write a professional quote in South Africa](/blog/how-to-write-professional-quote-south-africa.html).
+Business identity, customer, date, validity, line items, ZAR totals, VAT treatment, exclusions. Full walkthrough: [how to write a professional quote in South Africa](/blog/how-to-write-professional-quote-south-africa/).
 
 ### Invoice essentials
 
-Everything needed to pay: amount due, payment method, invoice number or reference, and — if you are VAT-registered — the fields SARS expects on a tax invoice. Quoting VAT clearly earlier avoids sticker shock; details in [VAT on quotes](/blog/vat-on-quotes-small-business-sa.html).
+Everything needed to pay: amount due, payment method, invoice number or reference, and — if you are VAT-registered — the fields SARS expects on a tax invoice. Quoting VAT clearly earlier avoids sticker shock; details in [VAT on quotes](/blog/vat-on-quotes-small-business-sa/).
 
 This article is **not** tax advice. Confirm your own SARS obligations with a practitioner if you are unsure.
 

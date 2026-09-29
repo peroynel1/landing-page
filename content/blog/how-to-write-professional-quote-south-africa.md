@@ -29,7 +29,7 @@ faq:
 
 A professional quote in South Africa is not a long letter. It is a **clear promise of price** the customer can accept, and you can still defend a week later when supplier costs have moved.
 
-This sits inside the wider loop of [running an SA business from your phone](/blog/run-sa-business-from-phone.html): catalog first, quote second, stock and cashflow after.
+This sits inside the wider loop of [running an SA business from your phone](/blog/run-sa-business-from-phone/): catalog first, quote second, stock and cashflow after.
 
 ## Start with the catalog, not the chat
 
@@ -42,7 +42,7 @@ Minimum fields per line:
 - Unit price in ZAR
 - Line total
 
-Save those once. Reuse them. That is what separates a quote from a chat paragraph. For catalog structure, see [product catalogs for quote businesses](/blog/product-catalog-quote-businesses.html).
+Save those once. Reuse them. That is what separates a quote from a chat paragraph. For catalog structure, see [product catalogs for quote businesses](/blog/product-catalog-quote-businesses/).
 
 ## The quote skeleton that works on a phone
 
@@ -54,7 +54,7 @@ Save those once. Reuse them. That is what separates a quote from a chat paragrap
 6. **Total** — the number they should reply “yes” to.
 7. **Next step** — how to accept, deposit rules, or site visit notes.
 
-For VAT detail, read [VAT on quotes for small SA businesses](/blog/vat-on-quotes-small-business-sa.html). For when to switch language to an invoice, read [quote vs invoice in South Africa](/blog/quote-vs-invoice-south-africa.html).
+For VAT detail, read [VAT on quotes for small SA businesses](/blog/vat-on-quotes-small-business-sa/). For when to switch language to an invoice, read [quote vs invoice in South Africa](/blog/quote-vs-invoice-south-africa/).
 
 ## Direct answer: what makes it “professional”
 
@@ -64,7 +64,7 @@ Professional means **reproducible**. Another person on your team (or future you)
 
 Send the finished quote on WhatsApp — that is how SA customers decide. Keep the structured version in your system so a forward, a screenshot crop, or a “can you do it cheaper?” reply does not erase the original lines.
 
-Practical send flow: [send a quote on WhatsApp without losing the numbers](/blog/send-quote-whatsapp-without-losing-numbers.html).
+Practical send flow: [send a quote on WhatsApp without losing the numbers](/blog/send-quote-whatsapp-without-losing-numbers/).
 
 ## Checklist before you hit send
 

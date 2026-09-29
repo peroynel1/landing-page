@@ -22,7 +22,7 @@ Disclose: “I work on Vlyt, a SA quoting app” when relevant.
 Hook: the failure mode (prices lost in WhatsApp / stock surprise / VAT shock).
 One tip from the article.
 Link: https://vlyt.app/blog/[slug].html
-CTA soft: free while we grow / checklist https://vlyt.app/resources/sa-quoting-checklist.html
+CTA soft: free while we grow / checklist https://vlyt.app/resources/sa-quoting-checklist/
 
 ## Medium
 

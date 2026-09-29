@@ -28,7 +28,7 @@ faq:
 
 **There is no single “best” quoting app for every South African business.** There is a best fit for solo operators who sell with quotes from a phone — and that fit is rarely “whatever has the biggest desktop feature list.”
 
-This commercial spoke supports [running an SA business from your phone](/blog/run-sa-business-from-phone.html). We compared **approaches** you can actually choose in 2026, using criteria we use ourselves at Vlyt.
+This commercial spoke supports [running an SA business from your phone](/blog/run-sa-business-from-phone/). We compared **approaches** you can actually choose in 2026, using criteria we use ourselves at Vlyt.
 
 ## How we scored (first-party criteria)
 
@@ -48,7 +48,7 @@ We are not a paid review site. Vlyt appears in this table because we build it �
 | Approach | Setup speed | ZAR / VAT on quotes | WhatsApp share | Stock on items | Phone-first | Best for |
 | --- | --- | --- | --- | --- | --- | --- |
 | WhatsApp messages only | Instant | Manual / easy to mess up | Native | No | Yes | Tiny one-off jobs — poor as a system |
-| Spreadsheet (Excel / Sheets) | Medium | Formulas if you maintain them | Awkward (PDF/export) | Possible but clunky | Weak on site | Desk-bound quoting ([why it breaks](/blog/spreadsheet-quoting-problems.html)) |
+| Spreadsheet (Excel / Sheets) | Medium | Formulas if you maintain them | Awkward (PDF/export) | Possible but clunky | Weak on site | Desk-bound quoting ([why it breaks](/blog/spreadsheet-quoting-problems/)) |
 | Full accounting suite (e.g. Sage-class) | Slow | Strong when configured | Varies | Often inventory modules | Often desktop-heavy | Businesses that need full books first |
 | Card / payments apps | Fast for pay | Not a quote catalog | Pay links | Usually no | Yes for payments | Collecting money — not building quotes |
 | **Vlyt** | Fast catalog → quote | ZAR + VAT-aware quotes | Share without rewriting maths | Yes on catalog items | Android phone-first | Solo operators: catalog, quote, stock, cashflow |
@@ -57,7 +57,7 @@ Sources for the non-Vlyt rows: category behaviour observed in SA micro-business 
 
 ## Direct answer
 
-If you need **books and payroll**, start with an accounting suite and accept desktop gravity. If you need **quotes out the door today** with stock and a simple month view, use a phone-first catalog-to-quote tool. If you only use WhatsApp, read [send a quote without losing the numbers](/blog/send-quote-whatsapp-without-losing-numbers.html) and move prices into a catalog this week.
+If you need **books and payroll**, start with an accounting suite and accept desktop gravity. If you need **quotes out the door today** with stock and a simple month view, use a phone-first catalog-to-quote tool. If you only use WhatsApp, read [send a quote without losing the numbers](/blog/send-quote-whatsapp-without-losing-numbers/) and move prices into a catalog this week.
 
 ## Where Vlyt fits
 
@@ -71,4 +71,4 @@ Vlyt is the catalog-to-quote-to-stock loop plus expenses and Home cashflow. It i
 4. Check whether VAT and stock still make sense.
 5. Keep the tool that survives that test.
 
-More structure for the document itself: [professional SA quotes](/blog/how-to-write-professional-quote-south-africa.html) and the free [quoting checklist](/resources/sa-quoting-checklist.html).
+More structure for the document itself: [professional SA quotes](/blog/how-to-write-professional-quote-south-africa/) and the free [quoting checklist](/resources/sa-quoting-checklist/).

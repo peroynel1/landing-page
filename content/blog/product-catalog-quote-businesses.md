@@ -28,7 +28,7 @@ faq:
 
 If the catalog is wrong, every quote is wrong. For quote-based South African businesses, the catalog is not a nice-to-have web shop — it is the **price memory** of the company.
 
-Part of [running the business from your phone](/blog/run-sa-business-from-phone.html).
+Part of [running the business from your phone](/blog/run-sa-business-from-phone/).
 
 ## Direct answer
 
@@ -41,7 +41,7 @@ Build a catalog of the products and services you actually sell, with ZAR prices 
 - Sell price in ZAR
 - Optional cost (for your margin sense)
 - Variations / packaging if price or stock differs
-- Stock quantity if you hold inventory ([stock guide](/blog/stock-tracking-phone-traders.html))
+- Stock quantity if you hold inventory ([stock guide](/blog/stock-tracking-phone-traders/))
 
 ## Catalog hygiene rules
 
@@ -52,7 +52,7 @@ Build a catalog of the products and services you actually sell, with ZAR prices 
 
 ## From catalog to quote
 
-With a clean list, [writing a professional quote](/blog/how-to-write-professional-quote-south-africa.html) is assembly, not invention. That is how you stay fast on site.
+With a clean list, [writing a professional quote](/blog/how-to-write-professional-quote-south-africa/) is assembly, not invention. That is how you stay fast on site.
 
 ## Shipping and packaging notes
 
