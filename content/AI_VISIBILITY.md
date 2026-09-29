@@ -22,6 +22,8 @@ Run monthly. For each prompt, query ChatGPT (with search if available), Gemini, 
 
 ## Log template
 
+Latest run: [AI_VISIBILITY_LOG.md](./AI_VISIBILITY_LOG.md) (baseline 2026-09-29).
+
 | Date | Prompt # | ChatGPT | Gemini | Perplexity | AI Overview | Who was cited instead | Content gap / next brief |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | | | | | | | | |

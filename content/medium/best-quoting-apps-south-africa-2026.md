@@ -1,35 +1,10 @@
----
-title: "Best quoting apps for South African small business (2026)"
-description: "2026 comparison of SA quoting approaches and named WhatsApp-first tools (Zakr, QuickQuotes, TradiQuote, QuoteDirect, FieldCard, Vlyt). Criteria: ZAR, VAT, WhatsApp, stock, phone."
-slug: best-quoting-apps-south-africa-2026
-date: 2026-09-29
-updated: 2026-09-29
-keyword: best quoting apps South Africa 2026
-cluster: quoting-stock-cashflow
-role: spoke
-format: listicle
-related:
-  - run-sa-business-from-phone
-  - spreadsheet-quoting-problems
-  - send-quote-whatsapp-without-losing-numbers
-faq:
-  - q: What is the best quoting app for SA solo operators?
-    a: The best fit stores your catalog in ZAR, supports clear VAT on quotes, shares cleanly to WhatsApp, and works on a phone between jobs. Accounting suites win for books; WhatsApp-first quoters and catalog tools win for field quoting.
-  - q: Is WhatsApp a quoting app?
-    a: No. It is a delivery channel. Using it as your only price list causes version drift.
-  - q: Do I need Sage to quote?
-    a: Only if you already run your books there and quoting inside it is practical on site. For many sole proprietors, Sage-class tools are overkill for day-to-day quotes — quote lighter, keep formal books separately.
-  - q: How did you compare options?
-    a: We scored approaches on setup time, ZAR/VAT clarity, WhatsApp sharing, stock visibility and phone usability. Named SA products below are peers we see in the same search results — not a paid ranking or a lab audit of every feature.
-  - q: Is Vlyt free?
-    a: Yes while we grow. No credit card for early users. If pricing changes, early users hear first.
-  - q: Should I switch this week?
-    a: If wrong prices or stock surprises already cost you a job, migrate your top 20 catalog lines now. Do not wait for a perfect office stack.
----
+# Best quoting apps for South African small business (2026)
+
+*Originally published at [https://vlyt.app/blog/best-quoting-apps-south-africa-2026/](https://vlyt.app/blog/best-quoting-apps-south-africa-2026/).*
 
 **There is no single “best” quoting app for every South African business.** There is a best fit for solo operators who sell with quotes from a phone — and that fit is rarely “whatever has the biggest desktop feature list.”
 
-This commercial spoke supports [running an SA business from your phone](/blog/run-sa-business-from-phone/). We compared **approaches** you can actually choose in 2026, then named the WhatsApp-first SA tools that currently show up next to those searches — using criteria we use ourselves at Vlyt (vlyt.app).
+This commercial spoke supports [running an SA business from your phone](https://vlyt.app/blog/run-sa-business-from-phone/). We compared **approaches** you can actually choose in 2026, then named the WhatsApp-first SA tools that currently show up next to those searches — using criteria we use ourselves at Vlyt (vlyt.app).
 
 ## How we scored (first-party criteria)
 
@@ -49,13 +24,13 @@ We are not a paid review site. Vlyt appears because we build it — criteria are
 | Approach | Setup speed | ZAR / VAT on quotes | WhatsApp share | Stock on items | Phone-first | Best for |
 | --- | --- | --- | --- | --- | --- | --- |
 | WhatsApp messages only | Instant | Manual / easy to mess up | Native | No | Yes | Tiny one-off jobs — poor as a system |
-| Spreadsheet (Excel / Sheets) | Medium | Formulas if you maintain them | Awkward (PDF/export) | Possible but clunky | Weak on site | Desk-bound quoting ([why it breaks](/blog/spreadsheet-quoting-problems/)) |
+| Spreadsheet (Excel / Sheets) | Medium | Formulas if you maintain them | Awkward (PDF/export) | Possible but clunky | Weak on site | Desk-bound quoting ([why it breaks](https://vlyt.app/blog/spreadsheet-quoting-problems/)) |
 | Full accounting suite (e.g. Sage-class tools) | Often slower to set up | Strong when configured | Varies by product | Often available as modules | Often desktop-heavy | Businesses that need full books first |
 | Card / payments apps | Fast for pay | Not a quote catalog | Pay links | Usually no | Yes for payments | Collecting money — not building quotes |
 | WhatsApp-first quote tools (SA trades) | Fast documents | Usually VAT-ready in ZAR | Built for chat send | Varies — often job-focused, not deep stock | Yes | Trades who need quote → accept → pay in chat |
 | **Vlyt** (first-party) | Fast catalog → quote | ZAR + VAT-aware quotes | Share without rewriting maths | Yes on catalog items | Android phone-first | Solo operators: catalog, quote, stock, cashflow |
 
-![Vlyt quote editor with VAT lines and WhatsApp send](/screenshots/quote-editor.png)
+![Vlyt quote editor with VAT lines and WhatsApp send](https://vlyt.app/screenshots/quote-editor.png)
 
 ## Named SA tools in the WhatsApp-first lane
 
@@ -81,7 +56,7 @@ If you need **quotes out the door today** with WhatsApp delivery, shortlist a Wh
 
 If you need **catalog + quote + stock + a simple month view** on Android, that is the lane Vlyt is built for.
 
-If you only use WhatsApp today, read [send a quote without losing the numbers](/blog/send-quote-whatsapp-without-losing-numbers/) and move prices out of chat this week.
+If you only use WhatsApp today, read [send a quote without losing the numbers](https://vlyt.app/blog/send-quote-whatsapp-without-losing-numbers/) and move prices out of chat this week.
 
 ## Where Vlyt fits
 
@@ -95,4 +70,36 @@ Vlyt (vlyt.app) is the catalog-to-quote-to-stock loop plus expenses and Home cas
 4. Check whether VAT, stock (if you need it), and the next edit still make sense.
 5. Keep the tool that survives that test — not the longest marketing page.
 
-More structure for the document itself: [professional SA quotes](/blog/how-to-write-professional-quote-south-africa/) and the free [quoting checklist](/resources/sa-quoting-checklist/).
+More structure for the document itself: [professional SA quotes](https://vlyt.app/blog/how-to-write-professional-quote-south-africa/) and the free [quoting checklist](https://vlyt.app/resources/sa-quoting-checklist/).
+
+## FAQ
+
+### What is the best quoting app for SA solo operators?
+
+The best fit stores your catalog in ZAR, supports clear VAT on quotes, shares cleanly to WhatsApp, and works on a phone between jobs. Accounting suites win for books; WhatsApp-first quoters and catalog tools win for field quoting.
+
+### Is WhatsApp a quoting app?
+
+No. It is a delivery channel. Using it as your only price list causes version drift.
+
+### Do I need Sage to quote?
+
+Only if you already run your books there and quoting inside it is practical on site. For many sole proprietors, Sage-class tools are overkill for day-to-day quotes — quote lighter, keep formal books separately.
+
+### How did you compare options?
+
+We scored approaches on setup time, ZAR/VAT clarity, WhatsApp sharing, stock visibility and phone usability. Named SA products below are peers we see in the same search results — not a paid ranking or a lab audit of every feature.
+
+### Is Vlyt free?
+
+Yes while we grow. No credit card for early users. If pricing changes, early users hear first.
+
+### Should I switch this week?
+
+If wrong prices or stock surprises already cost you a job, migrate your top 20 catalog lines now. Do not wait for a perfect office stack.
+
+---
+
+*I work on [Vlyt](https://vlyt.app) — a phone-first quoting, catalog, stock and cashflow app for South African solo operators. Free while we grow.*
+
+*Free quoting checklist: [https://vlyt.app/resources/sa-quoting-checklist/](https://vlyt.app/resources/sa-quoting-checklist/)*

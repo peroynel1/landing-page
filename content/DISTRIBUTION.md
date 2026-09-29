@@ -26,8 +26,14 @@ CTA soft: free while we grow / checklist https://vlyt.app/resources/sa-quoting-c
 
 ## Medium
 
-Title close to the blog title.
-First paragraph: “Originally published at https://vlyt.app/blog/[slug]/”
-Do not nofollow yourself out of the canonical story — prefer Medium’s canonical setting if available.
+Drafts live in [`content/medium/`](./medium/) — regenerate with `npm run medium:export`.
 
+**Preferred:** Medium → Write → Import a story → paste `https://vlyt.app/blog/[slug]/`  
+Import usually keeps the original as canonical. Tags: South Africa, Small Business, Quoting, WhatsApp.
+
+**Fallback:** paste from `content/medium/[slug].md`. Keep the “Originally published at…” line. Set Canonical link to the vlyt.app URL if Medium shows that field.
+
+Pace: 1–2 articles per week (start with pillar → WhatsApp → write-quote → spreadsheet → best-apps).  
 Log posts in [OUTREACH.md](./OUTREACH.md) owned-distribution table.
+
+LinkedIn/X: skip until the Vlyt company/personal page exists; then use the skeleton above.

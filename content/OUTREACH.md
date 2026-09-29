@@ -36,6 +36,15 @@ https://vlyt.app
 
 | Date | Channel | Source article | URL / post | Status |
 | --- | --- | --- | --- | --- |
-| | Quora | | | |
-| | LinkedIn / X | | | |
-| | Medium | | | |
+| 2026-09-29 | Quora | (several) | profile answers | done (batch) |
+| | LinkedIn | — | — | blocked: create Vlyt LinkedIn first |
+| 2026-09-29 | Medium | run-sa-business-from-phone | https://medium.com/@vlytapp/run-your-sa-business-from-your-phone-quotes-stock-and-cashflow-vlyt-3a65a20d3250 | done |
+| 2026-09-29 | Medium | send-quote-whatsapp-without-losing-numbers | https://medium.com/@vlytapp/how-to-send-a-quote-on-whatsapp-without-losing-the-numbers-vlyt-cdf4b2ba044c | done |
+| 2026-09-29 | Medium | how-to-write-professional-quote-south-africa | https://medium.com/@vlytapp/how-to-write-a-professional-quote-in-south-africa-vlyt-9daf342b56bb | done |
+| 2026-09-29 | Medium | spreadsheet-quoting-problems | https://medium.com/@vlytapp/why-spreadsheet-quoting-breaks-down-and-what-to-use-instead-vlyt-a19a9689abbf | done |
+| | Medium | best-quoting-apps-south-africa-2026 | | todo — re-import after 2026-09-29 rewrite |
+| | Medium | quote-vs-invoice-south-africa | | todo |
+| | Medium | vat-on-quotes-small-business-sa | | todo |
+| | Medium | stock-tracking-phone-traders | | todo |
+| | Medium | cashflow-basics-trades-sa | | todo |
+| | Medium | product-catalog-quote-businesses | | todo |

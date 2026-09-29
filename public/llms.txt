@@ -13,7 +13,7 @@ Blog: https://vlyt.app/blog/
 
 ## Guides
 
-- [Best quoting apps for South African small business (2026)](https://vlyt.app/blog/best-quoting-apps-south-africa-2026/): Comparison of quoting approaches for SA solo operators — WhatsApp-only, spreadsheets, accounting suites and phone-first tools like Vlyt. First-party criteria: ZAR, VAT, WhatsApp share, stock.
+- [Best quoting apps for South African small business (2026)](https://vlyt.app/blog/best-quoting-apps-south-africa-2026/): 2026 comparison of SA quoting approaches and named WhatsApp-first tools (Zakr, QuickQuotes, TradiQuote, QuoteDirect, FieldCard, Vlyt). Criteria: ZAR, VAT, WhatsApp, stock, phone.
 - [Cashflow basics for electricians, plumbers and landscapers](https://vlyt.app/blog/cashflow-basics-trades-sa/): A simple cashflow picture for SA trades: income, expenses and money still awaiting payment — without a desktop finance team.
 - [How to write a professional quote in South Africa](https://vlyt.app/blog/how-to-write-professional-quote-south-africa/): A practical SA quote template: line items, ZAR, VAT clarity, validity dates, and how to stop reinventing prices in WhatsApp.
 - [Product catalog for quote-based businesses](https://vlyt.app/blog/product-catalog-quote-businesses/): How to structure a product catalog so every SA quote reuses real prices — variations, packaging and stock on each item.

@@ -6,6 +6,7 @@
   "scripts": {
     "content": "node scripts/build-blog.mjs",
     "images:compress": "node scripts/compress-images.mjs",
+    "medium:export": "node scripts/export-medium.mjs",
     "dev": "npm run content && vite",
     "build": "npm run content && tsc && vite build",
     "preview": "vite preview"
