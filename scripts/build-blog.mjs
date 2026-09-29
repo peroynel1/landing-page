@@ -350,7 +350,7 @@ function renderPost(post, allPosts) {
 
   const body = `${siteHeader('blog')}
     <main class="mx-auto max-w-6xl px-5 py-16">
-      <div class="max-w-3xl">
+      <div class="mx-auto w-full max-w-3xl">
         <p class="eyebrow">Vlyt Learn</p>
         <h1 class="mt-4 font-display text-4xl tracking-tight text-ink md:text-5xl">${escapeHtml(post.title)}</h1>
         <p class="mt-4 text-lg text-ink-muted">${escapeHtml(post.description)}</p>
@@ -400,7 +400,7 @@ function renderBlogIndex(posts) {
 
   const body = `${siteHeader('blog')}
     <main class="mx-auto max-w-6xl px-5 py-16">
-      <div class="max-w-3xl">
+      <div class="mx-auto w-full max-w-3xl">
         <p class="eyebrow">Vlyt Learn</p>
         <h1 class="mt-4 font-display text-4xl tracking-tight md:text-5xl">Guides for SA quote-based businesses</h1>
         <p class="mt-4 text-lg text-ink-muted">
@@ -434,7 +434,7 @@ function renderResource(page) {
   const url = `${SITE}/resources/${page.slug}/`;
   const body = `${siteHeader()}
     <main class="mx-auto max-w-6xl px-5 py-16">
-      <div class="max-w-3xl">
+      <div class="mx-auto w-full max-w-3xl">
         <p class="eyebrow">Free resource</p>
         <h1 class="mt-4 font-display text-4xl tracking-tight md:text-5xl">${escapeHtml(page.title)}</h1>
         <p class="mt-4 text-lg text-ink-muted">${escapeHtml(page.description)}</p>
