@@ -39,14 +39,51 @@
     />
   </head>
   <body class="site-bg text-ink font-sans antialiased">
-    <header class="border-b border-white/10">
-      <div class="mx-auto flex max-w-3xl items-center gap-3 px-5 py-4">
-        <a href="./" class="wordmark" aria-label="Vlyt home">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a href="/" class="wordmark" aria-label="Vlyt home">
           <span class="wordmark-pu">Vlyt</span>
         </a>
+        <nav class="topnav" aria-label="Primary">
+          <a href="/#features">Features</a>
+          <a href="/#access">Pricing</a>
+          <a href="/#about">About</a>
+          <a href="/blog/">Blog</a>
+          <a href="/#faq">Support</a>
+          <a href="/#how">How it works</a>
+        </nav>
+        <a data-play href="#" class="play-btn play-btn-sm">
+          <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.609 1.814 13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893 2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198 2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658 16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+          Get it on Google Play
+        </a>
+        <button
+          id="nav-toggle"
+          type="button"
+          class="inline-flex h-10 w-10 items-center justify-center justify-self-end rounded-full border border-white/15 text-ink min-[900px]:hidden"
+          aria-expanded="false"
+          aria-controls="nav-panel"
+          aria-label="Open menu"
+        >
+          <span class="text-xl leading-none">☰</span>
+        </button>
+      </div>
+      <div id="nav-panel" class="hidden min-[900px]:hidden">
+        <div class="mx-auto flex max-w-6xl flex-col gap-3 px-5 pb-4 text-sm">
+          <a href="/#features" class="text-ink-muted hover:text-ink">Features</a>
+          <a href="/#access" class="text-ink-muted hover:text-ink">Pricing</a>
+          <a href="/#about" class="text-ink-muted hover:text-ink">About</a>
+          <a href="/blog/" class="text-ink-muted hover:text-ink">Blog</a>
+          <a href="/#faq" class="text-ink-muted hover:text-ink">Support</a>
+          <a href="/#how" class="text-ink-muted hover:text-ink">How it works</a>
+          <a data-play href="#" class="play-btn play-btn-sm mt-2 w-fit">
+            <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.609 1.814 13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893 2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198 2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658 16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+            Get it on Google Play
+          </a>
+        </div>
       </div>
     </header>
-    <main class="mx-auto max-w-3xl px-5 py-16">
+    <main class="mx-auto max-w-6xl px-5 py-16">
+      <div class="max-w-3xl">
       <h1 class="font-display text-4xl tracking-tight">Privacy notice</h1>
       <p class="mt-3 text-sm text-ink-muted">Last updated 17 September 2026</p>
       <div class="mt-10 space-y-6 text-ink-muted">
@@ -215,7 +252,8 @@
           >
         </p>
       </div>
-      <p class="mt-12 text-sm"><a class="text-accent" href="./">← Back</a></p>
+      <p class="mt-12 text-sm"><a class="text-accent" href="/">← Back</a></p>
+      </div>
     </main>
     <script type="module" src="/src/main.ts"></script>
   </body>

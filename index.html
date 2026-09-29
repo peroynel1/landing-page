@@ -140,51 +140,20 @@
     />
   </head>
   <body class="site-bg text-ink font-sans antialiased">
-    <div class="mainpage" id="top">
-      <section class="exact-hero" aria-label="Vlyt">
-        <header class="exact-hero-bar">
-          <a href="#top" class="wordmark" aria-label="Vlyt home">
-            <span class="wordmark-pu">Vlyt</span>
-          </a>
-          <nav class="topnav exact-hero-nav" aria-label="Primary">
-            <a href="#features">Features</a>
-            <a href="#access">Pricing</a>
-            <a href="#about">About</a>
-            <a href="/blog/">Blog</a>
-            <a href="#faq">Support</a>
-            <a href="#how">How it works</a>
-          </nav>
-          <a data-play href="#" class="play-btn play-btn-sm">
-            <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.609 1.814 13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893 2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198 2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658 16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
-            Get it on Google Play
-          </a>
-        </header>
-        <div class="exact-hero-frame">
-          <img
-            src="/images/hero-dark.png"
-            width="1280"
-            height="720"
-            alt="Vlyt: run your business from your pocket. Brew Lab home on phone — quotes, catalog, stock and cashflow for South African solo operators."
-            decoding="async"
-            fetchpriority="high"
-          />
-        </div>
-      </section>
-
-      <div class="mainpage-html">
-        <header class="topbar">
-        <a href="#top" class="wordmark" aria-label="Vlyt home">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a href="/" class="wordmark" aria-label="Vlyt home">
           <span class="wordmark-pu">Vlyt</span>
         </a>
-        <nav class="topnav">
-          <a href="#features">Features</a>
-          <a href="#access">Pricing</a>
-          <a href="#about">About</a>
+        <nav class="topnav" aria-label="Primary">
+          <a href="/#features">Features</a>
+          <a href="/#access">Pricing</a>
+          <a href="/#about">About</a>
           <a href="/blog/">Blog</a>
-          <a href="#faq">Support</a>
-          <a href="#how">How it works</a>
+          <a href="/#faq">Support</a>
+          <a href="/#how">How it works</a>
         </nav>
-        <a data-play href="#" class="play-btn play-btn-sm hidden min-[900px]:inline-flex">
+        <a data-play href="#" class="play-btn play-btn-sm">
           <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.609 1.814 13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893 2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198 2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658 16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
           Get it on Google Play
         </a>
@@ -198,22 +167,38 @@
         >
           <span class="text-xl leading-none">☰</span>
         </button>
-      </header>
-      <div id="nav-panel" class="hidden px-5 pb-4 min-[900px]:hidden">
-        <div class="flex flex-col gap-3 text-sm">
-          <a href="#features" class="text-ink-muted hover:text-ink">Features</a>
-          <a href="#access" class="text-ink-muted hover:text-ink">Pricing</a>
-          <a href="#about" class="text-ink-muted hover:text-ink">About</a>
+      </div>
+      <div id="nav-panel" class="hidden min-[900px]:hidden">
+        <div class="mx-auto flex max-w-6xl flex-col gap-3 px-5 pb-4 text-sm">
+          <a href="/#features" class="text-ink-muted hover:text-ink">Features</a>
+          <a href="/#access" class="text-ink-muted hover:text-ink">Pricing</a>
+          <a href="/#about" class="text-ink-muted hover:text-ink">About</a>
           <a href="/blog/" class="text-ink-muted hover:text-ink">Blog</a>
-          <a href="#faq" class="text-ink-muted hover:text-ink">Support</a>
-          <a href="#how" class="text-ink-muted hover:text-ink">How it works</a>
+          <a href="/#faq" class="text-ink-muted hover:text-ink">Support</a>
+          <a href="/#how" class="text-ink-muted hover:text-ink">How it works</a>
           <a data-play href="#" class="play-btn play-btn-sm mt-2 w-fit">
             <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.609 1.814 13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893 2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198 2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658 16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
             Get it on Google Play
           </a>
         </div>
       </div>
+    </header>
 
+    <div class="mainpage" id="top">
+      <section class="exact-hero" aria-label="Vlyt">
+        <div class="exact-hero-frame">
+          <img
+            src="/images/hero-dark.png"
+            width="1280"
+            height="720"
+            alt="Vlyt: run your business from your pocket. Brew Lab home on phone — quotes, catalog, stock and cashflow for South African solo operators."
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
+
+      <div class="mainpage-html">
       <section class="mainpage-hero">
         <div class="hero-copy">
           <p class="eyebrow">Vlyt</p>
@@ -595,12 +580,6 @@
           <a href="/resources/sa-quoting-checklist/" class="hover:text-ink">Quoting checklist</a>
           <a href="/privacy/" class="hover:text-ink">Privacy</a>
           <a href="/terms/" class="hover:text-ink">Terms</a>
-          <a
-            href="https://github.com/peroynel1/landing-page"
-            class="hover:text-ink"
-            rel="noreferrer"
-            >GitHub</a
-          >
         </nav>
       </div>
     </footer>

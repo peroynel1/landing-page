@@ -130,26 +130,58 @@ ${body}
 `;
 }
 
+const PLAY_ICON = `<svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.609 1.814 13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893 2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198 2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658 16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>`;
+
 function siteHeader(active = '') {
   const blogActive = active === 'blog' ? ' text-ink' : '';
-  return `    <header class="border-b border-white/10">
-      <div class="mx-auto flex max-w-3xl items-center justify-between gap-3 px-5 py-4">
+  return `    <header class="site-header">
+      <div class="site-header-inner">
         <a href="/" class="wordmark" aria-label="Vlyt home">
           <span class="wordmark-pu">Vlyt</span>
         </a>
-        <nav class="flex flex-wrap items-center gap-4 text-sm text-ink-muted">
-          <a href="/blog/" class="hover:text-ink${blogActive}">Blog</a>
-          <a href="/#features" class="hover:text-ink">Features</a>
-          <a href="/#faq" class="hover:text-ink">Support</a>
-          <a data-play href="#" class="play-btn play-btn-sm">Get the app</a>
+        <nav class="topnav" aria-label="Primary">
+          <a href="/#features">Features</a>
+          <a href="/#access">Pricing</a>
+          <a href="/#about">About</a>
+          <a href="/blog/"${blogActive ? ' class="text-ink"' : ''}>Blog</a>
+          <a href="/#faq">Support</a>
+          <a href="/#how">How it works</a>
         </nav>
+        <a data-play href="#" class="play-btn play-btn-sm">
+          ${PLAY_ICON}
+          Get it on Google Play
+        </a>
+        <button
+          id="nav-toggle"
+          type="button"
+          class="inline-flex h-10 w-10 items-center justify-center justify-self-end rounded-full border border-white/15 text-ink min-[900px]:hidden"
+          aria-expanded="false"
+          aria-controls="nav-panel"
+          aria-label="Open menu"
+        >
+          <span class="text-xl leading-none">☰</span>
+        </button>
+      </div>
+      <div id="nav-panel" class="hidden min-[900px]:hidden">
+        <div class="mx-auto flex max-w-6xl flex-col gap-3 px-5 pb-4 text-sm">
+          <a href="/#features" class="text-ink-muted hover:text-ink">Features</a>
+          <a href="/#access" class="text-ink-muted hover:text-ink">Pricing</a>
+          <a href="/#about" class="text-ink-muted hover:text-ink">About</a>
+          <a href="/blog/" class="text-ink-muted hover:text-ink${blogActive}">Blog</a>
+          <a href="/#faq" class="text-ink-muted hover:text-ink">Support</a>
+          <a href="/#how" class="text-ink-muted hover:text-ink">How it works</a>
+          <a data-play href="#" class="play-btn play-btn-sm mt-2 w-fit">
+            ${PLAY_ICON}
+            Get it on Google Play
+          </a>
+        </div>
       </div>
     </header>`;
 }
 
 function siteFooter() {
   return `    <footer class="border-t border-white/10">
-      <div class="mx-auto flex max-w-3xl flex-col gap-4 px-5 py-8 text-sm text-ink-muted sm:flex-row sm:items-center sm:justify-between">
+      <div class="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-8 text-sm text-ink-muted sm:flex-row sm:items-center sm:justify-between">
         <p>© <span id="y"></span> Vlyt</p>
         <nav class="flex flex-wrap gap-5">
           <a href="/blog/" class="hover:text-ink">Blog</a>
@@ -231,24 +263,26 @@ function renderPost(post, allPosts) {
   }
 
   const body = `${siteHeader('blog')}
-    <main class="mx-auto max-w-3xl px-5 py-16">
-      <p class="eyebrow">Vlyt Learn</p>
-      <h1 class="mt-4 font-display text-4xl tracking-tight text-ink md:text-5xl">${escapeHtml(post.title)}</h1>
-      <p class="mt-4 text-lg text-ink-muted">${escapeHtml(post.description)}</p>
-      <p class="mt-3 text-sm text-ink-faint">
-        <time datetime="${escapeHtml(post.date)}">${escapeHtml(post.date)}</time>
-        ${post.keyword ? ` · Targeting: ${escapeHtml(post.keyword)}` : ''}
-      </p>
-      <article class="prose mt-10">
-        ${post.bodyHtml}
-      </article>
-      ${faqHtml}
-      ${relatedHtml}
-      <section class="mt-14 rounded-[13px] border border-white/10 bg-white/[0.03] p-8 text-center">
-        <h2 class="font-display text-2xl text-ink">Run quotes from your pocket</h2>
-        <p class="mt-3 text-sm text-ink-muted">Vlyt is free while we grow — catalog, stock, VAT-aware quotes and cashflow on Android.</p>
-        <a data-play href="#" class="play-btn mt-6">Get it on Google Play</a>
-      </section>
+    <main class="mx-auto max-w-6xl px-5 py-16">
+      <div class="max-w-3xl">
+        <p class="eyebrow">Vlyt Learn</p>
+        <h1 class="mt-4 font-display text-4xl tracking-tight text-ink md:text-5xl">${escapeHtml(post.title)}</h1>
+        <p class="mt-4 text-lg text-ink-muted">${escapeHtml(post.description)}</p>
+        <p class="mt-3 text-sm text-ink-faint">
+          <time datetime="${escapeHtml(post.date)}">${escapeHtml(post.date)}</time>
+          ${post.keyword ? ` · Targeting: ${escapeHtml(post.keyword)}` : ''}
+        </p>
+        <article class="prose mt-10">
+          ${post.bodyHtml}
+        </article>
+        ${faqHtml}
+        ${relatedHtml}
+        <section class="mt-14 rounded-[13px] border border-white/10 bg-white/[0.03] p-8 text-center">
+          <h2 class="font-display text-2xl text-ink">Run quotes from your pocket</h2>
+          <p class="mt-3 text-sm text-ink-muted">Vlyt is free while we grow — catalog, stock, VAT-aware quotes and cashflow on Android.</p>
+          <a data-play href="#" class="play-btn mt-6">${PLAY_ICON} Get it on Google Play</a>
+        </section>
+      </div>
     </main>
 ${siteFooter()}`;
 
@@ -278,13 +312,15 @@ function renderBlogIndex(posts) {
     .join('\n');
 
   const body = `${siteHeader('blog')}
-    <main class="mx-auto max-w-3xl px-5 py-16">
-      <p class="eyebrow">Vlyt Learn</p>
-      <h1 class="mt-4 font-display text-4xl tracking-tight md:text-5xl">Guides for SA quote-based businesses</h1>
-      <p class="mt-4 text-lg text-ink-muted">
-        Practical writing on quotes, WhatsApp selling, VAT, stock and cashflow — written for solo operators who work from a phone.
-      </p>
-      <ul class="mt-10 list-none p-0">${list}</ul>
+    <main class="mx-auto max-w-6xl px-5 py-16">
+      <div class="max-w-3xl">
+        <p class="eyebrow">Vlyt Learn</p>
+        <h1 class="mt-4 font-display text-4xl tracking-tight md:text-5xl">Guides for SA quote-based businesses</h1>
+        <p class="mt-4 text-lg text-ink-muted">
+          Practical writing on quotes, WhatsApp selling, VAT, stock and cashflow — written for solo operators who work from a phone.
+        </p>
+        <ul class="mt-10 list-none p-0">${list}</ul>
+      </div>
     </main>
 ${siteFooter()}`;
 
@@ -309,16 +345,18 @@ ${siteFooter()}`;
 function renderResource(page) {
   const url = `${SITE}/resources/${page.slug}/`;
   const body = `${siteHeader()}
-    <main class="mx-auto max-w-3xl px-5 py-16">
-      <p class="eyebrow">Free resource</p>
-      <h1 class="mt-4 font-display text-4xl tracking-tight md:text-5xl">${escapeHtml(page.title)}</h1>
-      <p class="mt-4 text-lg text-ink-muted">${escapeHtml(page.description)}</p>
-      <article class="prose mt-10">${page.bodyHtml}</article>
-      <section class="mt-14 rounded-[13px] border border-white/10 bg-white/[0.03] p-8 text-center">
-        <h2 class="font-display text-2xl text-ink">Prefer this on your phone?</h2>
-        <p class="mt-3 text-sm text-ink-muted">Vlyt turns the checklist into a live catalog, quote and stock loop.</p>
-        <a data-play href="#" class="play-btn mt-6">Get it on Google Play</a>
-      </section>
+    <main class="mx-auto max-w-6xl px-5 py-16">
+      <div class="max-w-3xl">
+        <p class="eyebrow">Free resource</p>
+        <h1 class="mt-4 font-display text-4xl tracking-tight md:text-5xl">${escapeHtml(page.title)}</h1>
+        <p class="mt-4 text-lg text-ink-muted">${escapeHtml(page.description)}</p>
+        <article class="prose mt-10">${page.bodyHtml}</article>
+        <section class="mt-14 rounded-[13px] border border-white/10 bg-white/[0.03] p-8 text-center">
+          <h2 class="font-display text-2xl text-ink">Prefer this on your phone?</h2>
+          <p class="mt-3 text-sm text-ink-muted">Vlyt turns the checklist into a live catalog, quote and stock loop.</p>
+          <a data-play href="#" class="play-btn mt-6">${PLAY_ICON} Get it on Google Play</a>
+        </section>
+      </div>
     </main>
 ${siteFooter()}`;
 
