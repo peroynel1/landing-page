@@ -7,10 +7,12 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
 import { marked } from 'marked';
+import { Resvg } from '@resvg/resvg-js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
 const SITE = 'https://vlyt.app';
+const ogDir = path.join(root, 'public', 'images', 'og');
 
 marked.setOptions({ gfm: true, breaks: false });
 
@@ -43,6 +45,85 @@ function escapeHtml(s) {
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;');
+}
+
+function escapeXml(s) {
+  return String(s)
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&apos;');
+}
+
+function wrapLines(text, maxChars = 30, maxLines = 4) {
+  const words = String(text).split(/\s+/).filter(Boolean);
+  const lines = [];
+  let cur = '';
+  for (const w of words) {
+    const next = cur ? `${cur} ${w}` : w;
+    if (next.length > maxChars && cur) {
+      lines.push(cur);
+      cur = w;
+      if (lines.length >= maxLines) break;
+    } else {
+      cur = next;
+    }
+  }
+  if (lines.length < maxLines && cur) lines.push(cur);
+  if (words.join(' ').length > lines.join(' ').length) {
+    const last = lines.length - 1;
+    lines[last] = `${lines[last].replace(/\s+\S*$/, '')}…`;
+  }
+  return lines;
+}
+
+function writeOgPng({ fileBase, eyebrow, title }) {
+  ensureDir(ogDir);
+  const lines = wrapLines(title, 28, 4);
+  const titleSvg = lines
+    .map(
+      (line, i) =>
+        `<text x="80" y="${260 + i * 72}" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700">${escapeXml(line)}</text>`,
+    )
+    .join('\n');
+  const svg = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#000000"/>
+  <circle cx="180" cy="520" r="280" fill="#3ee8a0" fill-opacity="0.08"/>
+  <circle cx="980" cy="120" r="220" fill="#3ee8a0" fill-opacity="0.1"/>
+  <text x="80" y="120" fill="#3ee8a0" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800">${escapeXml(eyebrow)}</text>
+  ${titleSvg}
+  <rect x="80" y="560" width="120" height="6" fill="#3ee8a0"/>
+  <text x="1040" y="575" fill="#ffffff" fill-opacity="0.55" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="end">vlyt.app</text>
+</svg>`;
+  const resvg = new Resvg(svg, {
+    fitTo: { mode: 'width', value: 1200 },
+  });
+  const png = resvg.render().asPng();
+  const out = path.join(ogDir, `${fileBase}.png`);
+  fs.writeFileSync(out, png);
+  return `/images/og/${fileBase}.png`;
+}
+
+function writeRedirect(fromRelUnderPublic, toUrl) {
+  const full = path.join(root, 'public', fromRelUnderPublic);
+  ensureDir(path.dirname(full));
+  const html = `<!doctype html>
+<html lang="en-ZA">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <link rel="canonical" href="${toUrl}" />
+    <meta http-equiv="refresh" content="0;url=${toUrl}" />
+    <script>location.replace(${JSON.stringify(toUrl)});</script>
+  </head>
+  <body>
+    <p>Moved to <a href="${toUrl}">${toUrl}</a>.</p>
+  </body>
+</html>
+`;
+  fs.writeFileSync(full, html, 'utf8');
 }
 
 function formatDate(value) {
@@ -84,7 +165,8 @@ function loadMarkdownCollection(relDir) {
     .sort((a, b) => String(b.date).localeCompare(String(a.date)));
 }
 
-function layoutShell({ title, description, canonical, ogType, jsonLd, body, scriptSrc }) {
+function layoutShell({ title, description, canonical, ogType, ogImage, jsonLd, body, scriptSrc }) {
+  const image = ogImage || `${SITE}/images/og-image.png`;
   const ld = jsonLd ? `<script type="application/ld+json">\n${JSON.stringify(jsonLd, null, 2)}\n    </script>` : '';
   return `<!doctype html>
 <html lang="en-ZA">
@@ -94,6 +176,7 @@ function layoutShell({ title, description, canonical, ogType, jsonLd, body, scri
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeHtml(description)}" />
     <link rel="canonical" href="${canonical}" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon.png" />
@@ -102,7 +185,9 @@ function layoutShell({ title, description, canonical, ogType, jsonLd, body, scri
     <meta name="theme-color" content="#3ee8a0" />
     <meta property="og:title" content="${escapeHtml(title)}" />
     <meta property="og:description" content="${escapeHtml(description)}" />
-    <meta property="og:image" content="${SITE}/images/og-image.png" />
+    <meta property="og:image" content="${image}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:url" content="${canonical}" />
     <meta property="og:site_name" content="Vlyt" />
     <meta property="og:locale" content="en_ZA" />
@@ -110,7 +195,7 @@ function layoutShell({ title, description, canonical, ogType, jsonLd, body, scri
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(title)}" />
     <meta name="twitter:description" content="${escapeHtml(description)}" />
-    <meta name="twitter:image" content="${SITE}/images/og-image.png" />
+    <meta name="twitter:image" content="${image}" />
     ${ld}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -241,6 +326,7 @@ function renderPost(post, allPosts) {
       datePublished: post.date,
       dateModified: post.updated || post.date,
       mainEntityOfPage: url,
+      image: post.ogImage,
       author: { '@type': 'Organization', name: 'Vlyt', url: SITE },
       publisher: {
         '@type': 'Organization',
@@ -291,6 +377,7 @@ ${siteFooter()}`;
     description: post.description,
     canonical: url,
     ogType: 'article',
+    ogImage: post.ogImage,
     jsonLd: { '@context': 'https://schema.org', '@graph': graph },
     body,
     scriptSrc: '/src/main.ts',
@@ -330,6 +417,7 @@ ${siteFooter()}`;
       'Guides for South African solo operators: quotes, WhatsApp selling, VAT, stock tracking and cashflow.',
     canonical: `${SITE}/blog/`,
     ogType: 'website',
+    ogImage: `${SITE}/images/og/blog-index.png`,
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'Blog',
@@ -365,12 +453,14 @@ ${siteFooter()}`;
     description: page.description,
     canonical: url,
     ogType: 'article',
+    ogImage: page.ogImage,
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
       name: page.title,
       description: page.description,
       url,
+      image: page.ogImage,
       isPartOf: { '@type': 'WebSite', url: SITE, name: 'Vlyt' },
     },
     body,
@@ -478,6 +568,29 @@ Sitemap: ${SITE}/sitemap.xml
 const posts = loadMarkdownCollection('content/blog');
 const resources = loadMarkdownCollection('content/resources');
 
+writeOgPng({
+  fileBase: 'blog-index',
+  eyebrow: 'Vlyt Learn',
+  title: 'Guides for SA quote-based businesses',
+});
+
+for (const post of posts) {
+  const rel = writeOgPng({
+    fileBase: `blog-${post.slug}`,
+    eyebrow: 'Vlyt Learn',
+    title: post.title,
+  });
+  post.ogImage = `${SITE}${rel}`;
+}
+for (const page of resources) {
+  const rel = writeOgPng({
+    fileBase: `resource-${page.slug}`,
+    eyebrow: 'Free resource',
+    title: page.title,
+  });
+  page.ogImage = `${SITE}${rel}`;
+}
+
 const blogDir = path.join(root, 'blog');
 const resourcesDir = path.join(root, 'resources');
 ensureDir(blogDir);
@@ -490,17 +603,22 @@ for (const post of posts) {
   const postDir = path.join(blogDir, post.slug);
   ensureDir(postDir);
   fs.writeFileSync(path.join(postDir, 'index.html'), renderPost(post, posts), 'utf8');
+  writeRedirect(path.join('blog', `${post.slug}.html`), `/blog/${post.slug}/`);
 }
 for (const page of resources) {
   const pageDir = path.join(resourcesDir, page.slug);
   ensureDir(pageDir);
   fs.writeFileSync(path.join(pageDir, 'index.html'), renderResource(page), 'utf8');
+  writeRedirect(path.join('resources', `${page.slug}.html`), `/resources/${page.slug}/`);
 }
+
+writeRedirect('privacy.html', '/privacy/');
+writeRedirect('terms.html', '/terms/');
 
 writeSitemap(posts, resources);
 writeLlmsTxt(posts, resources);
 writeRobots();
 
 console.log(
-  `Built ${posts.length} blog posts, ${resources.length} resources, sitemap + robots + llms.txt`,
+  `Built ${posts.length} blog posts, ${resources.length} resources, OG images, redirects, sitemap + robots + llms.txt`,
 );

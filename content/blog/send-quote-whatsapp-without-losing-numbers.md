@@ -42,6 +42,8 @@ Build the quote in a system that stores line items and totals, then share that f
 4. Share to WhatsApp (PDF or clear summary).
 5. If they negotiate, **edit the quote**, then resend — do not only type a new total.
 
+![Example: a structured Vlyt quote ready to send](/screenshots/quote-editor.png)
+
 ## Message template that stays clean
 
 > Hi Thabo — quote for the bathroom redo is attached. Total R12,480 incl VAT, valid until Friday. Reply yes to book the deposit.

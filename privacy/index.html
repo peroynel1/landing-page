@@ -255,6 +255,22 @@
       <p class="mt-12 text-sm"><a class="text-accent" href="/">← Back</a></p>
       </div>
     </main>
+    <footer class="border-t border-white/10">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-8 text-sm text-ink-muted sm:flex-row sm:items-center sm:justify-between"
+      >
+        <p>© <span id="y"></span> Vlyt</p>
+        <nav class="flex flex-wrap gap-5">
+          <a href="/blog/" class="hover:text-ink">Blog</a>
+          <a href="/resources/sa-quoting-checklist/" class="hover:text-ink">Quoting checklist</a>
+          <a href="/privacy/" class="hover:text-ink">Privacy</a>
+          <a href="/terms/" class="hover:text-ink">Terms</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('y').textContent = String(new Date().getFullYear());
+    </script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

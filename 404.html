@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-ZA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page not found — Vlyt</title>
+    <meta name="description" content="That page is missing. Head home or browse Vlyt Learn guides." />
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="https://vlyt.app/404.html" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#3ee8a0" />
+    <meta property="og:title" content="Page not found — Vlyt" />
+    <meta property="og:description" content="That page is missing. Head home or browse Vlyt Learn guides." />
+    <meta property="og:image" content="https://vlyt.app/images/og-image.png" />
+    <meta property="og:url" content="https://vlyt.app/404.html" />
+    <meta property="og:site_name" content="Vlyt" />
+    <meta property="og:locale" content="en_ZA" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="site-bg text-ink font-sans antialiased">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a href="/" class="wordmark" aria-label="Vlyt home">
+          <span class="wordmark-pu">Vlyt</span>
+        </a>
+        <nav class="topnav" aria-label="Primary">
+          <a href="/#features">Features</a>
+          <a href="/blog/">Blog</a>
+          <a href="/#faq">Support</a>
+        </nav>
+        <a data-play href="#" class="play-btn play-btn-sm">Get it on Google Play</a>
+      </div>
+    </header>
+    <main class="mx-auto max-w-3xl px-5 py-24 text-center">
+      <p class="eyebrow">404</p>
+      <h1 class="mt-4 font-display text-4xl tracking-tight md:text-5xl">This page is missing</h1>
+      <p class="mt-4 text-lg text-ink-muted">
+        The link may be old, or the page moved. Try home or the guides for SA quote-based businesses.
+      </p>
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+        <a href="/" class="play-btn">Back to home</a>
+        <a href="/blog/" class="text-accent underline">Browse Vlyt Learn</a>
+        <a href="/resources/sa-quoting-checklist/" class="text-accent underline">Quoting checklist</a>
+      </div>
+    </main>
+    <footer class="border-t border-white/10">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-8 text-sm text-ink-muted sm:flex-row sm:items-center sm:justify-between"
+      >
+        <p>© <span id="y"></span> Vlyt</p>
+        <nav class="flex flex-wrap gap-5">
+          <a href="/blog/" class="hover:text-ink">Blog</a>
+          <a href="/resources/sa-quoting-checklist/" class="hover:text-ink">Quoting checklist</a>
+          <a href="/privacy/" class="hover:text-ink">Privacy</a>
+          <a href="/terms/" class="hover:text-ink">Terms</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('y').textContent = String(new Date().getFullYear());
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

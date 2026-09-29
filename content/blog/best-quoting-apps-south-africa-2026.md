@@ -41,7 +41,7 @@ This commercial spoke supports [running an SA business from your phone](/blog/ru
 | Stock on items | Stops promising empty shelves |
 | Phone usability | Quotes happen between jobs |
 
-We are not a paid review site. Vlyt appears in this table because we build it — criteria are explicit so you can disagree.
+We are not a paid review site. Vlyt appears in this table because we build it — criteria are explicit so you can disagree. Rows for other approaches are **category patterns**, not audited feature checklists of every named product.
 
 ## Comparison table (2026)
 
@@ -49,11 +49,13 @@ We are not a paid review site. Vlyt appears in this table because we build it �
 | --- | --- | --- | --- | --- | --- | --- |
 | WhatsApp messages only | Instant | Manual / easy to mess up | Native | No | Yes | Tiny one-off jobs — poor as a system |
 | Spreadsheet (Excel / Sheets) | Medium | Formulas if you maintain them | Awkward (PDF/export) | Possible but clunky | Weak on site | Desk-bound quoting ([why it breaks](/blog/spreadsheet-quoting-problems/)) |
-| Full accounting suite (e.g. Sage-class) | Slow | Strong when configured | Varies | Often inventory modules | Often desktop-heavy | Businesses that need full books first |
+| Full accounting suite (e.g. Sage-class tools) | Often slower to set up | Strong when configured | Varies by product | Often available as modules | Often desktop-heavy | Businesses that need full books first |
 | Card / payments apps | Fast for pay | Not a quote catalog | Pay links | Usually no | Yes for payments | Collecting money — not building quotes |
-| **Vlyt** | Fast catalog → quote | ZAR + VAT-aware quotes | Share without rewriting maths | Yes on catalog items | Android phone-first | Solo operators: catalog, quote, stock, cashflow |
+| **Vlyt** (first-party) | Fast catalog → quote | ZAR + VAT-aware quotes | Share without rewriting maths | Yes on catalog items | Android phone-first | Solo operators: catalog, quote, stock, cashflow |
 
-Sources for the non-Vlyt rows: category behaviour observed in SA micro-business use (chat-only, Sheets, desktop accounting, payment apps). Verify any vendor’s current pricing and features on their site before you buy — this table is a decision frame, not a sponsored ranking.
+![Vlyt quote editor with VAT lines and WhatsApp send](/screenshots/quote-editor.png)
+
+**Sources / limits:** Non-Vlyt rows summarise how these *categories* usually behave for SA micro-businesses we talk to. Individual products change. Verify pricing and features on each vendor’s site before you buy — this is a decision frame, not a sponsored ranking or a lab test of Sage, Yoco, or every spreadsheet template.
 
 ## Direct answer
 

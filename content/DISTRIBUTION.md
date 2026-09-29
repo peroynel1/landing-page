@@ -14,20 +14,20 @@ Question match: [buyer question]
 
 Short direct answer in the first two lines.
 2–4 practical steps from the article.
-One link: https://vlyt.app/blog/[slug].html
+One link: https://vlyt.app/blog/[slug]/
 Disclose: “I work on Vlyt, a SA quoting app” when relevant.
 
 ## LinkedIn / X skeleton
 
 Hook: the failure mode (prices lost in WhatsApp / stock surprise / VAT shock).
 One tip from the article.
-Link: https://vlyt.app/blog/[slug].html
+Link: https://vlyt.app/blog/[slug]/
 CTA soft: free while we grow / checklist https://vlyt.app/resources/sa-quoting-checklist/
 
 ## Medium
 
 Title close to the blog title.
-First paragraph: “Originally published at https://vlyt.app/blog/[slug].html”
+First paragraph: “Originally published at https://vlyt.app/blog/[slug]/”
 Do not nofollow yourself out of the canonical story — prefer Medium’s canonical setting if available.
 
 Log posts in [OUTREACH.md](./OUTREACH.md) owned-distribution table.

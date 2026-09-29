@@ -464,3 +464,13 @@ details.faq > summary::-webkit-details-marker {
   padding: 0.1em 0.35em;
   border-radius: 4px;
 }
+
+.prose img {
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  height: auto;
+  margin: 1.5em auto;
+  border-radius: 13px;
+  border: 1px solid rgb(255 255 255 / 12%);
+}

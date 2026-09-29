@@ -60,6 +60,8 @@ For VAT detail, read [VAT on quotes for small SA businesses](/blog/vat-on-quotes
 
 Professional means **reproducible**. Another person on your team (or future you) could rebuild the same total from the same lines. That is why tools that pull from a catalog beat typed chat maths.
 
+![Catalog prices reused on a quote](/screenshots/catalog-list.png)
+
 ## WhatsApp is the envelope, not the ledger
 
 Send the finished quote on WhatsApp — that is how SA customers decide. Keep the structured version in your system so a forward, a screenshot crop, or a “can you do it cheaper?” reply does not erase the original lines.

@@ -96,6 +96,8 @@ Once quotes are consistent, stock and cashflow become useful. You need to know w
 
 You do not need SARS-grade books on day one. You need **one number the customer pays** and **one view of whether that number made the month work**.
 
+![Phone Home: income, expenses and awaiting payment together](/screenshots/home.png)
+
 ## Choosing a tool (without the hype)
 
 When you compare apps, ignore feature grids that assume a five-person office. Score tools on:
