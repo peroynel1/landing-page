@@ -100,6 +100,7 @@ export type DemoData = {
     }>;
     quote_detail: {
       number: string;
+      status?: string;
       status_label: string;
       status_age: string;
       contact: string;
@@ -109,7 +110,7 @@ export type DemoData = {
       vat_cents: number;
       shipping_cents: number;
       total_cents: number;
-      sent_caption: string;
+      sent_caption?: string;
     };
   };
 };

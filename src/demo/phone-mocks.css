@@ -805,6 +805,11 @@
   background: rgba(76, 175, 132, 0.12);
 }
 
+.dm-workflow-strip.tone-muted {
+  border-left-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+}
+
 .dm-workflow-strip .dm-k {
   margin-bottom: 4px;
   color: rgba(242, 241, 236, 0.5);

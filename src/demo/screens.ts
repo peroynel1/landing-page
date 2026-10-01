@@ -304,19 +304,28 @@ function renderSales(data: DemoData): string {
 
 function renderQuote(data: DemoData): string {
   const q = data.ui.quote_detail;
+  const tone = q.status === 'draft' ? 'muted' : 'bad';
+  const actions =
+    q.status === 'draft'
+      ? `<button type="button" class="dm-workflow-btn good">Mark as pending</button>
+        <button type="button" class="dm-workflow-btn bad">Cancel quote</button>`
+      : `<button type="button" class="dm-workflow-btn good">To Pack</button>
+        <button type="button" class="dm-workflow-btn warn">Revert to Draft</button>
+        <button type="button" class="dm-workflow-btn bad">Cancel quote</button>`;
+  const age = q.status_age
+    ? `<span class="dm-status-age">${esc(q.status_age)}</span>`
+    : '';
   const body = `
     <div class="dm-workflow">
-      <div class="dm-workflow-strip tone-bad">
+      <div class="dm-workflow-strip tone-${tone}">
         <div class="dm-k">Quote status</div>
         <div class="dm-workflow-status">
           <span class="dm-status-main">${esc(q.status_label)}</span>
-          <span class="dm-status-age">${esc(q.status_age)}</span>
+          ${age}
         </div>
       </div>
       <div class="dm-workflow-actions">
-        <button type="button" class="dm-workflow-btn good">To Pack</button>
-        <button type="button" class="dm-workflow-btn warn">Revert to Draft</button>
-        <button type="button" class="dm-workflow-btn bad">Cancel quote</button>
+        ${actions}
       </div>
     </div>
     <button type="button" class="dm-wide">${ICO.clipboard}<span>Import order text</span></button>
@@ -338,9 +347,7 @@ function renderQuote(data: DemoData): string {
     <div class="dm-two-btns">
       <button type="button" class="dm-wide">Save</button>
       <button type="button" class="dm-wide outline good">${ICO.wa}<span>Send</span></button>
-    </div>
-    <button type="button" class="dm-wide outline">Send Reminder</button>
-    <div class="dm-caption">${esc(q.sent_caption)}</div>`;
+    </div>`;
   return shell({
     activeTab: 'Sales',
     title: 'Sales',

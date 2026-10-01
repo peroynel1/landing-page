@@ -461,8 +461,8 @@
     ],
     "quote_detail": {
       "number": "BL-1051",
-      "status_label": "Pending",
-      "status_age": "(1 day)",
+      "status_label": "Draft",
+      "status_age": "",
       "contact": "Bar Italia Verde",
       "phone": "+27 12 346 8890",
       "address": "271 Duxbury Road, Hatfield, Pretoria, 0083",
@@ -470,7 +470,8 @@
       "vat_cents": 83401,
       "shipping_cents": 16500,
       "total_cents": 639400,
-      "sent_caption": "Quote sent 0 days ago"
+      "sent_caption": "",
+      "status": "draft"
     },
     "catalog_stock": {
       "hand-grinder": {
