@@ -764,45 +764,49 @@
 
 .dm-workflow {
   overflow: hidden;
-  border-radius: 12px;
-  background: var(--dm-surface);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 .dm-workflow-strip {
-  padding: 12px;
+  padding: 12px 14px;
   border-left: 4px solid transparent;
 }
 
 .dm-workflow-strip.tone-bad {
   border-left-color: var(--dm-bad);
-  background: var(--dm-bad-bg);
+  background: rgba(224, 112, 112, 0.12);
 }
 
 .dm-workflow-strip.tone-warn {
   border-left-color: var(--dm-warn);
-  background: var(--dm-warn-bg);
+  background: rgba(200, 168, 92, 0.12);
 }
 
 .dm-workflow-strip.tone-good {
   border-left-color: var(--dm-good);
-  background: var(--dm-good-bg);
+  background: rgba(76, 175, 132, 0.12);
 }
 
 .dm-workflow-strip .dm-k {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  color: rgba(242, 241, 236, 0.5);
 }
 
 .dm-workflow-status {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 4px;
+  gap: 6px;
 }
 
 .dm-status-main {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 650;
   color: var(--dm-ink);
+  line-height: 1.2;
 }
 
 .dm-status-age {
@@ -814,21 +818,22 @@
 .dm-workflow-actions {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 12px;
-  border-top: 1px solid var(--dm-line);
+  gap: 10px;
+  padding: 12px 14px 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .dm-workflow-btn {
   appearance: none;
   width: 100%;
   border-radius: 10px;
-  padding: 10px 12px;
+  padding: 11px 12px;
   font: inherit;
   font-size: 13px;
   font-weight: 650;
   text-align: center;
-  background: var(--dm-surface-2);
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--dm-line);
   color: var(--dm-ink);
 }
@@ -846,6 +851,11 @@
 .dm-workflow-btn.bad {
   border-color: var(--dm-bad);
   color: var(--dm-bad);
+}
+
+/* Space import action away from the workflow card */
+.dm-workflow + .dm-wide {
+  margin-top: 4px;
 }
 
 .dm-stack-btns {
