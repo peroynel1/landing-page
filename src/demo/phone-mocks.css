@@ -74,6 +74,65 @@
   padding-top: 2px;
 }
 
+.dm-back-ico {
+  display: grid;
+  place-items: center;
+  color: var(--dm-ink);
+  flex-shrink: 0;
+}
+
+.dm-back-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 1.05rem;
+  font-weight: 650;
+  color: var(--dm-ink);
+  margin-right: auto;
+}
+
+.dm-back-label svg {
+  margin-left: -4px;
+}
+
+.dm-status-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.dm-status-bar {
+  width: 3px;
+  align-self: stretch;
+  min-height: 18px;
+  border-radius: 2px;
+  background: var(--dm-bad);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.dm-status-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.dm-status-text .dm-sub.inline {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.dm-wide svg,
+.dm-pill svg,
+.dm-add svg,
+.dm-back-label svg,
+.dm-view-toggle svg {
+  display: block;
+  flex-shrink: 0;
+}
+
 .dm-title {
   margin: 0;
   font-size: 1.45rem;
@@ -195,9 +254,11 @@
 .dm-avatar {
   width: 40px;
   height: 40px;
+  max-width: 40px;
   border-radius: 999px;
   object-fit: cover;
   background: var(--dm-surface);
+  flex-shrink: 0;
 }
 
 .dm-toolbar {
@@ -523,14 +584,6 @@
   background: rgba(255, 255, 255, 0.18);
   z-index: 1;
 }
-.dm-accent.thin {
-  position: relative;
-  width: 3px;
-  height: 18px;
-  border-radius: 2px;
-  flex-shrink: 0;
-}
-.dm-accent.thin.bad,
 .dm-list-card.tone-bad > .dm-accent {
   background: var(--dm-bad);
 }
@@ -550,8 +603,8 @@
 .dm-list-body.product {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 14px 14px 12px;
+  gap: 10px;
+  padding: 12px 12px 10px;
 }
 
 .dm-list-top {
@@ -591,6 +644,7 @@
 .dm-thumb {
   width: 48px;
   height: 48px;
+  max-width: 48px;
   border-radius: 9px;
   object-fit: cover;
   background: #ebe7df;
@@ -706,13 +760,6 @@
   height: 100%;
   background: var(--dm-good);
   border-radius: inherit;
-}
-
-.dm-status-line {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 6px;
 }
 
 .dm-stack-btns {

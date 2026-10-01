@@ -78,12 +78,18 @@ function tabBar(active: 'Home' | 'Sales' | 'Contacts' | 'Catalog'): string {
 function titleBar(opts: {
   title: string;
   right?: string;
-  back?: boolean;
+  back?: boolean | 'label' | 'center';
 }): string {
-  if (opts.back) {
+  if (opts.back === true || opts.back === 'center') {
     return `<div class="dm-title-row back">
-      <span class="dm-icon-btn">${ICO.back}</span>
+      <span class="dm-back-ico" aria-hidden="true">${ICO.back}</span>
       <span class="dm-title-center">${esc(opts.title)}</span>
+      <div class="dm-header-right">${opts.right || ''}</div>
+    </div>`;
+  }
+  if (opts.back === 'label') {
+    return `<div class="dm-title-row back">
+      <span class="dm-back-label" aria-hidden="true">${ICO.back}<span>${esc(opts.title)}</span></span>
       <div class="dm-header-right">${opts.right || ''}</div>
     </div>`;
   }
@@ -98,7 +104,7 @@ function shell(opts: {
   body: string;
   title?: string;
   right?: string;
-  back?: boolean;
+  back?: boolean | 'label' | 'center';
   time?: string;
   hideTitle?: boolean;
 }): string {
@@ -254,7 +260,7 @@ function renderSalesWindow(data: DemoData): string {
   return shell({
     activeTab: 'Sales',
     title: 'Sales window',
-    back: true,
+    back: 'center',
     body,
     time: '12:41',
   });
@@ -302,9 +308,11 @@ function renderQuote(data: DemoData): string {
     <div class="dm-card accent-bad pad-status">
       <div class="dm-k">Quote status</div>
       <div class="dm-status-line">
-        <span class="dm-accent thin bad"></span>
-        <span class="dm-name">${esc(q.status_label)}</span>
-        <span class="dm-sub inline">${esc(q.status_age)}</span>
+        <span class="dm-status-bar bad" aria-hidden="true"></span>
+        <div class="dm-status-text">
+          <span class="dm-name">${esc(q.status_label)}</span>
+          <span class="dm-sub inline">${esc(q.status_age)}</span>
+        </div>
       </div>
       <div class="dm-stack-btns">
         <button type="button" class="dm-outline good">To Pack</button>
@@ -312,7 +320,7 @@ function renderQuote(data: DemoData): string {
         <button type="button" class="dm-outline bad">Cancel quote</button>
       </div>
     </div>
-    <button type="button" class="dm-wide">${ICO.clipboard} Import order text</button>
+    <button type="button" class="dm-wide">${ICO.clipboard}<span>Import order text</span></button>
     <div class="dm-section-label">Customer</div>
     <div class="dm-card row-between">
       <div>
@@ -330,14 +338,14 @@ function renderQuote(data: DemoData): string {
     </div>
     <div class="dm-two-btns">
       <button type="button" class="dm-wide">Save</button>
-      <button type="button" class="dm-wide outline good">${ICO.wa} Send</button>
+      <button type="button" class="dm-wide outline good">${ICO.wa}<span>Send</span></button>
     </div>
     <button type="button" class="dm-wide outline">Send Reminder</button>
     <div class="dm-caption">${esc(q.sent_caption)}</div>`;
   return shell({
     activeTab: 'Sales',
     title: 'Sales',
-    back: true,
+    back: 'label',
     right: `<span class="dm-link">Duplicate</span><span class="dm-link bad">Delete</span>`,
     body,
   });
