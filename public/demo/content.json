@@ -245,11 +245,32 @@
           "variation": "Pro",
           "qty": 2,
           "unit_cents": 189900
+        },
+        {
+          "product": "Brew Scale",
+          "qty": 2,
+          "unit_cents": 99900
+        },
+        {
+          "product": "Hand Grinder",
+          "variation": "Silver",
+          "qty": 1,
+          "unit_cents": 189900
+        },
+        {
+          "product": "Paper Filters (100)",
+          "qty": 4,
+          "unit_cents": 8900
+        },
+        {
+          "product": "Home Barista Starter Kit",
+          "qty": 1,
+          "unit_cents": 399900
         }
       ],
       "packaging": "Protective pack",
       "shipping": "Courier (fragile)",
-      "note": "Wholesale — net 7"
+      "note": "Wholesale — net 7. Prefer morning delivery."
     },
     {
       "number": "BL-1055",
@@ -431,7 +452,7 @@
         "status": "pending",
         "status_label": "Pending (1 day)",
         "contact": "Bar Italia Verde",
-        "total_cents": 639400,
+        "total_cents": 1677790,
         "ship_meta": "Ship by —"
       },
       {
@@ -466,10 +487,10 @@
       "contact": "Bar Italia Verde",
       "phone": "+27 12 346 8890",
       "address": "271 Duxbury Road, Hatfield, Pretoria, 0083",
-      "subtotal_cents": 555999,
-      "vat_cents": 83401,
+      "subtotal_cents": 1444600,
+      "vat_cents": 216690,
       "shipping_cents": 16500,
-      "total_cents": 639400,
+      "total_cents": 1677790,
       "sent_caption": "",
       "status": "draft"
     },
