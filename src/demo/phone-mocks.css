@@ -138,8 +138,8 @@
 
 .dm-icon-btn {
   appearance: none;
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   border-radius: 999px;
   border: 1px solid var(--dm-line);
   background: transparent;
