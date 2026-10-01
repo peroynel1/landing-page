@@ -1,0 +1,419 @@
+{
+  "profile": {
+    "business_name": "Brew Lab",
+    "display_name": "Jordan Mets",
+    "currency": "ZAR",
+    "vat_registered": true,
+    "vat_rate_percent": 15,
+    "city": "Cape Town",
+    "avatar": "images/jordan-mets-avatar.png"
+  },
+  "products": [
+    {
+      "id": "hand-grinder",
+      "name": "Hand Grinder",
+      "description": "Precision burr grinder for pour-over and espresso prep.",
+      "image": "images/hand-grinder-black.png",
+      "tracked": true,
+      "stock_note": "2 batches on hand",
+      "variations": [
+        {
+          "name": "Black",
+          "price_cents": 189900,
+          "cost_cents": 55000,
+          "stock": 14,
+          "image": "images/hand-grinder-black.png"
+        },
+        {
+          "name": "Silver",
+          "price_cents": 189900,
+          "cost_cents": 55000,
+          "stock": 6,
+          "image": "images/hand-grinder-silver.png"
+        }
+      ]
+    },
+    {
+      "id": "pour-over-kit",
+      "name": "Pour-over Kit",
+      "description": "Dripper, carafe, and starter filters.",
+      "image": "images/pour-over-kit.png",
+      "tracked": true,
+      "variations": [
+        {
+          "name": "Home",
+          "price_cents": 129900,
+          "cost_cents": 38000,
+          "stock": 18,
+          "image": "images/pour-over-kit.png"
+        },
+        {
+          "name": "Pro",
+          "price_cents": 189900,
+          "cost_cents": 55000,
+          "stock": 5,
+          "image": "images/pour-over-kit.png"
+        }
+      ]
+    },
+    {
+      "id": "brew-scale",
+      "name": "Brew Scale",
+      "description": "0.1 g accuracy with built-in timer.",
+      "image": "images/brew-scale.png",
+      "price_cents": 99900,
+      "cost_cents": 28000,
+      "stock": 22,
+      "tracked": true
+    },
+    {
+      "id": "tamper",
+      "name": "Tamper",
+      "description": "Balanced stainless steel espresso tamper.",
+      "image": "images/tamper.png",
+      "tracked": true,
+      "variations": [
+        {
+          "name": "53 mm",
+          "price_cents": 54900,
+          "cost_cents": 15000,
+          "stock": 11,
+          "image": "images/tamper.png"
+        },
+        {
+          "name": "58 mm",
+          "price_cents": 59900,
+          "cost_cents": 17000,
+          "stock": 9,
+          "image": "images/tamper.png"
+        }
+      ]
+    },
+    {
+      "id": "starter-kit",
+      "name": "Home Barista Starter Kit",
+      "description": "Grinder, pour-over, scale, and filters — ready to gift.",
+      "image": "images/starter-kit.png",
+      "price_cents": 399900,
+      "cost_cents": 120000,
+      "stock": 8,
+      "tracked": true
+    },
+    {
+      "id": "filters",
+      "name": "Paper Filters (100)",
+      "description": "Bleached round filters for V60-style drippers.",
+      "image": "images/filters.png",
+      "price_cents": 8900,
+      "cost_cents": 2500,
+      "stock": 3,
+      "tracked": true,
+      "low_stock": true
+    }
+  ],
+  "packaging": [
+    {
+      "name": "Gift box",
+      "price_cents": 4500,
+      "cost_cents": 1800
+    },
+    {
+      "name": "Protective pack",
+      "price_cents": 3500,
+      "cost_cents": 1200
+    }
+  ],
+  "shipping": [
+    {
+      "name": "Cape Town local",
+      "price_cents": 8500,
+      "cost_cents": 4500
+    },
+    {
+      "name": "Courier (fragile)",
+      "price_cents": 16500,
+      "cost_cents": 9800
+    },
+    {
+      "name": "Collect",
+      "price_cents": 0,
+      "cost_cents": 0
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Dolce Café",
+      "phone": "+27 21 447 2198",
+      "address": "42 Albert Road, Woodstock, Cape Town, 7925",
+      "ship": true
+    },
+    {
+      "name": "La Tazza d'Oro",
+      "phone": "+27 21 200 9810",
+      "address": "36 Buitenkant Street, Cape Town City Centre, Cape Town, 8001",
+      "ship": true
+    },
+    {
+      "name": "James Whitfield",
+      "phone": "+27 82 441 2301",
+      "address": "18 Lower Main Road, Observatory, Cape Town, 7925",
+      "ship": true
+    },
+    {
+      "name": "Emily Parker",
+      "phone": "+27 83 512 7740",
+      "address": "7 Beach Road, Sea Point, Cape Town, 8005",
+      "ship": false
+    },
+    {
+      "name": "Thomas Hayes",
+      "phone": "+27 71 334 4412",
+      "address": "14 Dorp Street, Stellenbosch Central, Stellenbosch, 7600",
+      "ship": true
+    },
+    {
+      "name": "Chris Botha",
+      "phone": "+27 76 890 9088",
+      "address": "221 Florida Road, Morningside, Durban, 4001",
+      "ship": false
+    },
+    {
+      "name": "Charlotte Reed",
+      "phone": "+27 82 667 1204",
+      "address": "88 7th Street, Linden, Johannesburg, 2195",
+      "ship": true
+    },
+    {
+      "name": "Bar Italia Verde",
+      "phone": "+27 12 346 8890",
+      "address": "271 Duxbury Road, Hatfield, Pretoria, 0083",
+      "ship": true
+    }
+  ],
+  "quotes": [
+    {
+      "number": "BL-1042",
+      "status": "shipped",
+      "contact": "Dolce Café",
+      "lines": [
+        {
+          "product": "Hand Grinder",
+          "variation": "Black",
+          "qty": 2,
+          "unit_cents": 189900
+        },
+        {
+          "product": "Brew Scale",
+          "qty": 2,
+          "unit_cents": 99900
+        }
+      ],
+      "packaging": "Protective pack",
+      "shipping": "Cape Town local",
+      "note": "Café bar restock"
+    },
+    {
+      "number": "BL-1048",
+      "status": "to_pack",
+      "contact": "James Whitfield",
+      "lines": [
+        {
+          "product": "Home Barista Starter Kit",
+          "qty": 1,
+          "unit_cents": 399900
+        }
+      ],
+      "packaging": "Gift box",
+      "shipping": "Courier (fragile)",
+      "note": "Birthday gift — include card"
+    },
+    {
+      "number": "BL-1051",
+      "status": "pending",
+      "contact": "Bar Italia Verde",
+      "lines": [
+        {
+          "product": "Tamper",
+          "variation": "58 mm",
+          "qty": 4,
+          "unit_cents": 59900
+        },
+        {
+          "product": "Pour-over Kit",
+          "variation": "Pro",
+          "qty": 2,
+          "unit_cents": 189900
+        }
+      ],
+      "packaging": "Protective pack",
+      "shipping": "Courier (fragile)",
+      "note": "Wholesale — net 7"
+    },
+    {
+      "number": "BL-1055",
+      "status": "draft",
+      "contact": "Emily Parker",
+      "lines": [
+        {
+          "product": "Pour-over Kit",
+          "variation": "Home",
+          "qty": 1,
+          "unit_cents": 129900
+        },
+        {
+          "product": "Paper Filters (100)",
+          "qty": 2,
+          "unit_cents": 8900
+        }
+      ],
+      "packaging": null,
+      "shipping": "Collect",
+      "note": "Collect Saturday"
+    },
+    {
+      "number": "BL-1039",
+      "status": "packed",
+      "contact": "Thomas Hayes",
+      "lines": [
+        {
+          "product": "Hand Grinder",
+          "variation": "Silver",
+          "qty": 1,
+          "unit_cents": 189900
+        },
+        {
+          "product": "Brew Scale",
+          "qty": 1,
+          "unit_cents": 99900
+        }
+      ],
+      "packaging": "Gift box",
+      "shipping": "Courier (fragile)",
+      "note": ""
+    }
+  ],
+  "expenses": [
+    {
+      "title": "Stock — hand grinders (batch)",
+      "amount_cents": 475000,
+      "date_label": "This month",
+      "is_stock_purchase": true
+    },
+    {
+      "title": "Protective packaging supplies",
+      "amount_cents": 18600,
+      "date_label": "This month"
+    },
+    {
+      "title": "Courier account top-up",
+      "amount_cents": 25000,
+      "date_label": "This month"
+    },
+    {
+      "title": "Market stall fee — Oranjezicht",
+      "amount_cents": 45000,
+      "date_label": "This month"
+    }
+  ],
+  "dashboard": {
+    "period_label": "This month",
+    "income_cents": 836800,
+    "expenses_cents": 486500,
+    "awaiting_cents": 429400,
+    "activity": [
+      "Marked BL-1042 as shipped — Dolce Café",
+      "Quote BL-1048 to pack — James Whitfield",
+      "Quote BL-1051 sent — Bar Italia Verde",
+      "Draft BL-1055 — Emily Parker",
+      "Packed BL-1039 — Thomas Hayes"
+    ]
+  },
+  "status_labels": {
+    "draft": "Draft",
+    "pending": "Pending",
+    "to_pack": "To pack",
+    "packed": "Packed",
+    "shipped": "Shipped",
+    "cancelled": "Cancelled"
+  },
+  "ui": {
+    "home": {
+      "greeting": "Good afternoon",
+      "period_label": "Last 30 days",
+      "date_range": "30 Aug – 28 Sept 2026",
+      "metric": "Net cashflow",
+      "net_cashflow_cents": 1323300,
+      "trend_label": "100% vs prior 30 days",
+      "income_cents": 836800,
+      "expenses_cents": 486500,
+      "awaiting_cents": 450400,
+      "completed_quotes": "1 (4)",
+      "awaiting_payment_count": 1,
+      "activity": [
+        {
+          "title": "Quote BL-1042: Packed → Shipped",
+          "sub": "Dolce Café · 1h ago",
+          "badge": "Shipped",
+          "tone": "good"
+        },
+        {
+          "title": "Quote BL-1048: Pending → To pack",
+          "sub": "James Whitfield · 2h ago",
+          "badge": "To pack",
+          "tone": "warn"
+        }
+      ]
+    },
+    "sales_window": {
+      "period_label": "Last 30 days",
+      "date_range": "30 Aug – 28 Sept 2026",
+      "sold_units": 7,
+      "paid_quotes": 3,
+      "sold_cents": 1269300,
+      "margin_cents": 900300,
+      "expenses_cents": 88600,
+      "net_profit_cents": 836800,
+      "group_label": "Sept 2026",
+      "products": [
+        {
+          "name": "Brew Scale",
+          "units": 3,
+          "sold_cents": 299700,
+          "margin_cents": 215700,
+          "bar": 100
+        },
+        {
+          "name": "Hand Grinder – Silver",
+          "units": 3,
+          "sold_cents": 569700,
+          "margin_cents": 404700,
+          "bar": 100
+        },
+        {
+          "name": "Home Barista Starter Kit",
+          "units": 1,
+          "sold_cents": 399900,
+          "margin_cents": 279900,
+          "bar": 33
+        }
+      ]
+    },
+    "catalog_order": [
+      "brew-scale",
+      "hand-grinder",
+      "starter-kit",
+      "filters",
+      "pour-over-kit",
+      "tamper"
+    ],
+    "catalog_skus": {
+      "brew-scale": "BL-BREW-SCALE",
+      "hand-grinder": "BL-HAND-GRINDER",
+      "starter-kit": "BL-STARTER-KIT",
+      "filters": "BL-FILTERS",
+      "pour-over-kit": "BL-POUR-OVER",
+      "tamper": "BL-TAMPER"
+    },
+    "quote_number": "BL-1051"
+  }
+}

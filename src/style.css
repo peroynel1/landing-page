@@ -346,7 +346,8 @@ body {
   box-shadow: 0 24px 60px rgb(0 0 0 / 35%);
 }
 
-.shot img {
+.shot img,
+.shot .demo-phone {
   display: block;
   width: 100%;
   height: auto;
