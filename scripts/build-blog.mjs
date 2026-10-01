@@ -185,7 +185,7 @@ function replaceScreenshotImgs(html) {
       if (!screen) return full;
       const altMatch = attrs.match(/\balt="([^"]*)"/i);
       const label = altMatch ? altMatch[1] : `Vlyt ${screen} screen`;
-      return `<div class="shot max-h-[520px] my-8" role="img" aria-label="${escapeHtml(label)}"><div class="demo-phone" data-demo-screen="${screen}"></div></div>`;
+      return `<div class="feature-phone my-8" role="img" aria-label="${escapeHtml(label)}"><div class="phone"><div class="phone-screen phone-screen--demo"><div class="demo-phone" data-demo-screen="${screen}"></div></div></div></div>`;
     }
   );
 }

@@ -86,6 +86,10 @@ export type DemoData = {
     };
     catalog_order: string[];
     catalog_skus: Record<string, string>;
+    catalog_stock: Record<
+      string,
+      { tone: StatusTone; left: string; right: string }
+    >;
     quotes_list: Array<{
       number: string;
       status: string;

@@ -21,17 +21,19 @@
           "name": "Black",
           "price_cents": 189900,
           "cost_cents": 55000,
-          "stock": 14,
+          "stock": 0,
           "image": "images/hand-grinder-black.png"
         },
         {
           "name": "Silver",
           "price_cents": 189900,
           "cost_cents": 55000,
-          "stock": 6,
+          "stock": 0,
           "image": "images/hand-grinder-silver.png"
         }
-      ]
+      ],
+      "low_stock": true,
+      "out_of_stock": true
     },
     {
       "id": "pour-over-kit",
@@ -383,7 +385,7 @@
           "bar": 100
         },
         {
-          "name": "Hand Grinder – Silver",
+          "name": "Hand Grinder — Silver",
           "units": 3,
           "sold_cents": 569700,
           "margin_cents": 404700,
@@ -437,7 +439,7 @@
         "status": "draft",
         "status_label": "Draft",
         "contact": "Emily Parker",
-        "total_cents": 169700,
+        "total_cents": 147700,
         "ship_meta": "Ship by —"
       },
       {
@@ -445,7 +447,7 @@
         "status": "to_pack",
         "status_label": "To pack",
         "contact": "James Whitfield",
-        "total_cents": 465300,
+        "total_cents": 420900,
         "ship_meta": "Ship by —"
       },
       {
@@ -453,7 +455,7 @@
         "status": "packed",
         "status_label": "Packed",
         "contact": "Thomas Hayes",
-        "total_cents": 333400,
+        "total_cents": 310800,
         "ship_meta": "Ship by —"
       }
     ],
@@ -469,6 +471,38 @@
       "shipping_cents": 16500,
       "total_cents": 639400,
       "sent_caption": "Quote sent 0 days ago"
+    },
+    "catalog_stock": {
+      "hand-grinder": {
+        "tone": "bad",
+        "left": "Out of stock",
+        "right": "2 variations · 0 in stock"
+      },
+      "brew-scale": {
+        "tone": "good",
+        "left": "In stock",
+        "right": "22 in stock"
+      },
+      "starter-kit": {
+        "tone": "warn",
+        "left": "Low stock",
+        "right": "8 in stock"
+      },
+      "filters": {
+        "tone": "warn",
+        "left": "Low stock",
+        "right": "3 in stock"
+      },
+      "pour-over-kit": {
+        "tone": "good",
+        "left": "In stock",
+        "right": "2 variations · 23 in stock"
+      },
+      "tamper": {
+        "tone": "good",
+        "left": "In stock",
+        "right": "2 variations · 20 in stock"
+      }
     }
   }
 }

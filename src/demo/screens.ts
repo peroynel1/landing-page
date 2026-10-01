@@ -34,22 +34,24 @@ function toneForStatus(status: string): StatusTone {
 
 /** Inline SVG icons matching app tab / chrome roles (stroke currentColor). */
 const ICO = {
-  home: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-9.5z"/></svg>`,
-  sales: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 19V10M12 19V5M19 19v-7"/></svg>`,
-  contacts: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M16 19v-1a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v1"/><circle cx="10" cy="8" r="3"/><path d="M20 19v-1a3 3 0 0 0-2.2-2.9M15.5 5.2a3 3 0 0 1 0 5.6"/></svg>`,
-  catalog: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 7h11v12a1 1 0 0 1-1 1H8a2 2 0 0 1-2-2V5"/><path d="M6 5h10"/></svg>`,
-  search: `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="6"/><path d="m20 20-3.5-3.5"/></svg>`,
-  sort: `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 6v12M8 6l-2.5 2.5M8 6l2.5 2.5M16 18V6M16 18l-2.5-2.5M16 18l2.5-2.5"/></svg>`,
-  filter: `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M7 12h10M10 18h4"/></svg>`,
-  chevron: `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m9 6 6 6-6 6"/></svg>`,
-  back: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 6 9 12l6 6"/></svg>`,
-  phone: `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 17h2"/></svg>`,
-  plus: `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>`,
-  list: `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 7h12M8 12h12M8 17h12M4 7h.01M4 12h.01M4 17h.01"/></svg>`,
-  grid: `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/></svg>`,
-  layers: `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 4 8 4-8 4-8-4 8-4z"/><path d="m4 12 8 4 8-4M4 16l8 4 8-4"/></svg>`,
-  clipboard: `<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="5" width="10" height="15" rx="2"/><path d="M9 5V4h6v1"/><path d="M10 11h4M10 15h4"/></svg>`,
-  wa: `<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 3a8.5 8.5 0 0 0-7.4 12.7L3.5 20.5l4.9-1.3A8.5 8.5 0 1 0 12 3zm4.7 12.1c-.2.6-1.2 1.1-1.7 1.2-.4.1-.9.2-2.9-.6-2.4-1-4-3.6-4.1-3.8-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.4.2.5.7 1.8.8 1.9.1.2.1.3 0 .5l-.3.5c-.1.2-.3.3-.1.6.1.3.6 1 .1.4 1.6.7 1.6.5 1.8.5.2 0 .3 0 .4-.1.1-.1.5-.6.6-.8.1-.2.3-.2.5-.1l1.4.7c.2.1.3.1.4.2.1.2.1.5-.1 1.1z"/></svg>`,
+  home: `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-9.5z"/></svg>`,
+  sales: `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 19V10M12 19V5M19 19v-7"/></svg>`,
+  contacts: `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M16 19v-1a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v1"/><circle cx="10" cy="8" r="3"/><path d="M20 19v-1a3 3 0 0 0-2.2-2.9M15.5 5.2a3 3 0 0 1 0 5.6"/></svg>`,
+  catalog: `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7 12 12l8.7-5M12 22V12"/></svg>`,
+  search: `<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="6"/><path d="m20 20-3.5-3.5"/></svg>`,
+  sort: `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 6v12M8 6l-2.5 2.5M8 6l2.5 2.5M16 18V6M16 18l-2.5-2.5M16 18l2.5-2.5"/></svg>`,
+  filter: `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M7 12h10M10 18h4"/></svg>`,
+  chevron: `<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m9 6 6 6-6 6"/></svg>`,
+  back: `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 6 9 12l6 6"/></svg>`,
+  phone: `<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 17h2"/></svg>`,
+  plus: `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>`,
+  list: `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 7h12M8 12h12M8 17h12M4 7h.01M4 12h.01M4 17h.01"/></svg>`,
+  grid: `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/></svg>`,
+  layers: `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 4 8 4-8 4-8-4 8-4z"/><path d="m4 12 8 4 8-4M4 16l8 4 8-4"/></svg>`,
+  folder: `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>`,
+  gear: `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 3v2M12 19v2M4.2 6.2l1.4 1.4M18.4 16.4l1.4 1.4M3 12h2M19 12h2M4.2 17.8l1.4-1.4M18.4 7.6l1.4-1.4"/></svg>`,
+  clipboard: `<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="5" width="10" height="15" rx="2"/><path d="M9 5V4h6v1"/><path d="M10 11h4M10 15h4"/></svg>`,
+  wa: `<svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 3a8.5 8.5 0 0 0-7.4 12.7L3.5 20.5l4.9-1.3A8.5 8.5 0 1 0 12 3zm4.7 12.1c-.2.6-1.2 1.1-1.7 1.2-.4.1-.9.2-2.9-.6-2.4-1-4-3.6-4.1-3.8-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.4.2.5.7 1.8.8 1.9.1.2.1.3 0 .5l-.3.5c-.1.2-.3.3-.1.6.1.3.6 1 .1.4 1.6.7 1.6.5 1.8.5.2 0 .3 0 .4-.1.1-.1.5-.6.6-.8.1-.2.3-.2.5-.1l1.4.7c.2.1.3.1.4.2.1.2.1.5-.1 1.1z"/></svg>`,
 };
 
 function statusBar(time = '12:40'): string {
@@ -114,28 +116,28 @@ function locationLabel(c: DemoData['contacts'][number]): string {
   return 'Courier';
 }
 
-function productStock(p: DemoData['products'][number]): {
-  count: number;
-  low: boolean;
-  left: string;
-  right: string;
-} {
+function productStock(
+  p: DemoData['products'][number],
+  data: DemoData
+): { tone: StatusTone; left: string; right: string } {
+  const overlay = data.ui.catalog_stock?.[p.id];
+  if (overlay) return overlay;
   if (p.variations?.length) {
     const count = p.variations.reduce((s, v) => s + v.stock, 0);
     const low = count <= 10 || !!p.low_stock;
+    const out = count < 1;
     return {
-      count,
-      low,
-      left: low ? 'Low stock' : 'In stock',
+      tone: out ? 'bad' : low ? 'warn' : 'good',
+      left: out ? 'Out of stock' : low ? 'Low stock' : 'In stock',
       right: `${p.variations.length} variations · ${count} in stock`,
     };
   }
   const count = p.stock ?? 0;
   const low = !!p.low_stock || count <= 10;
+  const out = count < 1;
   return {
-    count,
-    low,
-    left: low ? 'Low stock' : 'In stock',
+    tone: out ? 'bad' : low ? 'warn' : 'good',
+    left: out ? 'Out of stock' : low ? 'Low stock' : 'In stock',
     right: `${count} in stock`,
   };
 }
@@ -289,7 +291,7 @@ function renderSales(data: DemoData): string {
   return shell({
     activeTab: 'Sales',
     title: 'Quotes',
-    right: `<button type="button" class="dm-add">${ICO.plus} New quote</button>`,
+    right: `<button type="button" class="dm-icon-btn">${ICO.gear}</button><button type="button" class="dm-add">${ICO.plus} New quote</button>`,
     body,
   });
 }
@@ -362,19 +364,16 @@ function renderCatalog(data: DemoData): string {
     <div class="dm-cards">
       ${products
         .map((p) => {
-          const stock = productStock(p);
-          const tone = stock.low ? 'warn' : 'good';
+          const stock = productStock(p, data);
           const thumb = imgSrc(p.variations?.[0]?.image || p.image);
           const sku = data.ui.catalog_skus[p.id] || p.id;
           const isVar = !!p.variations?.length;
-          const price = isVar
-            ? ''
-            : zar(p.price_cents || 0);
+          const price = isVar ? '' : zar(p.price_cents || 0);
           const cost = isVar ? '' : `Cost ${zar(p.cost_cents || 0)}`;
-          return `<article class="dm-list-card tone-${tone}">
+          return `<article class="dm-list-card tone-${stock.tone}">
             <span class="dm-accent"></span>
             <div class="dm-list-body product">
-              <img class="dm-thumb" src="${thumb}" alt="" width="56" height="56" />
+              <img class="dm-thumb" src="${thumb}" alt="" width="48" height="48" />
               <div class="dm-meta">
                 <div class="dm-name">${esc(p.name)}</div>
                 <div class="dm-sub">${esc(sku)}</div>
@@ -387,7 +386,7 @@ function renderCatalog(data: DemoData): string {
                 }
               </div>
             </div>
-            <div class="dm-list-footer tone-${tone}">
+            <div class="dm-list-footer tone-${stock.tone}">
               <span>${esc(stock.left)}</span>
               <span>${esc(stock.right)}</span>
             </div>
@@ -398,7 +397,7 @@ function renderCatalog(data: DemoData): string {
   return shell({
     activeTab: 'Catalog',
     title: 'Catalog',
-    right: `<button type="button" class="dm-add">${ICO.plus} Add</button>`,
+    right: `<button type="button" class="dm-icon-btn">${ICO.folder}</button><button type="button" class="dm-icon-btn">${ICO.layers}</button><button type="button" class="dm-icon-btn">${ICO.gear}</button><button type="button" class="dm-add">${ICO.plus} Add</button>`,
     body,
     time: '15:51',
   });
