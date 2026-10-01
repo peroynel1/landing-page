@@ -1,6 +1,8 @@
 import './style.css';
+import './demo/phone-mocks.css';
 import { initAnalytics } from './analytics.ts';
 import { PLAY_STORE_URL } from './config.ts';
+import { mountDemoScreens } from './demo/mount.ts';
 
 const playHref = PLAY_STORE_URL && PLAY_STORE_URL !== '#' ? PLAY_STORE_URL : '#';
 
@@ -27,4 +29,5 @@ panel?.querySelectorAll('a').forEach((link) => {
   });
 });
 
+void mountDemoScreens();
 initAnalytics();

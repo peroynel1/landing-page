@@ -156,13 +156,38 @@ function loadMarkdownCollection(relDir) {
         date,
         updated: formatDate(data.updated) || date,
         file,
-        bodyHtml: marked.parse(content),
+        bodyHtml: replaceScreenshotImgs(marked.parse(content)),
         faqs: Array.isArray(data.faq) ? data.faq : [],
         related: Array.isArray(data.related) ? data.related : [],
       };
     })
     .filter(Boolean)
     .sort((a, b) => String(b.date).localeCompare(String(a.date)));
+}
+
+/** Map /screenshots/*.png embeds to hydrated Brew Lab HTML phone mocks. */
+const SCREENSHOT_TO_DEMO = {
+  'home.png': 'home',
+  'catalog-list.png': 'catalog',
+  'quote-editor.png': 'quote',
+  'contacts.png': 'contacts',
+  'sales.png': 'sales',
+  'sales-window.png': 'salesWindow',
+};
+
+function replaceScreenshotImgs(html) {
+  return String(html).replace(
+    /<p>\s*<img\b([^>]*?)\bsrc="\/screenshots\/([^"]+)"([^>]*)>\s*<\/p>|<img\b([^>]*?)\bsrc="\/screenshots\/([^"]+)"([^>]*)>/gi,
+    (full, preA, fileA, postA, preB, fileB, postB) => {
+      const file = fileA || fileB;
+      const attrs = `${preA || preB || ''}${postA || postB || ''}`;
+      const screen = SCREENSHOT_TO_DEMO[file];
+      if (!screen) return full;
+      const altMatch = attrs.match(/\balt="([^"]*)"/i);
+      const label = altMatch ? altMatch[1] : `Vlyt ${screen} screen`;
+      return `<div class="feature-phone my-8" role="img" aria-label="${escapeHtml(label)}"><div class="phone"><div class="phone-screen phone-screen--demo"><div class="demo-phone" data-demo-screen="${screen}"></div></div></div></div>`;
+    }
+  );
 }
 
 function layoutShell({ title, description, canonical, ogType, ogImage, jsonLd, body, scriptSrc }) {
