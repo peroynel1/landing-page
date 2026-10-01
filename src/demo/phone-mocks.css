@@ -175,6 +175,12 @@
   pointer-events: auto;
 }
 
+/* Don't let flex-shrink crush cards (e.g. customer name/address) when
+   the quote body is taller than the phone — scroll instead. */
+.dm-scroll > * {
+  flex-shrink: 0;
+}
+
 .dm-scroll::-webkit-scrollbar {
   display: none;
 }
