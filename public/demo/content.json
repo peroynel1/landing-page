@@ -414,6 +414,61 @@
       "pour-over-kit": "BL-POUR-OVER",
       "tamper": "BL-TAMPER"
     },
-    "quote_number": "BL-1051"
+    "quote_number": "BL-1051",
+    "quotes_list": [
+      {
+        "number": "BL-1042",
+        "status": "shipped",
+        "status_label": "Shipped",
+        "contact": "Dolce Café",
+        "total_cents": 591600,
+        "ship_meta": "Ship by 24 Sept 2026"
+      },
+      {
+        "number": "BL-1051",
+        "status": "pending",
+        "status_label": "Pending (1 day)",
+        "contact": "Bar Italia Verde",
+        "total_cents": 639400,
+        "ship_meta": "Ship by —"
+      },
+      {
+        "number": "BL-1055",
+        "status": "draft",
+        "status_label": "Draft",
+        "contact": "Emily Parker",
+        "total_cents": 169700,
+        "ship_meta": "Ship by —"
+      },
+      {
+        "number": "BL-1048",
+        "status": "to_pack",
+        "status_label": "To pack",
+        "contact": "James Whitfield",
+        "total_cents": 465300,
+        "ship_meta": "Ship by —"
+      },
+      {
+        "number": "BL-1039",
+        "status": "packed",
+        "status_label": "Packed",
+        "contact": "Thomas Hayes",
+        "total_cents": 333400,
+        "ship_meta": "Ship by —"
+      }
+    ],
+    "quote_detail": {
+      "number": "BL-1051",
+      "status_label": "Pending",
+      "status_age": "(1 day)",
+      "contact": "Bar Italia Verde",
+      "phone": "+27 12 346 8890",
+      "address": "271 Duxbury Road, Hatfield, Pretoria, 0083",
+      "subtotal_cents": 555999,
+      "vat_cents": 83401,
+      "shipping_cents": 16500,
+      "total_cents": 639400,
+      "sent_caption": "Quote sent 0 days ago"
+    }
   }
 }

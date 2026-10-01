@@ -6,6 +6,8 @@ export type DemoScreenId =
   | 'catalog'
   | 'contacts';
 
+export type StatusTone = 'good' | 'warn' | 'bad' | 'muted';
+
 export type DemoData = {
   profile: {
     business_name: string;
@@ -32,8 +34,6 @@ export type DemoData = {
       image: string;
     }>;
   }>;
-  packaging: Array<{ name: string; price_cents: number }>;
-  shipping: Array<{ name: string; price_cents: number }>;
   contacts: Array<{
     name: string;
     phone: string;
@@ -44,15 +44,6 @@ export type DemoData = {
     number: string;
     status: string;
     contact: string;
-    lines: Array<{
-      product: string;
-      variation?: string;
-      qty: number;
-      unit_cents: number;
-    }>;
-    packaging: string | null;
-    shipping: string | null;
-    note: string;
   }>;
   status_labels: Record<string, string>;
   ui: {
@@ -72,7 +63,7 @@ export type DemoData = {
         title: string;
         sub: string;
         badge: string;
-        tone: 'good' | 'warn';
+        tone: StatusTone;
       }>;
     };
     sales_window: {
@@ -95,6 +86,26 @@ export type DemoData = {
     };
     catalog_order: string[];
     catalog_skus: Record<string, string>;
-    quote_number: string;
+    quotes_list: Array<{
+      number: string;
+      status: string;
+      status_label: string;
+      contact: string;
+      total_cents: number;
+      ship_meta: string;
+    }>;
+    quote_detail: {
+      number: string;
+      status_label: string;
+      status_age: string;
+      contact: string;
+      phone: string;
+      address: string;
+      subtotal_cents: number;
+      vat_cents: number;
+      shipping_cents: number;
+      total_cents: number;
+      sent_caption: string;
+    };
   };
 };
