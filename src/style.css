@@ -322,7 +322,7 @@ body {
 .phone-screen--demo {
   line-height: normal;
   /* Same silhouette for every feature phone mock. */
-  aspect-ratio: 9 / 20.5;
+  aspect-ratio: 9 / 19.5;
 }
 
 .phone-screen--demo .demo-phone {
@@ -357,19 +357,19 @@ body {
 
 .feature-phone .phone {
   /* Same width everywhere → same height via aspect-ratio. */
-  width: min(100%, 320px);
+  width: min(100%, 300px);
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .feature-phone .phone {
-    width: min(100%, 340px);
+    width: min(100%, 320px);
   }
 }
 
 @media (min-width: 900px) {
   .feature-phone .phone {
-    width: min(100%, 360px);
+    width: min(100%, 340px);
   }
 }
 
