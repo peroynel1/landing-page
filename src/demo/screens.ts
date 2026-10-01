@@ -107,11 +107,14 @@ function shell(opts: {
   back?: boolean | 'label' | 'center';
   time?: string;
   hideTitle?: boolean;
+  /** Sticky bar above the tab dock (quote cart / totals). */
+  footer?: string;
 }): string {
   const head = opts.hideTitle
     ? ''
     : titleBar({ title: opts.title || '', right: opts.right, back: opts.back });
-  return `${statusBar(opts.time)}${head}<div class="dm-scroll">${opts.body}</div>${tabBar(opts.activeTab)}`;
+  const foot = opts.footer ? `<div class="dm-cart-footer">${opts.footer}</div>` : '';
+  return `${statusBar(opts.time)}${head}<div class="dm-scroll">${opts.body}</div>${foot}${tabBar(opts.activeTab)}`;
 }
 
 function locationLabel(c: DemoData['contacts'][number]): string {
@@ -304,6 +307,10 @@ function renderSales(data: DemoData): string {
 
 function renderQuote(data: DemoData): string {
   const q = data.ui.quote_detail;
+  const source =
+    data.quotes.find((x) => x.number === q.number) ||
+    data.quotes.find((x) => x.contact === q.contact) ||
+    data.quotes[0];
   const tone = q.status === 'draft' ? 'muted' : 'bad';
   const actions =
     q.status === 'draft'
@@ -315,6 +322,32 @@ function renderQuote(data: DemoData): string {
   const age = q.status_age
     ? `<span class="dm-status-age">${esc(q.status_age)}</span>`
     : '';
+  const lines = (source?.lines || [])
+    .map((l) => {
+      const label = l.variation ? `${l.product} · ${l.variation}` : l.product;
+      return `<div class="dm-quote-line">
+        <div class="dm-meta">
+          <div class="dm-name">${esc(label)}</div>
+          <div class="dm-sub">${l.qty} × ${zar(l.unit_cents)}</div>
+        </div>
+        <div class="dm-right">${zar(l.qty * l.unit_cents)}</div>
+      </div>`;
+    })
+    .join('');
+  const pack = source?.packaging
+    ? `<div class="dm-quote-line fee">
+        <div class="dm-meta"><div class="dm-name">${esc(source.packaging)}</div><div class="dm-sub">Packaging</div></div>
+      </div>`
+    : '';
+  const ship = source?.shipping
+    ? `<div class="dm-quote-line fee">
+        <div class="dm-meta"><div class="dm-name">${esc(source.shipping)}</div><div class="dm-sub">Shipping</div></div>
+      </div>`
+    : '';
+  const note = source?.note
+    ? `<div class="dm-note">${esc(source.note)}</div>`
+    : '';
+
   const body = `
     <div class="dm-workflow">
       <div class="dm-workflow-strip tone-${tone}">
@@ -338,22 +371,34 @@ function renderQuote(data: DemoData): string {
       </div>
       ${ICO.chevron}
     </div>
-    <div class="dm-money-lines">
+    <div class="dm-section-label">Line items</div>
+    <div class="dm-quote-lines">
+      ${lines}
+      ${pack}
+      ${ship}
+    </div>
+    ${note}
+    <button type="button" class="dm-wide outline">+ Add product</button>`;
+
+  const footer = `
+    <div class="dm-money-lines sticky">
       <div><span>Subtotal (excl. VAT)</span><span>${zar(q.subtotal_cents)}</span></div>
       <div><span>VAT (15%)</span><span>${zar(q.vat_cents)}</span></div>
       <div><span>Shipping</span><span>${zar(q.shipping_cents)}</span></div>
       <div class="grand"><span>Total</span><span>${zar(q.total_cents)}</span></div>
     </div>
     <div class="dm-two-btns">
-      <button type="button" class="dm-wide">Save</button>
+      <button type="button" class="dm-wide solid">Save</button>
       <button type="button" class="dm-wide outline good">${ICO.wa}<span>Send</span></button>
     </div>`;
+
   return shell({
     activeTab: 'Sales',
     title: 'Sales',
     back: 'label',
     right: `<span class="dm-link">Duplicate</span><span class="dm-link bad">Delete</span>`,
     body,
+    footer,
   });
 }
 

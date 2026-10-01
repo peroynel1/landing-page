@@ -189,6 +189,54 @@
   flex-shrink: 0;
 }
 
+.dm-cart-footer {
+  flex-shrink: 0;
+  padding: 10px 12px 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--dm-canvas);
+}
+
+.dm-cart-footer .dm-money-lines {
+  padding: 0 2px 8px;
+  gap: 6px;
+}
+
+.dm-cart-footer .dm-money-lines .grand {
+  margin-top: 2px;
+}
+
+.dm-quote-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dm-quote-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--dm-surface);
+  border: 1px solid var(--dm-line);
+}
+
+.dm-quote-line.fee {
+  background: transparent;
+}
+
+.dm-note {
+  font-size: 12px;
+  color: var(--dm-muted);
+  padding: 4px 2px 2px;
+  font-style: italic;
+}
+
+.dm-wide.solid {
+  background: rgba(255, 255, 255, 0.14);
+}
+
 .dm-tab {
   display: flex;
   align-items: center;
