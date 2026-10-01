@@ -44,6 +44,15 @@ export type DemoData = {
     number: string;
     status: string;
     contact: string;
+    lines: Array<{
+      product: string;
+      variation?: string;
+      qty: number;
+      unit_cents: number;
+    }>;
+    packaging: string | null;
+    shipping: string | null;
+    note: string;
   }>;
   status_labels: Record<string, string>;
   ui: {
