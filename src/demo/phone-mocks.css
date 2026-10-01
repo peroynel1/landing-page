@@ -54,6 +54,7 @@
   padding: 8px 16px 2px;
   font-size: 12px;
   font-weight: 600;
+  flex-shrink: 0;
 }
 
 .dm-status-right {
@@ -68,6 +69,7 @@
   gap: 8px;
   padding: 4px 14px 10px;
   min-height: 40px;
+  flex-shrink: 0;
 }
 
 .dm-title-row.back {
@@ -157,7 +159,10 @@
 }
 
 .dm-scroll {
-  flex: 1 1 auto;
+  /* Constrain to remaining phone height so tall screens scroll inside,
+     instead of growing past the frame and getting clipped. */
+  flex: 1 1 0;
+  min-height: 0;
   overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior: contain;
@@ -165,8 +170,6 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  min-height: 0;
-  /* Hide scrollbar chrome — marketing frame should look like a still phone. */
   scrollbar-width: none;
   -ms-overflow-style: none;
   pointer-events: auto;
@@ -183,6 +186,7 @@
   padding: 8px 10px 12px;
   background: var(--dm-tab);
   border-top: 1px solid var(--dm-line);
+  flex-shrink: 0;
 }
 
 .dm-tab {
@@ -778,10 +782,11 @@
   background: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
 }
 
 .dm-workflow-strip {
-  padding: 12px 14px;
+  padding: 10px 12px;
   border-left: 4px solid transparent;
 }
 
@@ -801,7 +806,7 @@
 }
 
 .dm-workflow-strip .dm-k {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   color: rgba(242, 241, 236, 0.5);
 }
 
@@ -813,14 +818,14 @@
 }
 
 .dm-status-main {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 650;
   color: var(--dm-ink);
   line-height: 1.2;
 }
 
 .dm-status-age {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--dm-muted);
 }
@@ -828,8 +833,8 @@
 .dm-workflow-actions {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 12px 14px 14px;
+  gap: 8px;
+  padding: 10px 12px 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.03);
 }
@@ -838,9 +843,9 @@
   appearance: none;
   width: 100%;
   border-radius: 10px;
-  padding: 11px 12px;
+  padding: 9px 12px;
   font: inherit;
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 650;
   text-align: center;
   background: rgba(255, 255, 255, 0.05);
@@ -865,7 +870,7 @@
 
 /* Space import action away from the workflow card */
 .dm-workflow + .dm-wide {
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .dm-stack-btns {
