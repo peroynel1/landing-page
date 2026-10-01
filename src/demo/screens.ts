@@ -305,19 +305,18 @@ function renderSales(data: DemoData): string {
 function renderQuote(data: DemoData): string {
   const q = data.ui.quote_detail;
   const body = `
-    <div class="dm-card accent-bad pad-status">
-      <div class="dm-k">Quote status</div>
-      <div class="dm-status-line">
-        <span class="dm-status-bar bad" aria-hidden="true"></span>
-        <div class="dm-status-text">
-          <span class="dm-name">${esc(q.status_label)}</span>
-          <span class="dm-sub inline">${esc(q.status_age)}</span>
+    <div class="dm-workflow">
+      <div class="dm-workflow-strip tone-bad">
+        <div class="dm-k">Quote status</div>
+        <div class="dm-workflow-status">
+          <span class="dm-status-main">${esc(q.status_label)}</span>
+          <span class="dm-status-age">${esc(q.status_age)}</span>
         </div>
       </div>
-      <div class="dm-stack-btns">
-        <button type="button" class="dm-outline good">To Pack</button>
-        <button type="button" class="dm-outline warn">Revert to Draft</button>
-        <button type="button" class="dm-outline bad">Cancel quote</button>
+      <div class="dm-workflow-actions">
+        <button type="button" class="dm-workflow-btn good">To Pack</button>
+        <button type="button" class="dm-workflow-btn warn">Revert to Draft</button>
+        <button type="button" class="dm-workflow-btn bad">Cancel quote</button>
       </div>
     </div>
     <button type="button" class="dm-wide">${ICO.clipboard}<span>Import order text</span></button>
