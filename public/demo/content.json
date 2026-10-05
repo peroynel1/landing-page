@@ -494,6 +494,31 @@
       "sent_caption": "",
       "status": "draft"
     },
+    "reports": {
+      "type_label": "Profit & loss",
+      "type_hint": "Revenue, COGS, expenses by category, net.",
+      "data_type": "Both",
+      "basis_label": "Cash received",
+      "basis_hint": "Income dated when payment was received; gross quote totals.",
+      "period_label": "This month",
+      "period_range": "1 Sept – 30 Sept 2026",
+      "generated_title": "Report generated",
+      "generated_sub": "Tap to preview and share or download",
+      "past": [
+        {
+          "heading": "28 Sept 2026 · 14:12",
+          "subtitle": "Profit & loss · Cash received · Sept 2026"
+        },
+        {
+          "heading": "22 Sept 2026 · 09:40",
+          "subtitle": "Transaction ledger · Both · Last 30 days"
+        },
+        {
+          "heading": "15 Sept 2026 · 18:05",
+          "subtitle": "Sales summary · Cash received · This month"
+        }
+      ]
+    },
     "catalog_stock": {
       "hand-grinder": {
         "tone": "bad",

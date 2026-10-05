@@ -51,6 +51,9 @@ const ICO = {
   folder: `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>`,
   gear: `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 3v2M12 19v2M4.2 6.2l1.4 1.4M18.4 16.4l1.4 1.4M3 12h2M19 12h2M4.2 17.8l1.4-1.4M18.4 7.6l1.4-1.4"/></svg>`,
   clipboard: `<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="5" width="10" height="15" rx="2"/><path d="M9 5V4h6v1"/><path d="M10 11h4M10 15h4"/></svg>`,
+  doc: `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>`,
+  check: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 4.5-5"/></svg>`,
+  caretDown: `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m7 10 5 5 5-5"/></svg>`,
   wa: `<svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 3a8.5 8.5 0 0 0-7.4 12.7L3.5 20.5l4.9-1.3A8.5 8.5 0 1 0 12 3zm4.7 12.1c-.2.6-1.2 1.1-1.7 1.2-.4.1-.9.2-2.9-.6-2.4-1-4-3.6-4.1-3.8-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.4.2.5.7 1.8.8 1.9.1.2.1.3 0 .5l-.3.5c-.1.2-.3.3-.1.6.1.3.6 1 .1.4 1.6.7 1.6.5 1.8.5.2 0 .3 0 .4-.1.1-.1.5-.6.6-.8.1-.2.3-.2.5-.1l1.4.7c.2.1.3.1.4.2.1.2.1.5-.1 1.1z"/></svg>`,
 };
 
@@ -519,6 +522,76 @@ function renderContacts(data: DemoData): string {
   });
 }
 
+function renderReports(data: DemoData): string {
+  const r = data.ui.reports;
+  const dataSeg = ['Income', 'Expenses', 'Both']
+    .map(
+      (label) =>
+        `<span class="${label === r.data_type ? 'on' : ''}">${label}</span>`
+    )
+    .join('');
+  const past = r.past
+    .map(
+      (p) => `<div class="dm-report-row">
+        <span class="dm-report-ico">${ICO.doc}</span>
+        <div class="dm-meta">
+          <div class="dm-name">${esc(p.heading)}</div>
+          <div class="dm-sub">${esc(p.subtitle)}</div>
+        </div>
+        ${ICO.chevron}
+      </div>`
+    )
+    .join('');
+
+  const body = `
+    <div class="dm-page-title">Reports</div>
+    <div class="dm-lede">Export ledgers, profit &amp; loss, sales, and more as PDF or CSV.</div>
+    <div class="dm-field-label">Report type</div>
+    <div class="dm-picker">
+      <div class="dm-meta">
+        <div class="dm-name">${esc(r.type_label)}</div>
+        <div class="dm-sub">${esc(r.type_hint)}</div>
+      </div>
+      ${ICO.caretDown}
+    </div>
+    <div class="dm-field-label">Data type</div>
+    <div class="dm-seg">${dataSeg}</div>
+    <div class="dm-field-label">Report basis</div>
+    <div class="dm-picker">
+      <div class="dm-meta">
+        <div class="dm-name">${esc(r.basis_label)}</div>
+        <div class="dm-sub">${esc(r.basis_hint)}</div>
+      </div>
+      ${ICO.caretDown}
+    </div>
+    <div class="dm-field-label">Date range</div>
+    <div class="dm-picker">
+      <div class="dm-meta">
+        <div class="dm-name">${esc(r.period_label)}</div>
+        <div class="dm-sub">${esc(r.period_range)}</div>
+      </div>
+      ${ICO.caretDown}
+    </div>
+    <button type="button" class="dm-wide solid tall">Generate report</button>
+    <div class="dm-generated">
+      <span class="dm-generated-ico">${ICO.check}</span>
+      <div class="dm-meta">
+        <div class="dm-name">${esc(r.generated_title)}</div>
+        <div class="dm-sub">${esc(r.generated_sub)}</div>
+      </div>
+      ${ICO.chevron}
+    </div>
+    <div class="dm-section-label">Past reports</div>
+    <div class="dm-report-list">${past}</div>`;
+
+  return shell({
+    activeTab: 'Home',
+    title: 'Home',
+    back: 'label',
+    body,
+  });
+}
+
 const RENDERERS: Record<DemoScreenId, (data: DemoData) => string> = {
   home: renderHome,
   salesWindow: renderSalesWindow,
@@ -526,6 +599,7 @@ const RENDERERS: Record<DemoScreenId, (data: DemoData) => string> = {
   quote: renderQuote,
   catalog: renderCatalog,
   contacts: renderContacts,
+  reports: renderReports,
 };
 
 export function renderDemoScreen(id: DemoScreenId, data: DemoData): string {
@@ -539,4 +613,5 @@ export const DEMO_SCREEN_IDS: DemoScreenId[] = [
   'quote',
   'catalog',
   'contacts',
+  'reports',
 ];

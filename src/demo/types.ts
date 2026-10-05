@@ -4,7 +4,8 @@ export type DemoScreenId =
   | 'sales'
   | 'quote'
   | 'catalog'
-  | 'contacts';
+  | 'contacts'
+  | 'reports';
 
 export type StatusTone = 'good' | 'warn' | 'bad' | 'muted';
 
@@ -120,6 +121,21 @@ export type DemoData = {
       shipping_cents: number;
       total_cents: number;
       sent_caption?: string;
+    };
+    reports: {
+      type_label: string;
+      type_hint: string;
+      data_type: string;
+      basis_label: string;
+      basis_hint: string;
+      period_label: string;
+      period_range: string;
+      generated_title: string;
+      generated_sub: string;
+      past: Array<{
+        heading: string;
+        subtitle: string;
+      }>;
     };
   };
 };
