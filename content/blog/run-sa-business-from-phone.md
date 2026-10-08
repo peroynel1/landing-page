@@ -10,6 +10,7 @@ format: guide
 related:
   - how-to-write-professional-quote-south-africa
   - send-quote-whatsapp-without-losing-numbers
+  - follow-up-open-quotes-south-africa
   - spreadsheet-quoting-problems
   - quote-vs-invoice-south-africa
   - vat-on-quotes-small-business-sa
@@ -75,6 +76,7 @@ Practical guides:
 
 - [How to write a professional quote in South Africa](/blog/how-to-write-professional-quote-south-africa/)
 - [How to send a quote on WhatsApp without losing the numbers](/blog/send-quote-whatsapp-without-losing-numbers/)
+- [How to follow up open quotes in South Africa](/blog/follow-up-open-quotes-south-africa/)
 - [Quote vs invoice in South Africa](/blog/quote-vs-invoice-south-africa/)
 - [VAT on quotes for small SA businesses](/blog/vat-on-quotes-small-business-sa/)
 

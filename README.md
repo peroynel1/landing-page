@@ -13,6 +13,25 @@ npm install
 npm run dev
 ```
 
+Marketing daily-task dashboard (local only — not deployed to vlyt.app):
+
+```bash
+npm run ops
+```
+
+Opens `http://localhost:5174/ops/`. Schedule lives in [`content/ops/schedule.json`](./content/ops/schedule.json). Mark done in the UI, then **Sync to repo** (downloads JSON) or:
+
+```bash
+npm run ops:complete -- --id li-post-4 --url https://…
+```
+
+Reddit thread finder (needs a Reddit **script** app + `.env` — see [content/REDDIT.md](./content/REDDIT.md)):
+
+```bash
+copy .env.example .env   # fill REDDIT_* then:
+npm run ops:reddit-find
+```
+
 ## Play Store URL
 
 Set `PLAY_STORE_URL` in `src/config.ts`. Leave `#` until the listing is live.
@@ -34,8 +53,11 @@ Markdown posts live in `content/blog/`. Free resources live in `content/resource
 `resources/`, plus `public/sitemap.xml`, `public/robots.txt`, and `public/llms.txt`.
 
 Cocoon map: [content/COCOON.md](./content/COCOON.md)  
+Content backlog (gaps): [content/CONTENT_BACKLOG.md](./content/CONTENT_BACKLOG.md)  
 Outreach tracker: [content/OUTREACH.md](./content/OUTREACH.md)  
 Owned distribution: [content/DISTRIBUTION.md](./content/DISTRIBUTION.md)  
+Platform pool: [content/PLATFORMS.md](./content/PLATFORMS.md)  
+Marketing ops dashboard: `npm run ops` → [content/ops/schedule.json](./content/ops/schedule.json)  
 AI visibility prompts: [content/AI_VISIBILITY.md](./content/AI_VISIBILITY.md)  
 GSC rewrite loop: [content/GSC_REWRITE_LOOP.md](./content/GSC_REWRITE_LOOP.md)
 

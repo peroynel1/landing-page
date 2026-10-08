@@ -10,6 +10,7 @@ format: guide
 related:
   - run-sa-business-from-phone
   - how-to-write-professional-quote-south-africa
+  - follow-up-open-quotes-south-africa
   - best-quoting-apps-south-africa-2026
 faq:
   - q: Should I type the quote inside WhatsApp?
@@ -41,6 +42,7 @@ Build the quote in a system that stores line items and totals, then share that f
 3. Confirm VAT labelling ([VAT on quotes](/blog/vat-on-quotes-small-business-sa/)).
 4. Share to WhatsApp (PDF or clear summary).
 5. If they negotiate, **edit the quote**, then resend — do not only type a new total.
+6. Track what is still open and [follow up with a clear status](/blog/follow-up-open-quotes-south-africa/).
 
 ![Example: a structured Vlyt quote ready to send](/screenshots/quote-editor.png)
 

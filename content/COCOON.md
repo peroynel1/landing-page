@@ -16,12 +16,17 @@ One URL per search intent. Prefer SA / WhatsApp / phone modifiers over vanity he
 | Spoke | product catalog for quoting | How-to | Guide | `product-catalog-quote-businesses` | pillar, stock, write-quote |
 | Spoke | best quoting apps South Africa 2026 | Commercial investigation | Listicle / comparison | `best-quoting-apps-south-africa-2026` | pillar, spreadsheet, whatsapp |
 | Spoke | send quote on WhatsApp | How-to | Guide | `send-quote-whatsapp-without-losing-numbers` | pillar, write-quote, best-apps |
+| Spoke | follow up open quotes South Africa | How-to | Guide | `follow-up-open-quotes-south-africa` | pillar, whatsapp, write-quote, cashflow |
 
-## Publish order
+## Publish order (v1 — shipped)
 
 1. Pillar + WhatsApp quote + quote vs invoice + spreadsheet problems  
 2. Best quoting apps (with verified comparison table)  
 3. VAT, stock, catalog, cashflow spokes  
+
+## Continuous gaps
+
+Next spokes and rewrite priority live in [CONTENT_BACKLOG.md](./CONTENT_BACKLOG.md). Cadence: **1 new spoke or major rewrite every 7–10 days**, then distribute before drafting the next.
 
 ## Link rules
 

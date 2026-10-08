@@ -10,6 +10,7 @@ format: guide
 related:
   - run-sa-business-from-phone
   - send-quote-whatsapp-without-losing-numbers
+  - follow-up-open-quotes-south-africa
   - vat-on-quotes-small-business-sa
   - quote-vs-invoice-south-africa
 faq:

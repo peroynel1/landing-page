@@ -11,6 +11,7 @@ related:
   - run-sa-business-from-phone
   - stock-tracking-phone-traders
   - how-to-write-professional-quote-south-africa
+  - follow-up-open-quotes-south-africa
 faq:
   - q: What is cashflow for a solo trade?
     a: Money in, money out, and money still promised but not paid — for a period you choose (this week or this month).
