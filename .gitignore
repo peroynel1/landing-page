@@ -10,7 +10,11 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+dist-ops-do-not-deploy
 *.local
+.env
+.env.*
+!.env.example
 
 # Editor directories and files
 .vscode/*
@@ -34,3 +38,10 @@ public/screenshots/reports.png
 /blog/
 /resources/
 
+
+# Local hero patch scratch
+public/images/_fonts/
+public/images/_*.png
+public/screenshots/_*.png
+public/screenshots/*.orig.png
+public/images/*.orig.png

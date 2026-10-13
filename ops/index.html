@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Vlyt marketing ops — local only</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Archivo:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .ops-shell {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 28px 20px 64px;
+      }
+      .ops-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 28px;
+      }
+      .ops-header h1 {
+        font-family: var(--font-display);
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+        text-transform: uppercase;
+        letter-spacing: -0.03em;
+        margin: 8px 0 0;
+        line-height: 0.95;
+      }
+      .ops-toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .ops-grid {
+        display: grid;
+        gap: 20px;
+      }
+      @media (min-width: 900px) {
+        .ops-grid {
+          grid-template-columns: 1.1fr 0.9fr;
+          align-items: start;
+        }
+      }
+      .ops-panel {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-card);
+        padding: 18px 18px 14px;
+      }
+      .ops-panel h2 {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--color-ink-faint);
+        margin: 0 0 14px;
+      }
+      .ops-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .ops-task {
+        display: flex;
+        align-items: stretch;
+        gap: 4px;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        background: var(--color-surface-raised);
+      }
+      .ops-task.is-active {
+        border-color: rgb(62 232 160 / 45%);
+      }
+      .ops-task.is-done .ops-task-title {
+        text-decoration: line-through;
+        color: var(--color-ink-faint);
+      }
+      .ops-task.is-overdue {
+        border-color: rgb(255 120 100 / 35%);
+      }
+      .ops-task-main {
+        flex: 1;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 10px;
+        align-items: center;
+        text-align: left;
+        background: transparent;
+        border: 0;
+        color: inherit;
+        font: inherit;
+        padding: 10px 12px;
+        cursor: pointer;
+      }
+      .ops-task-title {
+        font-size: 14px;
+        line-height: 1.35;
+      }
+      .ops-task-due {
+        font-size: 11px;
+        color: var(--color-ink-faint);
+        white-space: nowrap;
+      }
+      .ops-check {
+        display: flex;
+        align-items: center;
+        padding: 0 12px;
+        cursor: pointer;
+      }
+      .ops-empty {
+        color: var(--color-ink-muted);
+        font-size: 14px;
+        padding: 8px 4px;
+      }
+      .ops-plat {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding: 4px 7px;
+        border-radius: var(--radius-badge);
+        background: rgb(255 255 255 / 8%);
+        color: var(--color-ink-muted);
+        white-space: nowrap;
+      }
+      .ops-plat-linkedin {
+        color: #7eb8ff;
+      }
+      .ops-plat-x {
+        color: #fff;
+      }
+      .ops-plat-medium {
+        color: #c4c4c4;
+      }
+      .ops-plat-whatsapp {
+        color: var(--color-accent);
+      }
+      .ops-plat-reddit {
+        color: #ff8a65;
+      }
+      .ops-plat-pitch {
+        color: #e8c56b;
+      }
+      .ops-week {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+      }
+      @media (min-width: 600px) {
+        .ops-week {
+          grid-template-columns: repeat(6, 1fr);
+        }
+      }
+      .ops-week-cell {
+        background: var(--color-surface-raised);
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+      }
+      .ops-week-label {
+        display: block;
+        font-size: 10px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--color-ink-faint);
+        margin-bottom: 4px;
+      }
+      .ops-week-n {
+        font-family: var(--font-display);
+        font-size: 1.4rem;
+        color: var(--color-accent);
+      }
+      .ops-blocked {
+        margin-bottom: 16px;
+        padding: 12px 14px;
+        border-radius: 10px;
+        border: 1px solid rgb(255 120 100 / 35%);
+        background: rgb(255 80 60 / 8%);
+        font-size: 13px;
+      }
+      .ops-muted {
+        color: var(--color-ink-muted);
+      }
+      .ops-detail-title {
+        font-family: var(--font-display);
+        font-size: 1.35rem;
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+        margin: 10px 0 0;
+        line-height: 1.05;
+      }
+      .ops-meta {
+        margin: 16px 0 0;
+        display: grid;
+        gap: 10px;
+      }
+      .ops-meta dt {
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--color-ink-faint);
+      }
+      .ops-meta dd {
+        margin: 2px 0 0;
+        font-size: 13px;
+        color: var(--color-ink-muted);
+      }
+      .ops-meta a {
+        color: var(--color-accent);
+      }
+      .ops-meta code {
+        font-size: 12px;
+        color: var(--color-ink);
+      }
+      .ops-actions {
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .ops-field {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        font-size: 12px;
+        color: var(--color-ink-faint);
+      }
+      .ops-field input {
+        background: var(--color-surface-raised);
+        border: 1px solid var(--color-border);
+        border-radius: 8px;
+        color: var(--color-ink);
+        padding: 10px 12px;
+        font: inherit;
+      }
+      .ops-action-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .ops-btn {
+        appearance: none;
+        border: 1px solid var(--color-border);
+        background: var(--color-surface-raised);
+        color: var(--color-ink);
+        font: inherit;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 9px 14px;
+        border-radius: 999px;
+        cursor: pointer;
+      }
+      .ops-btn:hover {
+        border-color: rgb(255 255 255 / 22%);
+      }
+      .ops-btn-accent {
+        background: var(--color-accent);
+        color: #0e0f12;
+        border-color: transparent;
+      }
+      .ops-hint {
+        font-size: 12px;
+        color: var(--color-ink-faint);
+        margin: 0;
+        line-height: 1.45;
+      }
+      .ops-cmd {
+        margin: 0;
+        padding: 10px 12px;
+        background: #0a0a0a;
+        border-radius: 8px;
+        font-size: 11px;
+        overflow-x: auto;
+        color: var(--color-ink-muted);
+      }
+      .ops-toast {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: var(--color-accent);
+        color: #0e0f12;
+        font-weight: 700;
+        font-size: 13px;
+        padding: 12px 16px;
+        border-radius: 10px;
+        z-index: 50;
+      }
+      .ops-stack-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+    </style>
+  </head>
+  <body class="site-bg">
+    <div class="ops-shell">
+      <header class="ops-header">
+        <div>
+          <p class="eyebrow">Local only · not on vlyt.app</p>
+          <h1>Marketing ops</h1>
+          <p class="ops-muted" style="margin: 10px 0 0; font-size: 14px">
+            Daily stack for <strong id="ops-date"></strong> · paste packs stay in
+            <code>content/</code>
+          </p>
+        </div>
+        <div class="ops-toolbar">
+          <button type="button" class="ops-btn ops-btn-accent" id="ops-sync">Sync to repo</button>
+          <button type="button" class="ops-btn" id="ops-clear-local">Clear local</button>
+        </div>
+      </header>
+
+      <div id="ops-blocked" class="ops-blocked" hidden></div>
+
+      <section class="ops-panel" style="margin-bottom: 16px">
+        <h2>This week (done)</h2>
+        <div class="ops-week" id="ops-week"></div>
+      </section>
+
+      <div class="ops-grid">
+        <div class="ops-stack-wrap">
+          <section class="ops-panel">
+            <h2>Today’s stack</h2>
+            <ul class="ops-list" id="ops-stack"></ul>
+          </section>
+          <section class="ops-panel">
+            <h2>Backlog / upcoming</h2>
+            <ul class="ops-list" id="ops-backlog"></ul>
+          </section>
+        </div>
+        <section class="ops-panel" id="ops-detail"></section>
+      </div>
+    </div>
+    <div id="ops-toast" class="ops-toast" hidden></div>
+    <script type="module" src="/src/ops/main.ts"></script>
+  </body>
+</html>

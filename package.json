@@ -7,6 +7,9 @@
     "content": "node scripts/build-blog.mjs",
     "images:compress": "node scripts/compress-images.mjs",
     "medium:export": "node scripts/export-medium.mjs",
+    "ops": "vite --config vite.ops.config.ts",
+    "ops:complete": "node scripts/ops-complete.mjs",
+    "ops:reddit-find": "node --env-file=.env scripts/ops-reddit-find.mjs",
     "dev": "npm run content && vite",
     "build": "npm run content && tsc && vite build",
     "preview": "vite preview"

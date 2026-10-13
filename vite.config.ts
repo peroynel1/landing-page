@@ -10,7 +10,7 @@ import path from 'node:path';
  */
 function collectHtmlInputs(): Record<string, string> {
   const inputs: Record<string, string> = {};
-  const skipDirs = new Set(['node_modules', 'dist', 'public', '.git', 'content', 'scripts', 'src']);
+  const skipDirs = new Set(['node_modules', 'dist', 'public', '.git', 'content', 'scripts', 'src', 'ops', 'dist-ops-do-not-deploy']);
   const root = process.cwd();
 
   for (const name of fs.readdirSync(root)) {

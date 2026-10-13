@@ -1,4 +1,4 @@
-# Stock tracking for traders who sell from a phone
+# Stock tutorial for traders who sell from a phone
 
 *Originally published at [https://vlyt.app/blog/stock-tracking-phone-traders/](https://vlyt.app/blog/stock-tracking-phone-traders/).*
 
@@ -9,6 +9,14 @@ If you quote from a phone, stock tracking has to live next to the product you ju
 ## Direct answer
 
 Put a quantity on every stocked item in your catalog. Update it when you buy and when you sell. Check it before you promise a delivery date on a quote.
+
+## Phone stock tutorial (minimum steps)
+
+1. Open your catalog on the phone.
+2. Add quantity on each item you can run out of.
+3. When stock arrives, increase the count the same day.
+4. When a sale or dispatch happens, decrease it — not merely when you send a quote.
+5. Before the next WhatsApp quote, glance at the level so you do not promise what you cannot deliver.
 
 ## Minimum viable stock
 

@@ -29,6 +29,7 @@ jobs:
           VITE_PUBLIC_ORDER_FUNCTION_URL: ${{ vars.VITE_PUBLIC_ORDER_FUNCTION_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
           VITE_GA_MEASUREMENT_ID: ${{ vars.VITE_GA_MEASUREMENT_ID }}
+          VITE_WHATSAPP_CHANNEL_URL: ${{ vars.VITE_WHATSAPP_CHANNEL_URL }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

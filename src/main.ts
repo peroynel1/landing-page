@@ -1,7 +1,7 @@
 import './style.css';
 import './demo/phone-mocks.css';
 import { initAnalytics } from './analytics.ts';
-import { PLAY_STORE_URL } from './config.ts';
+import { PLAY_STORE_URL, WHATSAPP_CHANNEL_URL } from './config.ts';
 import { mountDemoScreens } from './demo/mount.ts';
 
 const playHref = PLAY_STORE_URL && PLAY_STORE_URL !== '#' ? PLAY_STORE_URL : '#';
@@ -13,6 +13,16 @@ for (const el of document.querySelectorAll<HTMLAnchorElement>('[data-play]')) {
     el.addEventListener('click', (event) => {
       event.preventDefault();
     });
+  }
+}
+
+for (const el of document.querySelectorAll<HTMLAnchorElement>('[data-wa-channel]')) {
+  if (WHATSAPP_CHANNEL_URL) {
+    el.href = WHATSAPP_CHANNEL_URL;
+    el.hidden = false;
+    el.removeAttribute('aria-hidden');
+  } else {
+    el.remove();
   }
 }
 

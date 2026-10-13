@@ -54,6 +54,7 @@ Paste each prompt into ChatGPT (search on), Gemini, Perplexity, Google AI Mode. 
 
 1. **Do not rewrite everything** — content exists; problem is discovery (indexation, mentions, competitor-named comparisons).
 2. ~~**Update** `best-quoting-apps-south-africa-2026` to name Zakr / QuickQuotes / TradiQuote / QuoteDirect as category peers~~ — done 2026-09-29 (also FieldCard, Swift Quote AI, Rebill).
-3. **Push the checklist** everywhere (Medium remaining posts, Quora, future pitches) — prompt #15 is winnable with the resource URL.
+3. **Push the checklist** everywhere (Medium remaining posts, Quora, future pitches) — prompt #15 is winnable with the resource URL.  
+   - Quora checklist answers posted 2026-09-29 (quotation-to-buyer + plumbers quote/invoice).
 4. **Brand disambiguation** — always “Vlyt (vlyt.app)” in titles/bios so models don’t attach Nigeria mobility Vlyt.
 5. Re-import updated best-apps to Medium when ready; re-run this log in ~30 days.

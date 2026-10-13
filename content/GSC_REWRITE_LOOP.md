@@ -41,3 +41,17 @@ Complete in Google account (cannot be done from repo alone):
 - [ ] GA4 linked to Search Console
 - [ ] `VITE_GA_MEASUREMENT_ID` set in GitHub Actions variables
 - [ ] Home + `/blog/` URL Inspection → Request indexing after deploy
+
+## Pass log
+
+### 2026-10-13 — early queries (0 clicks)
+
+| Query | Impr. | Action |
+| --- | --- | --- |
+| vlyt | 12 | Homepage already branded; no change beyond FAQ |
+| vlyt betekenis | 6 | About blurb + FAQ “What does Vlyt mean?” on `index.html` |
+| tradiquote | 4 | H2 + FAQ “Vlyt vs TradiQuote” on best-apps spoke |
+| whatsapp quote delivery / sending quotes via whatsapp | 4+1 | Title/meta/H2/FAQ rewrite on WhatsApp quote spoke |
+| stock tutorial phone | 1 | Title/meta + “Phone stock tutorial” steps on stock spoke |
+
+After deploy: URL Inspection → Request indexing for home, WhatsApp spoke, best-apps, stock spoke.

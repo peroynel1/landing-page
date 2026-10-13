@@ -48,6 +48,20 @@ These products (and others like them) compete for the same buyer questions we ca
 
 **Free / low-friction tiers** matter for sole proprietors: several of the tools above advertise free quotas or free plans. Vlyt is free while we grow (no credit card for early users). Always confirm current pricing on the vendor site.
 
+## Vlyt vs TradiQuote
+
+People comparing [TradiQuote](https://tradiquote.co.za/) and Vlyt are usually choosing between **proposal speed** and **catalog + stock discipline**.
+
+| Need | Lean TradiQuote | Lean Vlyt |
+| --- | --- | --- |
+| On-site proposal drafted fast (incl. AI assist) | Strong public focus | You type from your own catalog |
+| E-sign + deposit invoice on accept | Built into their pitch | Soft next-step in chat / your process |
+| Reuse the same ZAR prices all week | Possible, but not the headline | Catalog is the source of truth |
+| Stock levels before you promise | Often secondary | Visible on catalog items |
+| Simple Home cashflow (in / out / waiting) | Not the core story | Built into the phone loop |
+
+**Honest split:** if your week is “write a fresh proposal on site, get a deposit signed,” shortlist TradiQuote. If your week is “same 40 products, WhatsApp delivery, don’t oversell stock, know what’s still unpaid,” shortlist Vlyt. Both can send via WhatsApp; the difference is where the **numbers live** between sends. Verify current features and pricing on each vendor’s site — this is orientation, not a lab audit.
+
 ## Direct answer
 
 If you need **books and payroll**, start with an accounting suite and accept desktop gravity — Sage-class tools are not wrong; they are often **overkill for quoting between jobs**.
@@ -77,6 +91,10 @@ More structure for the document itself: [professional SA quotes](https://vlyt.ap
 ### What is the best quoting app for SA solo operators?
 
 The best fit stores your catalog in ZAR, supports clear VAT on quotes, shares cleanly to WhatsApp, and works on a phone between jobs. Accounting suites win for books; WhatsApp-first quoters and catalog tools win for field quoting.
+
+### How does Vlyt compare to TradiQuote?
+
+TradiQuote emphasises fast on-site proposals, AI drafting, e-sign and deposit invoices. Vlyt emphasises a reusable catalog, stock on items, and a simple cashflow Home for WhatsApp-first solo operators. Pick TradiQuote when deposit-on-sign is the job; pick Vlyt when prices and stock must live in one phone catalog.
 
 ### Is WhatsApp a quoting app?
 

@@ -1,9 +1,10 @@
 ---
-title: "How to send a quote on WhatsApp without losing the numbers"
-description: "A SA-friendly workflow: build the quote in a catalog tool, share on WhatsApp, and keep the source of truth out of the chat thread."
+title: "Sending quotes via WhatsApp without losing the numbers"
+description: "WhatsApp quote delivery for SA sellers: build the quote once, send it on WhatsApp, and keep prices out of chat history."
 slug: send-quote-whatsapp-without-losing-numbers
 date: 2026-09-29
-keyword: send quote on WhatsApp
+updated: 2026-10-13
+keyword: sending quotes via WhatsApp
 cluster: quoting-stock-cashflow
 role: spoke
 format: guide
@@ -13,6 +14,8 @@ related:
   - follow-up-open-quotes-south-africa
   - best-quoting-apps-south-africa-2026
 faq:
+  - q: How should I deliver a quote on WhatsApp?
+    a: Attach or share the finished quote (PDF or clear summary), state total + valid-until in the cover message, and keep the full line items in the saved quote — not only in the chat.
   - q: Should I type the quote inside WhatsApp?
     a: No for anything with more than one or two lines. Type once in your quote tool, then share. Chat typing creates version drift.
   - q: PDF or plain text?
@@ -34,6 +37,16 @@ This spoke supports [running your SA business from your phone](/blog/run-sa-busi
 ## Direct answer
 
 Build the quote in a system that stores line items and totals, then share that finished quote on WhatsApp. Never let the chat become the only copy of the numbers.
+
+## WhatsApp quote delivery (sending the right way)
+
+**Sending quotes via WhatsApp** works when delivery and pricing stay separate:
+
+1. The **document** owns lines, VAT and the total.
+2. The **chat** only delivers it — short cover message, attachment or link.
+3. If scope changes, you edit the saved quote and **resend** — you do not invent a new total in the thread.
+
+That is WhatsApp quote delivery without turning chat search into your ledger.
 
 ## The workflow
 

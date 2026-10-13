@@ -225,7 +225,7 @@ function layoutShell({ title, description, canonical, ogType, ogImage, jsonLd, b
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Syne:wght@700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Archivo:wght@700;800&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -296,6 +296,7 @@ function siteFooter() {
         <nav class="flex flex-wrap gap-5">
           <a href="/blog/" class="hover:text-ink">Blog</a>
           <a href="/resources/sa-quoting-checklist/" class="hover:text-ink">Quoting checklist</a>
+          <a data-wa-channel hidden href="#" class="hover:text-ink">WhatsApp tips</a>
           <a href="/privacy/" class="hover:text-ink">Privacy</a>
           <a href="/terms/" class="hover:text-ink">Terms</a>
         </nav>

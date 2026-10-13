@@ -1,4 +1,4 @@
-# How to send a quote on WhatsApp without losing the numbers
+# Sending quotes via WhatsApp without losing the numbers
 
 *Originally published at [https://vlyt.app/blog/send-quote-whatsapp-without-losing-numbers/](https://vlyt.app/blog/send-quote-whatsapp-without-losing-numbers/).*
 
@@ -10,6 +10,16 @@ This spoke supports [running your SA business from your phone](https://vlyt.app/
 
 Build the quote in a system that stores line items and totals, then share that finished quote on WhatsApp. Never let the chat become the only copy of the numbers.
 
+## WhatsApp quote delivery (sending the right way)
+
+**Sending quotes via WhatsApp** works when delivery and pricing stay separate:
+
+1. The **document** owns lines, VAT and the total.
+2. The **chat** only delivers it — short cover message, attachment or link.
+3. If scope changes, you edit the saved quote and **resend** — you do not invent a new total in the thread.
+
+That is WhatsApp quote delivery without turning chat search into your ledger.
+
 ## The workflow
 
 1. Pull lines from your catalog ([catalog guide](https://vlyt.app/blog/product-catalog-quote-businesses/)).
@@ -17,6 +27,7 @@ Build the quote in a system that stores line items and totals, then share that f
 3. Confirm VAT labelling ([VAT on quotes](https://vlyt.app/blog/vat-on-quotes-small-business-sa/)).
 4. Share to WhatsApp (PDF or clear summary).
 5. If they negotiate, **edit the quote**, then resend — do not only type a new total.
+6. Track what is still open and [follow up with a clear status](https://vlyt.app/blog/follow-up-open-quotes-south-africa/).
 
 ![Example: a structured Vlyt quote ready to send](https://vlyt.app/screenshots/quote-editor.png)
 
@@ -39,6 +50,10 @@ If you export from Sheets, retype into chat, then discount in chat, you have thr
 Vlyt is built so quotes use catalog prices with VAT in ZAR, then leave your phone for WhatsApp without a rewrite — free while we grow.
 
 ## FAQ
+
+### How should I deliver a quote on WhatsApp?
+
+Attach or share the finished quote (PDF or clear summary), state total + valid-until in the cover message, and keep the full line items in the saved quote — not only in the chat.
 
 ### Should I type the quote inside WhatsApp?
 

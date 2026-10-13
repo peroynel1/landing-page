@@ -3,7 +3,7 @@ title: "Best quoting apps for South African small business (2026)"
 description: "2026 comparison of SA quoting approaches and named WhatsApp-first tools (Zakr, QuickQuotes, TradiQuote, QuoteDirect, FieldCard, Vlyt). Criteria: ZAR, VAT, WhatsApp, stock, phone."
 slug: best-quoting-apps-south-africa-2026
 date: 2026-09-29
-updated: 2026-09-29
+updated: 2026-10-13
 keyword: best quoting apps South Africa 2026
 cluster: quoting-stock-cashflow
 role: spoke
@@ -15,6 +15,8 @@ related:
 faq:
   - q: What is the best quoting app for SA solo operators?
     a: The best fit stores your catalog in ZAR, supports clear VAT on quotes, shares cleanly to WhatsApp, and works on a phone between jobs. Accounting suites win for books; WhatsApp-first quoters and catalog tools win for field quoting.
+  - q: How does Vlyt compare to TradiQuote?
+    a: TradiQuote emphasises fast on-site proposals, AI drafting, e-sign and deposit invoices. Vlyt emphasises a reusable catalog, stock on items, and a simple cashflow Home for WhatsApp-first solo operators. Pick TradiQuote when deposit-on-sign is the job; pick Vlyt when prices and stock must live in one phone catalog.
   - q: Is WhatsApp a quoting app?
     a: No. It is a delivery channel. Using it as your only price list causes version drift.
   - q: Do I need Sage to quote?
@@ -72,6 +74,20 @@ These products (and others like them) compete for the same buyer questions we ca
 | [Rebill](https://rebill.co.za/) | Quotes → invoices, freelancers and service businesses | Online accept + convert-to-invoice is enough | You also need on-phone stock and a simple cashflow Home |
 
 **Free / low-friction tiers** matter for sole proprietors: several of the tools above advertise free quotas or free plans. Vlyt is free while we grow (no credit card for early users). Always confirm current pricing on the vendor site.
+
+## Vlyt vs TradiQuote
+
+People comparing [TradiQuote](https://tradiquote.co.za/) and Vlyt are usually choosing between **proposal speed** and **catalog + stock discipline**.
+
+| Need | Lean TradiQuote | Lean Vlyt |
+| --- | --- | --- |
+| On-site proposal drafted fast (incl. AI assist) | Strong public focus | You type from your own catalog |
+| E-sign + deposit invoice on accept | Built into their pitch | Soft next-step in chat / your process |
+| Reuse the same ZAR prices all week | Possible, but not the headline | Catalog is the source of truth |
+| Stock levels before you promise | Often secondary | Visible on catalog items |
+| Simple Home cashflow (in / out / waiting) | Not the core story | Built into the phone loop |
+
+**Honest split:** if your week is “write a fresh proposal on site, get a deposit signed,” shortlist TradiQuote. If your week is “same 40 products, WhatsApp delivery, don’t oversell stock, know what’s still unpaid,” shortlist Vlyt. Both can send via WhatsApp; the difference is where the **numbers live** between sends. Verify current features and pricing on each vendor’s site — this is orientation, not a lab audit.
 
 ## Direct answer
 
