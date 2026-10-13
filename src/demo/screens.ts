@@ -54,6 +54,9 @@ const ICO = {
   doc: `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>`,
   check: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 4.5-5"/></svg>`,
   caretDown: `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m7 10 5 5 5-5"/></svg>`,
+  caretMini: `<svg class="dm-caret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>`,
+  trendUp: `<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V5M12 5l-4 4M12 5l4 4"/></svg>`,
+  sectionMark: `<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>`,
   wa: `<svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 3a8.5 8.5 0 0 0-7.4 12.7L3.5 20.5l4.9-1.3A8.5 8.5 0 1 0 12 3zm4.7 12.1c-.2.6-1.2 1.1-1.7 1.2-.4.1-.9.2-2.9-.6-2.4-1-4-3.6-4.1-3.8-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.4.2.5.7 1.8.8 1.9.1.2.1.3 0 .5l-.3.5c-.1.2-.3.3-.1.6.1.3.6 1 .1.4 1.6.7 1.6.5 1.8.5.2 0 .3 0 .4-.1.1-.1.5-.6.6-.8.1-.2.3-.2.5-.1l1.4.7c.2.1.3.1.4.2.1.2.1.5-.1 1.1z"/></svg>`,
 };
 
@@ -165,12 +168,12 @@ function renderHome(data: DemoData): string {
       <img class="dm-avatar" src="${imgSrc(data.profile.avatar)}" alt="" width="40" height="40" />
     </div>
     <div class="dm-pills">
-      <button type="button" class="dm-pill">${esc(h.metric)} <span class="dm-caret">▾</span></button>
-      <button type="button" class="dm-pill">${esc(h.period_label)} <span class="dm-caret">▾</span></button>
+      <button type="button" class="dm-pill">${esc(h.metric)} ${ICO.caretMini}</button>
+      <button type="button" class="dm-pill">${esc(h.period_label)} ${ICO.caretMini}</button>
     </div>
     <div class="dm-date">${esc(h.date_range)}</div>
     <div class="dm-hero-amount">${zar(h.net_cashflow_cents)}</div>
-    <div class="dm-trend">↑ ${esc(h.trend_label)}</div>
+    <div class="dm-trend">${ICO.trendUp} ${esc(h.trend_label)}</div>
     <div class="dm-stat-row">
       <div><div class="dm-k">Income</div><div class="dm-v good">${zar(h.income_cents)}</div></div>
       <div><div class="dm-k">Expenses</div><div class="dm-v bad">${zar(h.expenses_cents)}</div></div>
@@ -221,7 +224,7 @@ function renderSalesWindow(data: DemoData): string {
       <div class="dm-sub">Products from ${s.paid_quotes} paid quotes</div>
       <div class="dm-summary-meta">
         <span>${esc(s.date_range)}</span>
-        <button type="button" class="dm-pill sm">${esc(s.period_label)} <span class="dm-caret">▾</span></button>
+        <button type="button" class="dm-pill sm">${esc(s.period_label)} ${ICO.caretMini}</button>
       </div>
       <div class="dm-grid-2">
         <div><div class="dm-k">Sold</div><div class="dm-v">${zar(s.sold_cents)}</div></div>
@@ -234,8 +237,8 @@ function renderSalesWindow(data: DemoData): string {
       <span class="on">Products</span><span>Packaging</span><span>Shipping</span>
     </div>
     <div class="dm-pills">
-      <button type="button" class="dm-pill">${ICO.layers} Month <span class="dm-caret">▾</span></button>
-      <button type="button" class="dm-pill">${ICO.sort} Units sold <span class="dm-caret">▾</span></button>
+      <button type="button" class="dm-pill">${ICO.layers} Month ${ICO.caretMini}</button>
+      <button type="button" class="dm-pill">${ICO.sort} Units sold ${ICO.caretMini}</button>
     </div>
     <div class="dm-card">
       <div class="dm-group-head">
@@ -276,8 +279,8 @@ function renderSales(data: DemoData): string {
   const body = `
     <div class="dm-toolbar">
       <div class="dm-search">${ICO.search}<span>Search quotes...</span></div>
-      <button type="button" class="dm-pill">${ICO.sort} Ship date <span class="dm-caret">▾</span></button>
-      <button type="button" class="dm-icon-btn">${ICO.filter}</button>
+      <button type="button" class="dm-pill">${ICO.sort} Ship date ${ICO.caretMini}</button>
+      <button type="button" class="dm-icon-btn" aria-label="Filter">${ICO.filter}</button>
     </div>
     <div class="dm-cards">
       ${data.ui.quotes_list
@@ -303,7 +306,7 @@ function renderSales(data: DemoData): string {
   return shell({
     activeTab: 'Sales',
     title: 'Quotes',
-    right: `<button type="button" class="dm-icon-btn">${ICO.gear}</button><button type="button" class="dm-add">${ICO.plus} New quote</button>`,
+    right: `<button type="button" class="dm-icon-btn" aria-label="Settings">${ICO.gear}</button><button type="button" class="dm-add">${ICO.plus} New quote</button>`,
     body,
   });
 }
@@ -415,14 +418,14 @@ function renderCatalog(data: DemoData): string {
       <span class="on">Products</span><span>Packaging</span><span>Shipping</span>
     </div>
     <div class="dm-toolbar">
-      <button type="button" class="dm-pill">${ICO.sort} Popular <span class="dm-caret">▾</span></button>
-      <button type="button" class="dm-icon-btn">${ICO.filter}</button>
+      <button type="button" class="dm-pill">${ICO.sort} Popular ${ICO.caretMini}</button>
+      <button type="button" class="dm-icon-btn" aria-label="Filter">${ICO.filter}</button>
       <div class="dm-view-toggle">
         <span class="on">${ICO.list} List</span>
         <span>${ICO.grid} Grid</span>
       </div>
     </div>
-    <div class="dm-section-label">⌄ Uncategorized · ${products.length}</div>
+    <div class="dm-section-label">${ICO.sectionMark} Uncategorized · ${products.length}</div>
     <div class="dm-cards">
       ${products
         .map((p) => {
@@ -459,7 +462,7 @@ function renderCatalog(data: DemoData): string {
   return shell({
     activeTab: 'Catalog',
     title: 'Catalog',
-    right: `<button type="button" class="dm-icon-btn">${ICO.folder}</button><button type="button" class="dm-icon-btn">${ICO.layers}</button><button type="button" class="dm-icon-btn">${ICO.gear}</button><button type="button" class="dm-add">${ICO.plus} Add</button>`,
+    right: `<button type="button" class="dm-icon-btn" aria-label="Folders">${ICO.folder}</button><button type="button" class="dm-icon-btn" aria-label="Layers">${ICO.layers}</button><button type="button" class="dm-icon-btn" aria-label="Settings">${ICO.gear}</button><button type="button" class="dm-add">${ICO.plus} Add</button>`,
     body,
     time: '15:51',
   });
@@ -482,7 +485,7 @@ function renderContacts(data: DemoData): string {
     <div class="dm-toolbar">
       <div class="dm-search grow">${ICO.search}<span>Search contacts...</span></div>
       <button type="button" class="dm-pill">${ICO.sort} Newest</button>
-      <button type="button" class="dm-icon-btn">${ICO.filter}</button>
+      <button type="button" class="dm-icon-btn" aria-label="Filter">${ICO.filter}</button>
     </div>
     <div class="dm-cards">
       ${data.contacts
@@ -517,7 +520,7 @@ function renderContacts(data: DemoData): string {
   return shell({
     activeTab: 'Contacts',
     title: 'Contacts',
-    right: `<button type="button" class="dm-icon-btn">${ICO.phone}</button><button type="button" class="dm-add">${ICO.plus} Add</button>`,
+    right: `<button type="button" class="dm-icon-btn" aria-label="Call">${ICO.phone}</button><button type="button" class="dm-add">${ICO.plus} Add</button>`,
     body,
   });
 }

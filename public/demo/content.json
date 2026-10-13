@@ -6,14 +6,14 @@
     "vat_registered": true,
     "vat_rate_percent": 15,
     "city": "Cape Town",
-    "avatar": "images/jordan-mets-avatar.png"
+    "avatar": "images/jordan-mets-avatar.webp"
   },
   "products": [
     {
       "id": "hand-grinder",
       "name": "Hand Grinder",
       "description": "Precision burr grinder for pour-over and espresso prep.",
-      "image": "images/hand-grinder-black.png",
+      "image": "images/hand-grinder-black.webp",
       "tracked": true,
       "stock_note": "2 batches on hand",
       "variations": [
@@ -22,14 +22,14 @@
           "price_cents": 189900,
           "cost_cents": 55000,
           "stock": 0,
-          "image": "images/hand-grinder-black.png"
+          "image": "images/hand-grinder-black.webp"
         },
         {
           "name": "Silver",
           "price_cents": 189900,
           "cost_cents": 55000,
           "stock": 0,
-          "image": "images/hand-grinder-silver.png"
+          "image": "images/hand-grinder-silver.webp"
         }
       ],
       "low_stock": true,
@@ -39,7 +39,7 @@
       "id": "pour-over-kit",
       "name": "Pour-over Kit",
       "description": "Dripper, carafe, and starter filters.",
-      "image": "images/pour-over-kit.png",
+      "image": "images/pour-over-kit.webp",
       "tracked": true,
       "variations": [
         {
@@ -47,14 +47,14 @@
           "price_cents": 129900,
           "cost_cents": 38000,
           "stock": 18,
-          "image": "images/pour-over-kit.png"
+          "image": "images/pour-over-kit.webp"
         },
         {
           "name": "Pro",
           "price_cents": 189900,
           "cost_cents": 55000,
           "stock": 5,
-          "image": "images/pour-over-kit.png"
+          "image": "images/pour-over-kit.webp"
         }
       ]
     },
@@ -62,7 +62,7 @@
       "id": "brew-scale",
       "name": "Brew Scale",
       "description": "0.1 g accuracy with built-in timer.",
-      "image": "images/brew-scale.png",
+      "image": "images/brew-scale.webp",
       "price_cents": 99900,
       "cost_cents": 28000,
       "stock": 22,
@@ -72,7 +72,7 @@
       "id": "tamper",
       "name": "Tamper",
       "description": "Balanced stainless steel espresso tamper.",
-      "image": "images/tamper.png",
+      "image": "images/tamper.webp",
       "tracked": true,
       "variations": [
         {
@@ -80,14 +80,14 @@
           "price_cents": 54900,
           "cost_cents": 15000,
           "stock": 11,
-          "image": "images/tamper.png"
+          "image": "images/tamper.webp"
         },
         {
           "name": "58 mm",
           "price_cents": 59900,
           "cost_cents": 17000,
           "stock": 9,
-          "image": "images/tamper.png"
+          "image": "images/tamper.webp"
         }
       ]
     },
@@ -95,7 +95,7 @@
       "id": "starter-kit",
       "name": "Home Barista Starter Kit",
       "description": "Grinder, pour-over, scale, and filters — ready to gift.",
-      "image": "images/starter-kit.png",
+      "image": "images/starter-kit.webp",
       "price_cents": 399900,
       "cost_cents": 120000,
       "stock": 8,
@@ -105,7 +105,7 @@
       "id": "filters",
       "name": "Paper Filters (100)",
       "description": "Bleached round filters for V60-style drippers.",
-      "image": "images/filters.png",
+      "image": "images/filters.webp",
       "price_cents": 8900,
       "cost_cents": 2500,
       "stock": 3,
@@ -374,13 +374,13 @@
       "awaiting_payment_count": 1,
       "activity": [
         {
-          "title": "Quote BL-1042: Packed → Shipped",
+          "title": "Quote BL-1042: Packed to Shipped",
           "sub": "Dolce Café · 1h ago",
           "badge": "Shipped",
           "tone": "good"
         },
         {
-          "title": "Quote BL-1048: Pending → To pack",
+          "title": "Quote BL-1048: Pending to pack",
           "sub": "James Whitfield · 2h ago",
           "badge": "To pack",
           "tone": "warn"

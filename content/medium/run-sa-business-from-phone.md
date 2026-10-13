@@ -45,6 +45,7 @@ Practical guides:
 
 - [How to write a professional quote in South Africa](https://vlyt.app/blog/how-to-write-professional-quote-south-africa/)
 - [How to send a quote on WhatsApp without losing the numbers](https://vlyt.app/blog/send-quote-whatsapp-without-losing-numbers/)
+- [How to follow up open quotes in South Africa](https://vlyt.app/blog/follow-up-open-quotes-south-africa/)
 - [Quote vs invoice in South Africa](https://vlyt.app/blog/quote-vs-invoice-south-africa/)
 - [VAT on quotes for small SA businesses](https://vlyt.app/blog/vat-on-quotes-small-business-sa/)
 
