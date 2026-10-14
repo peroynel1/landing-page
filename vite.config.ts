@@ -5,7 +5,7 @@ import path from 'node:path';
 
 /**
  * MPA inputs: repo-root HTML (index, 404) plus every folder index.html under
- * blog/resources/privacy/terms/order. Skip sibling redirect HTML files so
+ * blog/resources/privacy/terms/order/company. Skip sibling redirect HTML files so
  * keys do not collide with directory indexes.
  */
 function collectHtmlInputs(): Record<string, string> {
@@ -37,7 +37,7 @@ function collectHtmlInputs(): Record<string, string> {
     }
   }
 
-  for (const top of ['blog', 'resources', 'privacy', 'terms', 'order']) {
+  for (const top of ['blog', 'resources', 'privacy', 'terms', 'order', 'company']) {
     const dir = path.join(root, top);
     if (fs.existsSync(dir)) walk(dir);
   }

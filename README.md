@@ -74,3 +74,11 @@ Domain: `vlyt.app` (GoDaddy registration, Cloudflare DNS → GitHub Pages).
 - Root `CNAME` file contains `vlyt.app`
 - Vite `base` is `/`
 - In the GitHub repo: Settings → Pages → custom domain `vlyt.app` → Enforce HTTPS once DNS is green
+
+## Google Play organisation conversion (SA DIY)
+
+Step-by-step checklist to register a Pty Ltd and convert Play Console personal → organisation:
+
+[`ops/play-org/README.md`](./ops/play-org/README.md)
+
+Public company page: [`/company/`](./company/index.html) → https://vlyt.app/company/

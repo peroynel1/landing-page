@@ -297,6 +297,7 @@ function siteFooter() {
           <a href="/blog/" class="hover:text-ink">Blog</a>
           <a href="/resources/sa-quoting-checklist/" class="hover:text-ink">Quoting checklist</a>
           <a data-wa-channel hidden href="#" class="hover:text-ink">WhatsApp tips</a>
+          <a href="/company/" class="hover:text-ink">Company</a>
           <a href="/privacy/" class="hover:text-ink">Privacy</a>
           <a href="/terms/" class="hover:text-ink">Terms</a>
         </nav>
@@ -498,6 +499,7 @@ function writeSitemap(posts, resources) {
   const staticUrls = [
     { loc: `${SITE}/`, changefreq: 'weekly', priority: '1.0' },
     { loc: `${SITE}/blog/`, changefreq: 'weekly', priority: '0.9' },
+    { loc: `${SITE}/company/`, changefreq: 'yearly', priority: '0.3' },
     { loc: `${SITE}/privacy/`, changefreq: 'yearly', priority: '0.3' },
     { loc: `${SITE}/terms/`, changefreq: 'yearly', priority: '0.3' },
   ];
@@ -550,6 +552,7 @@ function writeLlmsTxt(posts, resources) {
     '',
     `- [Home](${SITE}/): Product overview`,
     `- [Blog index](${SITE}/blog/): All guides`,
+    `- [Company](${SITE}/company/): Legal entity and organisation contact`,
     ...resources.map((r) => `- [${r.title}](${SITE}/resources/${r.slug}/)`),
     '',
     '## Guides',
@@ -640,6 +643,7 @@ for (const page of resources) {
 
 writeRedirect('privacy.html', '/privacy/');
 writeRedirect('terms.html', '/terms/');
+writeRedirect('company.html', '/company/');
 
 writeSitemap(posts, resources);
 writeLlmsTxt(posts, resources);
