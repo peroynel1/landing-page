@@ -125,9 +125,15 @@ body {
 }
 
 .mainpage {
-  min-height: 100svh;
   display: flex;
   flex-direction: column;
+}
+
+/* Mobile HTML hero fills the first screen; desktop PNG hero sizes to itself. */
+@media (max-width: 899px) {
+  .mainpage {
+    min-height: 100svh;
+  }
 }
 
 .site-header {
@@ -159,11 +165,13 @@ body {
   display: none;
   position: relative;
   width: 100%;
-  height: calc(100svh - 85px);
+  /* Hug the 16:9 frame — avoid empty black under the image on tall tablets. */
+  height: auto;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   background: #000;
+  padding-bottom: 32px;
 }
 
 .play-icon {
@@ -174,9 +182,10 @@ body {
 .exact-hero-frame {
   position: relative;
   margin-top: 24px;
-  width: min(100vw, calc((100svh - 109px) * 16 / 9));
-  height: min(calc(100svh - 109px), calc(100vw * 9 / 16));
-  margin-bottom: auto;
+  width: min(100vw, 1600px, calc((100svh - 109px) * 16 / 9));
+  max-height: calc(100svh - 109px);
+  aspect-ratio: 16 / 9;
+  height: auto;
 }
 
 .exact-hero-frame img {
@@ -359,6 +368,17 @@ body {
   /* Same width everywhere → same height via aspect-ratio. */
   width: min(100%, 300px);
   margin: 0 auto;
+}
+
+/* Mobile: always text first, then phone — desktop keeps alternating md:order-*. */
+@media (max-width: 767px) {
+  #features .grid > :not(.feature-phone) {
+    order: 1;
+  }
+
+  #features .grid > .feature-phone {
+    order: 2;
+  }
 }
 
 @media (min-width: 768px) {
