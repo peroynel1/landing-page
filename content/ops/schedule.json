@@ -424,9 +424,11 @@
       "dueDate": "2026-10-16",
       "sourceSlug": "quote-deposit-whatsapp-south-africa",
       "copyFile": "content/CONTENT_BACKLOG.md",
-      "status": "todo",
+      "status": "done",
       "priority": 20,
-      "notes": "Cadence 7–10 days after follow-up spoke. See CONTENT_BACKLOG.md"
+      "doneAt": "2026-10-16",
+      "postUrl": "https://vlyt.app/blog/quote-deposit-whatsapp-south-africa/",
+      "notes": "Published. Next: Medium import + 1 LI/X/WA tip within 7 days."
     }
   ]
 }

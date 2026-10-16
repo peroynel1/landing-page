@@ -17,6 +17,7 @@ One URL per search intent. Prefer SA / WhatsApp / phone modifiers over vanity he
 | Spoke | best quoting apps South Africa 2026 | Commercial investigation | Listicle / comparison | `best-quoting-apps-south-africa-2026` | pillar, spreadsheet, whatsapp |
 | Spoke | send quote on WhatsApp | How-to | Guide | `send-quote-whatsapp-without-losing-numbers` | pillar, write-quote, best-apps |
 | Spoke | follow up open quotes South Africa | How-to | Guide | `follow-up-open-quotes-south-africa` | pillar, whatsapp, write-quote, cashflow |
+| Spoke | quote deposit WhatsApp South Africa | How-to | Guide | `quote-deposit-whatsapp-south-africa` | pillar, quote-vs-invoice, whatsapp, cashflow, follow-up |
 
 ## Publish order (v1 — shipped)
 

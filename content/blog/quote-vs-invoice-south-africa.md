@@ -11,6 +11,7 @@ related:
   - run-sa-business-from-phone
   - how-to-write-professional-quote-south-africa
   - vat-on-quotes-small-business-sa
+  - quote-deposit-whatsapp-south-africa
 faq:
   - q: What is a quote?
     a: A quote is an offer to do work or supply goods at a stated price. It is not a demand for payment. The customer can accept, negotiate or decline.

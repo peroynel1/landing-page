@@ -30,6 +30,7 @@ If import mangling happens, paste from the matching `.md` below (title = H1; str
 | How to follow up open quotes in South Africa (without chasing chaos) | `follow-up-open-quotes-south-africa.md` | https://vlyt.app/blog/follow-up-open-quotes-south-africa/ |
 | How to write a professional quote in South Africa | `how-to-write-professional-quote-south-africa.md` | https://vlyt.app/blog/how-to-write-professional-quote-south-africa/ |
 | Product catalog for quote-based businesses | `product-catalog-quote-businesses.md` | https://vlyt.app/blog/product-catalog-quote-businesses/ |
+| Quote deposit on WhatsApp in South Africa: “yes” is not booked | `quote-deposit-whatsapp-south-africa.md` | https://vlyt.app/blog/quote-deposit-whatsapp-south-africa/ |
 | Quote vs invoice in South Africa: when you need which | `quote-vs-invoice-south-africa.md` | https://vlyt.app/blog/quote-vs-invoice-south-africa/ |
 | Run your SA business from your phone: quotes, stock and cashflow | `run-sa-business-from-phone.md` | https://vlyt.app/blog/run-sa-business-from-phone/ |
 | Sending quotes via WhatsApp without losing the numbers | `send-quote-whatsapp-without-losing-numbers.md` | https://vlyt.app/blog/send-quote-whatsapp-without-losing-numbers/ |

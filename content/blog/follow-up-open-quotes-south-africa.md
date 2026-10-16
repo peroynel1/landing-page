@@ -12,6 +12,7 @@ related:
   - send-quote-whatsapp-without-losing-numbers
   - how-to-write-professional-quote-south-africa
   - cashflow-basics-trades-sa
+  - quote-deposit-whatsapp-south-africa
 faq:
   - q: How many open quotes should I keep in play?
     a: Only as many as you can name without scrolling chat. If you cannot list them, you have too many — or no list.

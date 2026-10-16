@@ -23,7 +23,7 @@ Cluster map: [COCOON.md](./COCOON.md) · Distribution: [DISTRIBUTION.md](./DISTR
 | # | Status | Slug | Target keyword | Why it closes a gap | Depends on / links |
 | --- | --- | --- | --- | --- | --- |
 | 1 | **syndicated** | `follow-up-open-quotes-south-africa` | follow up open quotes South Africa | Tip 2 / process leak has no canonical page | write-quote, whatsapp, cashflow |
-| 2 | todo | `quote-deposit-whatsapp-south-africa` | quote deposit WhatsApp South Africa | “Yes” ≠ booked; deposits before materials | quote-vs-invoice, cashflow, whatsapp |
+| 2 | published | `quote-deposit-whatsapp-south-africa` | quote deposit WhatsApp South Africa | “Yes” ≠ booked; deposits before materials | quote-vs-invoice, cashflow, whatsapp |
 | 3 | todo | `negotiate-quote-discount-south-africa` | negotiate quote discount South Africa | Version chaos when they ask “cheaper?” | whatsapp, write-quote |
 | 4 | todo | `quote-exclusions-scope-creep-sa` | quote exclusions scope creep | Checklist has exclusions; no spoke | write-quote, whatsapp |
 | 5 | todo | `after-quote-accepted-south-africa` | after quote accepted next steps | Quote → job → invoice → paid | quote-vs-invoice, cashflow, stock |
