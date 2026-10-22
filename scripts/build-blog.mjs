@@ -500,6 +500,7 @@ function writeSitemap(posts, resources) {
     { loc: `${SITE}/`, changefreq: 'weekly', priority: '1.0' },
     { loc: `${SITE}/blog/`, changefreq: 'weekly', priority: '0.9' },
     { loc: `${SITE}/company/`, changefreq: 'yearly', priority: '0.3' },
+    { loc: `${SITE}/delete-account/`, changefreq: 'yearly', priority: '0.3' },
     { loc: `${SITE}/privacy/`, changefreq: 'yearly', priority: '0.3' },
     { loc: `${SITE}/terms/`, changefreq: 'yearly', priority: '0.3' },
   ];
@@ -553,6 +554,7 @@ function writeLlmsTxt(posts, resources) {
     `- [Home](${SITE}/): Product overview`,
     `- [Blog index](${SITE}/blog/): All guides`,
     `- [Company](${SITE}/company/): Legal entity and organisation contact`,
+    `- [Delete account](${SITE}/delete-account/): How to delete an account and business data`,
     ...resources.map((r) => `- [${r.title}](${SITE}/resources/${r.slug}/)`),
     '',
     '## Guides',
@@ -644,6 +646,7 @@ for (const page of resources) {
 writeRedirect('privacy.html', '/privacy/');
 writeRedirect('terms.html', '/terms/');
 writeRedirect('company.html', '/company/');
+writeRedirect('delete-account.html', '/delete-account/');
 
 writeSitemap(posts, resources);
 writeLlmsTxt(posts, resources);

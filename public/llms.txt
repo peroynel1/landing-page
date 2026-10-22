@@ -10,6 +10,7 @@ Blog: https://vlyt.app/blog/
 - [Home](https://vlyt.app/): Product overview
 - [Blog index](https://vlyt.app/blog/): All guides
 - [Company](https://vlyt.app/company/): Legal entity and organisation contact
+- [Delete account](https://vlyt.app/delete-account/): How to delete an account and business data
 - [SA micro-business quoting checklist](https://vlyt.app/resources/sa-quoting-checklist/)
 
 ## Guides

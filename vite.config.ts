@@ -37,7 +37,7 @@ function collectHtmlInputs(): Record<string, string> {
     }
   }
 
-  for (const top of ['blog', 'resources', 'privacy', 'terms', 'order', 'company']) {
+  for (const top of ['blog', 'resources', 'privacy', 'terms', 'order', 'company', 'delete-account']) {
     const dir = path.join(root, top);
     if (fs.existsSync(dir)) walk(dir);
   }
